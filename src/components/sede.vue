@@ -110,12 +110,14 @@
         <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" width="201" height="156" loading="lazy" src="@/assets/img/galeria/imagen6.png" alt="Gallery image" />
       </div>
     </div>
-    <div class="order-1 ld:order-2 fixed" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-      <h2 class="titulo-seccion">Sede</h2>
-      <p class="titulo">Hotel Sumiya</p>
-      <p class="mb-6">Interior Fraccionamiento, Cam. Real a Sumiya S/N, Jose G. Parres, C. P. 62564 Jiutepec, Morelos.</p>
-      <div class="hidden">
-        <button class="flex gap-2 rounded-full transition-all duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">Conoce los costos</button>
+    <div class="order-1 ld:order-2 relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="sticky">
+        <h2 class="titulo-seccion">Sede</h2>
+        <p class="titulo">Hotel Sumiya</p>
+        <p class="mb-6">Interior Fraccionamiento, Cam. Real a Sumiya S/N, Jose G. Parres, C. P. 62564 Jiutepec, Morelos.</p>
+        <div class="hidden">
+          <button class="flex gap-2 rounded-full transition-all duration-500  text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">Conoce los costos</button>
+        </div>
       </div>
     </div>
   </section>

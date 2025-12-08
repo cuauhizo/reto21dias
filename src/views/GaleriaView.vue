@@ -140,8 +140,8 @@
   <div class="min-h-screen text-white py-10 md:py-20 p-4 sm:p-8">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-12">
-        <h1 class="text-4xl md:text-5xl font-bold font-lemon-bold mb-2">Galería de la Convención</h1>
-        <p class="text-lg text-gray-300 font-lemon-normal">Los mejores momentos de nuestro evento.</p>
+        <h1 class="text-4xl md:text-5xl font-bold  mb-2">Galería de la Convención</h1>
+        <p class="text-lg text-gray-300 ">Los mejores momentos de nuestro evento.</p>
         <router-link
           to="/"
           class="text-purple-400 hover:underline mt-4 inline-block"

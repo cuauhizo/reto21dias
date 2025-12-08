@@ -22,7 +22,7 @@
       class="col-span-full"
       data-aos="zoom-in"
       data-aos-anchor-placement="top-bottom">
-      <div class="md:flex md:max-w-4xl mx-auto gap-10 font-lemon-normal">
+      <div class="md:flex md:max-w-4xl mx-auto gap-10 ">
         <button
           class="w-full md:w-1/2 py-4 text-center text-lg font-extralight focus:outline-none"
           :class="{ 'active-tab-button': activeTab === 'tab1' }"
@@ -45,14 +45,14 @@
             v-for="programa1 in programaDia1"
             :key="programa1.id"
             class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-            <div class="col font-lemon-normal text-sm flex">
+            <div class="col  text-sm flex">
               <p class="">{{ programa1.horario }}</p>
             </div>
-            <div class="col md:col-span-2 font-lemon-normal text-sm mb-4">
+            <div class="col md:col-span-2  text-sm mb-4">
               <p class="font-normal leading-[1.237rem]">{{ programa1.actividad }}</p>
               <div
                 v-if="programa1.name"
-                class="flex items-center font-raleway">
+                class="flex items-center ">
                 <div>
                   <p class="">{{ programa1.name }}</p>
                   <p class="text-sm">{{ programa1.title }}</p>
@@ -63,7 +63,7 @@
                 v-if="programa1.reparto"
                 class="mt-4">
                 <div
-                  class="grid grid-cols-6 gap-3 mb-3 font-raleway items-center"
+                  class="grid grid-cols-6 gap-3 mb-3  items-center"
                   v-for="(ponente, key) in programa1.reparto"
                   :key="key">
                   <p class="col-span-4">
@@ -93,14 +93,14 @@
             v-for="programa2 in programaDia2"
             :key="programa2.id"
             class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-            <div class="col font-lemon-normal text-sm flex">
+            <div class="col  text-sm flex">
               <p class="">{{ programa2.horario }}</p>
             </div>
-            <div class="col md:col-span-2 font-lemon-normal text-sm mb-4">
+            <div class="col md:col-span-2  text-sm mb-4">
               <p class="font-normal leading-[1.237rem]">{{ programa2.actividad }}</p>
               <div
                 v-if="programa2.name"
-                class="flex items-center font-raleway">
+                class="flex items-center ">
                 <div>
                   <p class="">{{ programa2.name }}</p>
                   <p class="text-sm">{{ programa2.title }}</p>
@@ -111,7 +111,7 @@
                 v-if="programa2.reparto"
                 class="mt-4">
                 <div
-                  class="grid grid-cols-6 gap-3 mb-3 font-raleway items-center"
+                  class="grid grid-cols-6 gap-3 mb-3  items-center"
                   v-for="(ponente, key) in programa2.reparto"
                   :key="key">
                   <p class="col-span-4">

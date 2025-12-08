@@ -40,8 +40,7 @@
 <template>
   <Hero />
   <Patrocinadores />
-  <!-- <Ponentes/> -->
   <!-- <Programa/> -->
   <Stands />
-  <Sede />
+  <Ponentes />
 </template>

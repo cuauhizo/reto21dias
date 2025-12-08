@@ -65,9 +65,29 @@
 }
 
 
+@font-face {
+    font-family: 'nexa';
+    src: url('@/assets/font/Nexa/nexa-extralight-webfont.woff2') format('woff2'),
+         url('@/assets/font/Nexa/nexa-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'nexa-bold';
+    src: url('@/assets/font/Nexa/nexa-heavy-webfont.woff2') format('woff2'),
+         url('@/assets/font/Nexa/nexa-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Nexa", sans-serif;
 }
 
 

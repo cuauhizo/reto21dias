@@ -1,12 +1,12 @@
 <template>
   <section id="section1" class="container flex flex-wrap justify-items-center items-center content-center min-h-lvh gap-12 py-[5rem]">
     <div class="w-full" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-      <h1 class="hero-text font-lemon-bold text-center text-[2.244rem] md:text-[3.196rem] font-bold">10<sup>a</sup> Convención</h1>
-      <!-- <h2 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
+      <h1 class="hero-text  text-center text-[2.244rem] md:text-[3.196rem] font-bold">10<sup>a</sup> Convención</h1>
+      <!-- <h2 class="hero-text  text-[2.244rem] md:text-[3.196rem] font-bold">
         Seguridad y confianza:<br>
-        <span class="font-lemon-normal font-normal text-[1.773rem] md:text-[2.525rem]">la base de las sofipos</span>
+        <span class=" font-normal text-[1.773rem] md:text-[2.525rem]">la base de las sofipos</span>
       </h2> 
-      <button class="flex gap-2 rounded-full transition-all mt-4 duration-500 text-white text-[1.246rem] font-lemon-normal justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-3.5 md:text-[1.402rem]">
+      <button class="flex gap-2 rounded-full transition-all mt-4 duration-500 text-white text-[1.246rem]  justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-3.5 md:text-[1.402rem]">
         <span>10<sup>a</sup></span> Convención
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M4.5 19.5L19.5 4.5M19.5 4.5H8.25M19.5 4.5V15.75" stroke="#1DC270" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,10 +40,10 @@
     </div>
     <div class="space-y-6 md:space-y-8 w-full" data-aos="fade-left">
       <h3 class="uppercase text-center leading-7">
-        <span class="text-[2.244rem] font-lemon-bold">3 y 4 </span><br>
-        <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre </span><br>
-        <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya </span><br>
-        <span class="text-[1.246rem] font-lemon-light">Jiutepec Morelos</span>
+        <span class="text-[2.244rem] ">3 y 4 </span><br>
+        <span class="text-[#764796] text-[1.773rem] ">de Septiembre </span><br>
+        <span class="text-[1.246rem] ">Hotel Sumiya </span><br>
+        <span class="text-[1.246rem] ">Jiutepec Morelos</span>
       </h3>
     </div>
   </section>

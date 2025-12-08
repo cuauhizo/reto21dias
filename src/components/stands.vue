@@ -93,7 +93,7 @@
               href="/mapa/index.html"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex gap-2 rounded-full transition-all mt-2 duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
+              class="inline-flex gap-2 rounded-full transition-all mt-2 duration-500  text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
               Consulta aquí el mapa
             </a>
           </div>

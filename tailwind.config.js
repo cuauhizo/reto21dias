@@ -11,7 +11,8 @@ export default {
         "lemon-bold": ['"lemon-bold"', 'sans-serif'],
         "lemon-normal": ['"lemon-normal"', 'sans-serif'],
         "lemon-light": ['"lemon-light"', 'sans-serif'],
-        "raleway": ['"raleway"', 'sans-serif']
+        "nexa": ['"nexa"', 'sans-serif'],
+        "nexa-bold": ['"nexa-bold"', 'sans-serif']
       },
       colors: {
         "tolko-red": "rgb(204, 0, 50)"
