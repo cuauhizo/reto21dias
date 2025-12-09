@@ -1,52 +1,52 @@
 <script setup>
-  import { ref, onMounted, onUnmounted } from 'vue'
-  import Responsive from '@/components/responsive.vue'
+import { ref, onMounted, onUnmounted } from 'vue';
+import Responsive from '@/components/responsive.vue';
 
-  const anio = ref(new Date().getFullYear())
-  const showScrollTopButton = ref(false)
-  const activeSection = ref(null)
-  const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6']
+const anio = ref(new Date().getFullYear());
+const showScrollTopButton = ref(false);
+const activeSection = ref(null);
+const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'];
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
-  const handleScroll = () => {
-    const scrollTop = window.scrollY
-    showScrollTopButton.value = scrollTop > 0
+const handleScroll = () => {
+  const scrollTop = window.scrollY;
+  showScrollTopButton.value = scrollTop > 0;
 
-    // Detectar sección activa
-    for (const id of sectionIds) {
-      const el = document.getElementById(id)
-      if (el) {
-        const rect = el.getBoundingClientRect()
-        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-          activeSection.value = id
-          break
-        }
+  // Detectar sección activa
+  for (const id of sectionIds) {
+    const el = document.getElementById(id);
+    if (el) {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+        activeSection.value = id;
+        break;
       }
     }
   }
+};
 
-  const cerrarMenu = () => {
-    const checkbox = document.getElementById('menu')
-    if (checkbox) checkbox.checked = false
+const cerrarMenu = () => {
+  const checkbox = document.getElementById('menu');
+  if (checkbox) checkbox.checked = false;
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
+
+const scrollToSection = index => {
+  const element = document.getElementById(`section${index}`);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
   }
-
-  onMounted(() => {
-    window.addEventListener('scroll', handleScroll)
-  })
-
-  onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll)
-  })
-
-  const scrollToSection = index => {
-    const element = document.getElementById(`section${index}`)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
+};
 </script>
 
 <template>
@@ -62,35 +62,36 @@
             <input type="checkbox" id="menu" class="peer hidden" />
             <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-10 md:hidden"></label>
             <div class="fixed inset-0 bg-gradient-to-b from-white/20 to-[#3a3a82]/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none">
-              <ul class="absolute inset-x-0 top-24 p-10 items-center font-nexa-bold text-[15px] bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
+              <ul
+                class="absolute inset-x-0 top-24 p-10 items-center font-nexa-bold text-[15px] bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
                 <li>
                   <a
-                    href="#inicio"
+                    href="#beneficios"
                     class="py-2 px-2 rounded-full hover:bg-white hover:text-black hover:py-1 hover:px-2"
                     @click="
-                      scrollToSection(1);
-                      cerrarMenu()
+                      scrollToSection(2);
+                      cerrarMenu();
                     ">
                     Beneficios
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#patrocinadores"
+                    href="#temario"
                     :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']"
                     @click="
-                      scrollToSection(2);
-                      cerrarMenu()
+                      scrollToSection(4);
+                      cerrarMenu();
                     ">
                     Temario
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#stands"
+                    href="#costo"
                     @click="
                       scrollToSection(5);
-                      cerrarMenu()
+                      cerrarMenu();
                     "
                     :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section5' ? 'bg-white text-[#3a3a82]' : '']">
                     Costo
@@ -98,20 +99,22 @@
                 </li>
                 <li>
                   <a
-                    href="#stands"
+                    href="#preguntas_frecuentes"
                     @click="
                       scrollToSection(6);
-                      cerrarMenu()
+                      cerrarMenu();
                     "
                     :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']">
                     Preguntas frecuentes
                   </a>
                 </li>
                 <li class="md:hidden">
-                  <a href="#" class="flex items-center justify-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-4 transition-all duration-500">
-          <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Regístrate aquí!</span></span>
-          <i><img src="@/assets/img/icon-contacto.svg" class="pl-2" alt="icono contacto" /></i>
-        </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-4 transition-all duration-500">
+                    <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Regístrate aquí!</span></span>
+                    <i><img src="@/assets/img/icon-contacto.svg" class="pl-2" alt="icono contacto" /></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -126,76 +129,6 @@
     </div>
   </header>
 
-  <!-- <header
-  class="w-full flex justify-center sticky top-0 z-50 px-4 py-3 backdrop-blur-xl bg-white/10">
-  
-    <div
-    class="w-full max-w-[1280px] rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/20 shadow-lg">
-    
-
-        <nav class="flex items-center justify-between px-5 py-3 text-white">
-        <div class="flex items-center gap-6">
-          <a href="./" class="w-1/3 max-w-[55px]">
-            <img src="@/assets/img/logo-isfmc.svg" alt="Logo convension" class="w-full" width="55" height="55" loading="lazy" />
-          </a>
-          <div class="flex items-center justify-start gap-2 text-[14px]">
-            <input type="checkbox" id="menu" class="peer hidden" />
-            <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-10 md:hidden"></label>
-            <div class="fixed inset-0 bg-gradient-to-b from-white/20 to-[#3a3a82]/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none">
-              <ul class="absolute inset-x-0 top-24 p-10 items-center bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
-                <li>
-                  <a
-                    href="#inicio"
-                    class="py-2 px-2 rounded-full hover:bg-white hover:text-black hover:py-1 hover:px-2"
-                    @click="
-                      scrollToSection(1);
-                      cerrarMenu()
-                    ">
-                    Beneficios
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#patrocinadores"
-                    :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']"
-                    @click="
-                      scrollToSection(2);
-                      cerrarMenu()
-                    ">
-                    Temario
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#stands"
-                    @click="
-                      scrollToSection(5);
-                      cerrarMenu()
-                    "
-                    :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section5' ? 'bg-white text-[#3a3a82]' : '']">
-                    Costo
-                  </a>
-                </li>
-                <li class="md:hidden">
-                  <a href="#" class="flex items-center gap-2 bg-black text-white w-fit mx-auto rounded-full shadow-sm py-1 px-1.5 pr-2 transition-all duration-500">
-                    <i><img src="@/assets/img/icon-contacto.svg" alt="icono contacto" /></i>
-                    <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Inscríbete ya!</span></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <a href="#" class="hidden md:flex items-center gap-2 bg-black text-white w-fit rounded-full shadow-sm py-1 px-1.5 pr-2 transition-all duration-500">
-          <i><img src="@/assets/img/icon-contacto.svg" alt="icono contacto" /></i>
-          <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Inscríbete ya!</span></span>
-        </a>
-      </nav>
-    
-</div>
-
-  </header> -->
   <!-- Main -->
   <main>
     <router-view></router-view>
@@ -277,37 +210,37 @@
       </div>
     </div>
   </footer>
-  <Responsive/>
+  <Responsive />
 </template>
 
 <style scoped>
-  nav {
-    margin: 0 auto;
-    width: 100%;
-  }
+nav {
+  margin: 0 auto;
+  width: 100%;
+}
 
-  .nav-menu::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backdrop-filter: blur(16px);
-    backdrop-filter: blur(16px);
-    /* background: rgba(255 255 255 0.16); */
-    /* background: rgba(25 130 127 0.65); */
-    background: rgba(25, 130, 127, 0.65);
-  }
+.nav-menu::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  /* background: rgba(255 255 255 0.16); */
+  /* background: rgba(25 130 127 0.65); */
+  background: rgba(25, 130, 127, 0.65);
+}
 
-  /* Estilos opcionales para el botón de ir arriba */
-  .btn-irArriba {
-    padding: 15px;
-    background-color: #3a3a82;
-    color: #fff;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    border-radius: 50%;
-    z-index: 50;
-    border: 1px solid #000;
-  }
+/* Estilos opcionales para el botón de ir arriba */
+.btn-irArriba {
+  padding: 15px;
+  background-color: #3a3a82;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  z-index: 50;
+  border: 1px solid #000;
+}
 </style>
