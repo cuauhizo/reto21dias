@@ -67,7 +67,7 @@ const scrollToSection = index => {
                 <li>
                   <a
                     href="#beneficios"
-                    class="py-2 px-2 rounded-full hover:bg-white hover:text-black hover:py-1 hover:px-2"
+                    :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']"
                     @click="
                       scrollToSection(2);
                       cerrarMenu();
@@ -78,7 +78,7 @@ const scrollToSection = index => {
                 <li>
                   <a
                     href="#temario"
-                    :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']"
+                    :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section4' ? 'bg-white text-[#3a3a82]' : '']"
                     @click="
                       scrollToSection(4);
                       cerrarMenu();

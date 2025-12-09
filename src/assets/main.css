@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-  .container{
-    @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl
+  .container {
+    @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
   }
 
   .bg-gradient-radial {
@@ -16,80 +16,69 @@
     background-size: cover;
   }
 
+  .bg-temario {
+    background-image: url('@/assets/img/bg-temario.png');
+    background-size: cover;
+  }
+
   .bg-programa {
     background: #0c254d;
-    background: linear-gradient(45deg,#0c254d 0%, #440076 40%, #0c254d 80%);
-    background: -webkit-linear-gradient(45deg,#0c254d 0%, #440076 40%, #0c254d 80%);
-    background: -moz-linear-gradient(45deg,#0c254d 0%, #440076 40%, #0c254d 80%);
+    background: linear-gradient(45deg, #0c254d 0%, #440076 40%, #0c254d 80%);
+    background: -webkit-linear-gradient(45deg, #0c254d 0%, #440076 40%, #0c254d 80%);
+    background: -moz-linear-gradient(45deg, #0c254d 0%, #440076 40%, #0c254d 80%);
   }
 
   .titulo-seccion {
-    @apply text-sm font-normal font-lemon-normal uppercase tracking-[0.56px]
+    @apply text-sm font-normal font-lemon-normal uppercase tracking-[0.56px];
   }
 
   /* letter-spacing: 0.098rem; */
   .titulo {
-    @apply font-lemon-normal text-3xl md:text-[3.196rem] md:leading-[3.595rem] pt-4 mb-4
+    @apply font-lemon-normal text-3xl md:text-[3.196rem] md:leading-[3.595rem] pt-4 mb-4;
   }
-
 }
 
 @font-face {
   font-family: 'lemon-bold';
   src: url('@/assets/font/Lemon/lemon-milk-pro-bold.eot'); /* IE9+ Compat Modes */
-  src: url('@/assets/font/Lemon/lemon-milk-pro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('@/assets/font/Lemon/lemon-milk-pro-bold.woff2') format('woff2'), /* Super modern browsers */
-       url('@/assets/font/Lemon/lemon-milk-pro-bold.woff') format('woff'), /* Modern browsers */
-       url('@/assets/font/Lemon/lemon-milk-pro-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('@/assets/font/Lemon/lemon-milk-pro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('@/assets/font/Lemon/lemon-milk-pro-bold.woff2') format('woff2'),
+    /* Super modern browsers */ url('@/assets/font/Lemon/lemon-milk-pro-bold.woff') format('woff'), /* Modern browsers */ url('@/assets/font/Lemon/lemon-milk-pro-bold.ttf') format('truetype'); /* Safari, Android, iOS */
   font-display: swap;
 }
 
 @font-face {
   font-family: 'lemon-normal';
   src: url('@/assets/font/Lemon/lemon-milk-pro-regular.eot'); /* IE9+ Compat Modes */
-  src: url('@/assets/font/Lemon/lemon-milk-pro-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('@/assets/font/Lemon/lemon-milk-pro-regular.woff2') format('woff2'), /* Super modern browsers */
-       url('@/assets/font/Lemon/lemon-milk-pro-regular.woff') format('woff'), /* Modern browsers */
-       url('@/assets/font/Lemon/lemon-milk-pro-regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('@/assets/font/Lemon/lemon-milk-pro-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('@/assets/font/Lemon/lemon-milk-pro-regular.woff2') format('woff2'),
+    /* Super modern browsers */ url('@/assets/font/Lemon/lemon-milk-pro-regular.woff') format('woff'), /* Modern browsers */ url('@/assets/font/Lemon/lemon-milk-pro-regular.ttf') format('truetype'); /* Safari, Android, iOS */
   font-display: swap;
 }
 
 @font-face {
   font-family: 'lemon-light';
   src: url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.otf'); /* IE9+ Compat Modes */
-  src: url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.woff2') format('woff2'), /* Super modern browsers */
-       url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.woff') format('woff'), /* Modern browsers */
-       url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.woff2') format('woff2'),
+    /* Super modern browsers */ url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.woff') format('woff'), /* Modern browsers */ url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.ttf') format('truetype'); /* Safari, Android, iOS */
   font-display: swap;
 }
 
-
 @font-face {
-    font-family: 'nexa';
-    src: url('@/assets/font/Nexa/nexa-extralight-webfont.woff2') format('woff2'),
-         url('@/assets/font/Nexa/nexa-extralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'nexa';
+  src: url('@/assets/font/Nexa/nexa-extralight-webfont.woff2') format('woff2'), url('@/assets/font/Nexa/nexa-extralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-
 @font-face {
-    font-family: 'nexa-bold';
-    src: url('@/assets/font/Nexa/nexa-heavy-webfont.woff2') format('woff2'),
-         url('@/assets/font/Nexa/nexa-heavy-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'nexa-bold';
+  src: url('@/assets/font/Nexa/nexa-heavy-webfont.woff2') format('woff2'), url('@/assets/font/Nexa/nexa-heavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
-
 
 body {
-  font-family: "Nexa", sans-serif;
+  font-family: 'Nexa', sans-serif;
 }
-
 
 .texto-con-bordes,
 .texto-con-bordes-red {
@@ -105,6 +94,6 @@ body {
 
 .hero-text {
   /* @apply text-white leading-[normal] uppercase; */
-  @apply text-white leading-[normal] ;
+  @apply text-white leading-[normal];
   text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.32);
 }

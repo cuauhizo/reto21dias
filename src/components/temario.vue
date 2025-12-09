@@ -26,13 +26,40 @@ const openFaqBId = ref(null); // Estado para el Acordeón B
 const faqsA = ref([
   {
     id: 1,
-    question: 'How do i know if a product is available in boutiques?',
-    answer:
-      'Remember you can query the status of your orders any time in My orders in the My account section. if you are not resigered at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter your e-mail address and order number.',
+    question: 'GLP-1: El hack metabólico que todos usan  (y pocos entienden)',
+    answer: `
+      <ul>
+        <li>¿Qué es el GLP-1?</li>
+        <li>¿Cómo funciona en el cuerpo?</li>
+        <li>Principales beneficios más allá que bajar de peso</li>
+        <li>¿Quiénes se benefician con el GLP 1 y quienes no?</li>
+        <li>Errores típicos cuando alguien comienza a utilizar GLP-1</li>
+      </ul>
+    `,
   },
   {
     id: 2,
-    question: 'How can i find the prices or get other information about chanel products?',
+    question: 'Tu segundo cerebro en llamas: activa tu motor metabólico desde tu intestino',
+    answer: 'The prices and product information can usually be found on the product detail pages on the official website or by contacting an authorized distributor.',
+  },
+  {
+    id: 3,
+    question: 'Come para nutrirte no para inflamarse',
+    answer: 'The prices and product information can usually be found on the product detail pages on the official website or by contacting an authorized distributor.',
+  },
+  {
+    id: 4,
+    question: 'Tu cuerpo está cambiando: cómo evitar perder masa muscular',
+    answer: 'The prices and product information can usually be found on the product detail pages on the official website or by contacting an authorized distributor.',
+  },
+  {
+    id: 5,
+    question: 'SOS GLP-1: Sobrevive (y gana) a los efectos secundarios',
+    answer: 'The prices and product information can usually be found on the product detail pages on the official website or by contacting an authorized distributor.',
+  },
+  {
+    id: 6,
+    question: 'Salida segura: Cómo mantenerte delgado(a), fuerte y estable por meses (o años)',
     answer: 'The prices and product information can usually be found on the product detail pages on the official website or by contacting an authorized distributor.',
   },
 ]);
@@ -41,12 +68,77 @@ const faqsA = ref([
 const faqsB = ref([
   {
     id: 101, // Usar IDs distintos es buena práctica
-    question: 'Pregunta Adicional B1: ¿Cuál es el horario del evento?',
-    answer: 'El evento se llevará a cabo de 9:00 AM a 5:00 PM (hora de la Ciudad de México).',
+    question: '¿Quedarán grabadas las clases?',
+    answer: 'Sí. Todas las clases quedan grabadas y estarán disponibles durante tres meses a partir de la última sesión, para que puedas verlas cuantas veces quieras.',
   },
   {
     id: 102,
-    question: 'Pregunta Adicional B2: ¿Se incluye el almuerzo?',
+    question: '¿Cuánto tiempo tengo acceso al curso?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 103,
+    question: '¿Para quién está diseñado el curso?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 104,
+    question: '¿Cuáles son los objetivos del curso?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 105,
+    question: '¿Cuándo puedo descargar mi diploma?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 106,
+    question: '¿Cuándo se sube la grabación de cada clase?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 107,
+    question: '¿Puedo descargar los videos?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 108,
+    question: '¿Cómo ingreso al grupo de Telegram y Facebook?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 109,
+    question: '¿Puedo hacer preguntas a los ponentes?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 110,
+    question: '¿Puedo descargar mi menú y recetario?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 111,
+    question: '¿Al inscribirse se incluye el kit de suplementos?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 112,
+    question: '¿Es obligatorio iniciar el menú desde la clase 1?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 113,
+    question: '¿Qué pasa si no tengo los ingredientes exactos del menú?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 114,
+    question: '¿Qué pasa si no adquiero el kit de suplementos?',
+    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+  },
+  {
+    id: 115,
+    question: '¿Qué hago si ya pagué y no me llega el correo?',
     answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
   },
 ]);
@@ -71,88 +163,84 @@ const isFaqOpenB = id => {
 </script>
 
 <template>
-  <section id="section4" class="py-10 md:py-20 px-4">
+  <section class="py-10 md:py-20 px-4">
     <div class="mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row">
-      <div id="section5" class="w-full md:sticky md:top-20 md:w-1/2 md:order-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <div class="lg:w-[505px] bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-12">
-          <p class="titulo text-teal-700 text-4xl font-nexa-bold leading-10">¡Inscríbete ahora y aprovecha nuestro precio de lanzamiento!</p>
-          <p>
-            $4,800.
-            <sup>00</sup>
-            MXN
-          </p>
-          <p>
-            $3,500.
-            <sup>00</sup>
-            MXN
-          </p>
-          <p>Descuento por tiempo limitado</p>
-          <div class="grid items-center justify-center">
-            <button class="flex gap-2 rounded-full transition-all duration-500 text-xs justify-center items-center bg-gradient-to-r from-violet-950 to-violet-700 text-white hover:bg-gradient-to-br px-8 py-2">¡Regístrate aquí!</button>
+      <div id="section5" class="w-full md:sticky md:top-20 md:w-5/12 md:order-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="flex flex-col items-center justify-center text-center gap-6 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] h-[908px] mx-auto">
+          <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">¡Inscríbete ahora y aprovecha nuestro precio de lanzamiento!</h3>
+          <div class="flex flex-col items-center gap-1">
+            <span class="text-zinc-700 text-lg font-thin font-nexa line-through">$4,800.00 MXN</span>
+            <div class="flex items-baseline text-teal-700 font-nexa">
+              <span class="text-xl font-thin mr-1">$</span>
+              <span class="text-6xl font-black font-nexa-bold tracking-tight">3,500.</span>
+              <sup class="text-3xl font-black font-nexa-bold top-[-0.5em]">00</sup>
+              <span class="text-xl font-thin ml-2">MXN</span>
+            </div>
+            <span class="text-zinc-700 text-base font-thin font-nexa mt-2">Descuento por tiempo limitado</span>
           </div>
-          <img src="@/assets/img/SugarResetGLP1.svg" alt="Logo convension" class="w-[393px] m-auto" loading="lazy" />
-          <p>Paga a meses sin intereses con tarjetas de crédito participantes.</p>
-          <img src="@/assets/img/pago.png" alt="Logo convension" class="w-[320px] m-auto" loading="lazy" />
+          <a href="#" class="flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-10 transition-all duration-500">
+            <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Regístrate aquí!</span></span>
+            <i><img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="icono contacto" /></i>
+          </a>
+          <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="w-[233px] h-auto object-contain" loading="lazy" />
+          <p class="max-w-[320px] text-zinc-700 text-sm font-thin font-nexa leading-tight">Paga a meses sin intereses con tarjetas de crédito participantes.</p>
+          <img src="@/assets/img/pago.png" alt="Métodos de pago" class="w-[320px] h-auto object-contain" loading="lazy" />
         </div>
       </div>
-
-      <div class="flex flex-col gap-8 w-full min-w-0 flex-1 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
-        <div>
-          <h1 class="text-center lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold mb-6">FAQ's Principales</h1>
-          <div class="lg:w-8/12 w-full mx-auto">
+      <div id="section4" class="flex flex-col gap-8 w-full min-w-0 flex-1 md:w-7/12 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+        <div class="px-4 py-7 text-white rounded-[32px] sm:p-12 bg-temario">
+          <h2 class="text-2xl mb-6">Temario</h2>
+          <h3 class="text-4xl font-nexa-bold mb-6">¿Qué lograrás en Sugar Reset GLP-1: Reto de 21 Días?</h3>
+          <div class="w-full">
             <div v-for="(faq, index) in faqsA" :key="faq.id">
-              <hr class="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
-              <div class="w-full md:px-6">
-                <div id="mainHeading" class="flex justify-between items-center w-full cursor-pointer" @click="toggleFaqA(faq.id)">
+              <div class="w-full p-6 mb-1 bg-white/60 rounded-2xl backdrop-blur-2xl" :class="{ 'bg-white/100': isFaqOpenA(faq.id) }">
+                <div class="flex justify-between items-center w-full cursor-pointer" @click="toggleFaqA(faq.id)">
                   <div class="">
-                    <p class="flex justify-center items-center font-medium text-base leading-6 md:leading-4 text-gray-800" :class="{ 'font-semibold': isFaqOpenA(faq.id) }">
-                      <span class="lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q{{ index + 1 }}.</span>
+                    <p class="flex justify-center items-center text-white font-nexa-bold text-lg" :class="{ 'text-teal-700/100 font-semibold': isFaqOpenA(faq.id) }">
+                      <span class="bg-gradient-to-b from-teal-700 to-teal-400 rounded-lg bg-teal-700 text-white p-2 w-8 h-8 mr-3 text-lg leading-4 font-nexa-bold">{{ index + 1 }}</span>
                       {{ faq.question }}
                     </p>
                   </div>
-                  <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
+                  <button aria-label="toggler" class="">
                     <img class="transform dark:hidden transition duration-300" :class="{ 'rotate-180': isFaqOpenA(faq.id) }" src="@/assets/img/toggler.svg" alt="toggler" />
                     <img class="transform dark:block hidden transition duration-300" :class="{ 'rotate-180': isFaqOpenA(faq.id) }" src="@/assets/img/toggler.svg" alt="toggler" />
                   </button>
                 </div>
                 <div v-show="isFaqOpenA(faq.id)" class="mt-6 w-full">
-                  <p class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">
+                  <p class="text-base leading-6 text-black">
                     {{ faq.answer }}
                   </p>
                 </div>
               </div>
             </div>
-            <hr class="w-full lg:mt-10 my-8" />
           </div>
         </div>
-
         <hr class="w-full border-gray-400" />
         <div id="section6">
-          <h2 class="text-center lg:text-3xl text-2xl lg:leading-9 leading-7 text-gray-800 font-semibold mb-6">Preguntas sobre el Evento</h2>
-          <div class="lg:w-8/12 w-full mx-auto">
-            <div v-for="(faq, index) in faqsB" :key="faq.id">
-              <hr class="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
-              <div class="w-full md:px-6">
-                <div id="mainHeading" class="flex justify-between items-center w-full cursor-pointer" @click="toggleFaqB(faq.id)">
-                  <div class="">
-                    <p class="flex justify-center items-center font-medium text-base leading-6 md:leading-4 text-gray-800" :class="{ 'font-semibold': isFaqOpenB(faq.id) }">
-                      <span class="lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">E{{ index + 1 }}.</span>
-                      {{ faq.question }}
+          <div class="px-4 py-7 rounded-[48px] bg-gray-100 sm:p-12">
+            <h3 class="text-teal-700 text-3xl text-center lg:text-4xl font-nexa-bold leading-tight mb-6">Preguntas frecuentes</h3>
+            <div class="w-full">
+              <div v-for="(faq, index) in faqsB" :key="faq.id">
+                <div class="w-full p-6 mb-1 bg-white rounded-2xl backdrop-blur-2xl" :class="{ '': isFaqOpenB(faq.id) }">
+                  <div class="flex justify-between items-center w-full cursor-pointer" @click="toggleFaqB(faq.id)">
+                    <div class="">
+                      <p class="flex justify-center items-center text-teal-700 font-nexa-bold text-lg" :class="{ 'text-teal-700/100 font-semibold': isFaqOpenB(faq.id) }">
+                        {{ faq.question }}
+                      </p>
+                    </div>
+                    <button aria-label="toggler" class="">
+                      <img class="transform dark:hidden transition duration-300" :class="{ 'rotate-180': isFaqOpenB(faq.id) }" src="@/assets/img/toggler.svg" alt="toggler" />
+                      <img class="transform dark:block hidden transition duration-300" :class="{ 'rotate-180': isFaqOpenB(faq.id) }" src="@/assets/img/toggler.svg" alt="toggler" />
+                    </button>
+                  </div>
+                  <div v-show="isFaqOpenB(faq.id)" class="mt-6 w-full">
+                    <p class="text-base leading-6 text-black">
+                      {{ faq.answer }}
                     </p>
                   </div>
-                  <button aria-label="toggler" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
-                    <img class="transform dark:hidden transition duration-300" :class="{ 'rotate-180': isFaqOpenB(faq.id) }" src="@/assets/img/pago.png" alt="toggler" />
-                    <img class="transform dark:block hidden transition duration-300" :class="{ 'rotate-180': isFaqOpenB(faq.id) }" src="@/assets/img/toggler.svg" alt="toggler" />
-                  </button>
-                </div>
-                <div v-show="isFaqOpenB(faq.id)" class="mt-6 w-full">
-                  <p class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">
-                    {{ faq.answer }}
-                  </p>
                 </div>
               </div>
             </div>
-            <hr class="w-full lg:mt-10 my-8" />
           </div>
         </div>
       </div>
