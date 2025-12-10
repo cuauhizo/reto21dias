@@ -50,8 +50,7 @@ const scrollToSection = index => {
 </script>
 
 <template>
-  <!-- Header -->
-  <header class="">
+  <header>
     <div class="fixed z-30 w-full nav-menu bg-white bg-opacity-15 mt-2 md:-mt-10">
       <nav class="container h-30 flex items-center justify-between px-8 py-4 relative text-white">
         <div class="flex items-center gap-6">
@@ -128,8 +127,6 @@ const scrollToSection = index => {
       </nav>
     </div>
   </header>
-
-  <!-- Main -->
   <main>
     <router-view></router-view>
     <button class="btn-irArriba" @click="scrollToTop" v-show="showScrollTopButton" aria-label="Ir al inicio">
@@ -140,88 +137,53 @@ const scrollToSection = index => {
       </svg>
     </button>
   </main>
+  <footer>
+    <div class="bg-teal-700 rounded-tl-[64px] rounded-tr-[64px] text-white">
+      <div class="container py-10 md:py-12">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8 items-center text-center">
+          <div class="md:col-span-3">
+            <div class="flex items-center justify-start gap-5">
+              <img src="@/assets/img/logo-isfmc.svg" alt="Instituto Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
+              <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
+            </div>
+          </div>
 
-  <!-- Footer -->
-  <footer class="bg-teal-700 rounded-tl-[64px] rounded-tr-[64px] text-white">
-    <div class="container py-10 md:py-12">
-      <!-- <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8">
-        <div class="md:col-span-3">
-          <div class="flex items-center justify-start gap-5">
-            <img src="@/assets/img/logo-isfmc.svg" alt="Instituto Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
-            <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
+          <div class="md:col-span-6 flex flex-col items-start gap-2">
+            <div class="flex items-center gap-2">
+              <img src="@/assets/img/icon-whatsapp.svg" alt="" />
+              <div class="text-base">55 7147 7728</div>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="@/assets/img/icon-email.svg" alt="" />
+              <div class="text-base">info@isfmc.com</div>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="@/assets/img/icon-check.svg" alt="" />
+              <div class="text-base">Herramienta de validación de certificados</div>
+            </div>
           </div>
-        </div>
 
-        <div class="md:col-span-6">
-          <div class="flex gap-2">
-            <img src="@/assets/img/icon-whatsapp.svg" alt="" />
-            <div class="text-base">55 7147 7728</div>
-          </div>
-          <div class="flex gap-2">
-            <img src="@/assets/img/icon-email.svg" alt="" />
-            <div class="text-base">info@isfmc.com</div>
-          </div>
-          <div class="flex gap-2">
-            <img src="@/assets/img/icon-check.svg" alt="" />
-            <div class="text-base">Herramienta de validación de certificados</div>
+          <div class="md:col-span-3">
+            <div>
+              <span class="flex gap-2.5 justify-end">
+                <a class="cursor-pointer" href="#" alt="Facebook" target="_blank"><img src="@/assets/img/icon-facebook.svg" alt="" /></a>
+                <a class="cursor-pointer" href="#" alt="Instagram" target="_blank"><img src="@/assets/img/icon-instagram.svg" alt="" /></a>
+                <a class="cursor-pointer" href="#" alt="Youtube" target="_blank"><img src="@/assets/img/icon-youtube.svg" alt="" /></a>
+                <a class="cursor-pointer" href="#" alt="X" target="_blank"><img src="@/assets/img/icon-x.svg" alt="" /></a>
+                <a class="cursor-pointer" href="#" alt="Linkedin" target="_blank"><img src="@/assets/img/icon-linkedin.svg" alt="" /></a>
+              </span>
+            </div>
           </div>
         </div>
-
-        <div class="md:col-span-3">
-          <div>
-            <span class="flex gap-2.5 mt-2 justify-end">
-              <a class="cursor-pointer" href="#" alt="Facebook" target="_blank"><img src="@/assets/img/icon-facebook.svg" alt="" /></a>
-              <a class="cursor-pointer" href="#" alt="Instagram" target="_blank"><img src="@/assets/img/icon-instagram.svg" alt="" /></a>
-              <a class="cursor-pointer" href="#" alt="Youtube" target="_blank"><img src="@/assets/img/icon-youtube.svg" alt="" /></a>
-              <a class="cursor-pointer" href="#" alt="X" target="_blank"><img src="@/assets/img/icon-x.svg" alt="" /></a>
-              <a class="cursor-pointer" href="#" alt="Linkedin" target="_blank"><img src="@/assets/img/icon-linkedin.svg" alt="" /></a>
-            </span>
-          </div>
-        </div>
-      </div> -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8 items-center text-center">
-        <div class="md:col-span-3">
-          <div class="flex items-center justify-start gap-5">
-            <img src="@/assets/img/logo-isfmc.svg" alt="Instituto Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
-            <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
-          </div>
-        </div>
-
-        <div class="md:col-span-6 flex flex-col items-start gap-2">
-          <div class="flex items-center gap-2">
-            <img src="@/assets/img/icon-whatsapp.svg" alt="" />
-            <div class="text-base">55 7147 7728</div>
-          </div>
-          <div class="flex items-center gap-2">
-            <img src="@/assets/img/icon-email.svg" alt="" />
-            <div class="text-base">info@isfmc.com</div>
-          </div>
-          <div class="flex items-center gap-2">
-            <img src="@/assets/img/icon-check.svg" alt="" />
-            <div class="text-base">Herramienta de validación de certificados</div>
-          </div>
-        </div>
-
-        <div class="md:col-span-3">
-          <div>
-            <span class="flex gap-2.5 justify-end">
-              <a class="cursor-pointer" href="#" alt="Facebook" target="_blank"><img src="@/assets/img/icon-facebook.svg" alt="" /></a>
-              <a class="cursor-pointer" href="#" alt="Instagram" target="_blank"><img src="@/assets/img/icon-instagram.svg" alt="" /></a>
-              <a class="cursor-pointer" href="#" alt="Youtube" target="_blank"><img src="@/assets/img/icon-youtube.svg" alt="" /></a>
-              <a class="cursor-pointer" href="#" alt="X" target="_blank"><img src="@/assets/img/icon-x.svg" alt="" /></a>
-              <a class="cursor-pointer" href="#" alt="Linkedin" target="_blank"><img src="@/assets/img/icon-linkedin.svg" alt="" /></a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="mt-6 pt-6 border-t border-white/35">
-        <div class="flex flex-col text-sm justify-center items-center text-center md:flex-row md:justify-between">
-          <div>© {{ anio }} Instituto de Salud Funcional Mente - Cuerpo. Todos los derechos reservados.</div>
-          <div class="flex space-x-6 mb-4 md:mb-0">
-            <a href="#" class="cursor-pointer hover:text-gray-500">Aviso de privacidad</a>
-          </div>
-          <div class="">
-            <p class="">Términos y Condiciones</p>
+        <div class="mt-6 pt-6 border-t border-white/35">
+          <div class="flex flex-col text-sm justify-center items-center text-center md:flex-row md:justify-between">
+            <div>© {{ anio }} Instituto de Salud Funcional Mente - Cuerpo. Todos los derechos reservados.</div>
+            <div class="flex space-x-6 mb-4 md:mb-0">
+              <a href="#" class="cursor-pointer hover:text-gray-500">Aviso de privacidad</a>
+            </div>
+            <div class="">
+              <p class="">Términos y Condiciones</p>
+            </div>
           </div>
         </div>
       </div>
@@ -243,8 +205,6 @@ nav {
   height: 100%;
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
-  /* background: rgba(255 255 255 0.16); */
-  /* background: rgba(25 130 127 0.65); */
   background: rgba(25, 130, 127, 0.65);
 }
 

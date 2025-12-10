@@ -34,7 +34,7 @@ export const ponentes = [
   {
     id: 8,
     imagen: 'sebastian-de-nys.png',
-    nombre: 'sebastian de nys',
-    titulo: 'sebastian de nys',
+    nombre: 'Sebastian de nys',
+    titulo: 'Sebastian de nys',
   },
 ];

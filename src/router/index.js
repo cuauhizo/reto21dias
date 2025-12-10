@@ -7,11 +7,6 @@ const routes = [
     name: 'Home',
     component: () => import('@/views/HomeView.vue'),
   },
-  {
-    path: '/demo',
-    name: 'Demo',
-    component: () => import('@/views/DemoView.vue'),
-  },
   // Ruta comodín para 404
   {
     path: '/:pathMatch(.*)*',
