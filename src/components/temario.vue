@@ -188,8 +188,8 @@ const isFaqOpenB = id => {
 
 <template>
   <section class="py-10 md:py-20 px-4">
-    <div class="mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row">
-      <div id="section5" class="w-full md:sticky md:top-20 md:w-5/12 md:order-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="mx-auto flex max-w-7xl flex-col items-start gap-10 lg:flex-row">
+      <div id="section5" class="w-full lg:sticky md:top-20 lg:w-5/12 lg:order-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="flex flex-col items-center justify-center text-center gap-6 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] h-[908px] mx-auto">
           <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">¡Inscríbete ahora y aprovecha nuestro precio de lanzamiento!</h3>
           <div class="flex flex-col items-center gap-1">
@@ -211,7 +211,7 @@ const isFaqOpenB = id => {
           <img src="@/assets/img/pago.png" alt="Métodos de pago" class="w-[320px] h-auto object-contain" loading="lazy" />
         </div>
       </div>
-      <div id="section4" class="flex flex-col gap-8 w-full min-w-0 flex-1 md:w-7/12 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+      <div id="section4" class="flex flex-col gap-8 w-full flex-1 lg:w-7/12 lg:order-1" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
         <div class="px-4 py-7 text-white rounded-[32px] sm:p-12 bg-temario">
           <h2 class="text-2xl mb-6">Temario</h2>
           <h3 class="text-4xl font-nexa-bold mb-6">¿Qué lograrás en Sugar Reset GLP-1: Reto de 21 Días?</h3>

@@ -53,16 +53,16 @@ const scrollToSection = index => {
   <header>
     <div class="fixed z-30 w-full nav-menu bg-white bg-opacity-15 mt-2 md:-mt-10">
       <nav class="container h-30 flex items-center justify-between px-8 py-4 relative text-white">
-        <div class="flex items-center gap-6">
-          <a href="./" class="w-1/3 max-w-[55px]">
-            <img src="@/assets/img/logo-isfmc.svg" alt="Logo convension" class="w-full" width="55" height="55" loading="lazy" />
+        <div class="flex items-center gap-6 md:gap-0 lg:gap-6">
+          <a href="./" class="lg:w-1/3 min-w-[55px]">
+            <img src="@/assets/img/logo-isfmc.svg" alt="Logo convension" width="55" height="55" loading="lazy" />
           </a>
           <div class="flex items-center justify-start gap-2 text-[14px]">
             <input type="checkbox" id="menu" class="peer hidden" />
             <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-10 md:hidden"></label>
             <div class="fixed inset-0 bg-gradient-to-b from-white/20 to-[#3a3a82]/70 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none">
               <ul
-                class="absolute inset-x-0 top-24 p-10 items-center font-nexa-bold text-[15px] bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
+                class="absolute inset-x-0 top-24 p-10 items-center font-nexa-bold text-[15px] bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 md:gap-0 lg:gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
                 <li>
                   <a
                     href="#beneficios"
@@ -141,14 +141,14 @@ const scrollToSection = index => {
     <div class="bg-teal-700 rounded-tl-[64px] rounded-tr-[64px] text-white">
       <div class="container py-10 md:py-12">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8 items-center text-center">
-          <div class="md:col-span-3">
-            <div class="flex items-center justify-start gap-5">
+          <div class="col-span-4 lg:col-span-3">
+            <div class="flex items-center justify-center md:justify-start gap-5">
               <img src="@/assets/img/logo-isfmc.svg" alt="Instituto Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
               <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
             </div>
           </div>
 
-          <div class="md:col-span-6 flex flex-col items-start gap-2">
+          <div class="col-span-4 lg:col-span-6 flex flex-col items-start gap-2 sm:items-center md:items-start">
             <div class="flex items-center gap-2">
               <img src="@/assets/img/icon-whatsapp.svg" alt="" />
               <div class="text-base">55 7147 7728</div>
@@ -163,9 +163,9 @@ const scrollToSection = index => {
             </div>
           </div>
 
-          <div class="md:col-span-3">
+          <div class="col-span-4 lg:col-span-3">
             <div>
-              <span class="flex gap-2.5 justify-end">
+              <span class="flex gap-2.5 justify-center md:justify-end">
                 <a class="cursor-pointer" href="#" alt="Facebook" target="_blank"><img src="@/assets/img/icon-facebook.svg" alt="" /></a>
                 <a class="cursor-pointer" href="#" alt="Instagram" target="_blank"><img src="@/assets/img/icon-instagram.svg" alt="" /></a>
                 <a class="cursor-pointer" href="#" alt="Youtube" target="_blank"><img src="@/assets/img/icon-youtube.svg" alt="" /></a>
