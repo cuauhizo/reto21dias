@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section id="section2" class="container grid gap-12 justify-items-center items-center py-10 md:py-20 md:pt-40 lg:pt-48 lg:grid-cols-2">
+  <section id="section2" class="container grid gap-12 justify-items-center items-center pt-24 pb-10 md:py-20 md:pt-40 lg:pt-64 lg:grid-cols-2">
     <div data-aos="fade-down" data-aos-anchor-placement="top-center">
       <div class="w-full xl:w-[505px] justify-start">
         <p class="text-zinc-700 text-2xl font-thin font-Nexa leading-8 mb-7">

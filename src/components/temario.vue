@@ -74,72 +74,96 @@ const faqsB = ref([
   {
     id: 102,
     question: '¿Cuánto tiempo tengo acceso al curso?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: 'Tienes acceso completo al curso Sugar Reset GLP-1 por tres meses.',
   },
   {
     id: 103,
     question: '¿Para quién está diseñado el curso?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: 'Está dirigido a cualquier persona interesada en salud y bienestar, así como a profesionales de la salud que deseen profundizar en el uso funcional del GLP-1.',
   },
   {
     id: 104,
     question: '¿Cuáles son los objetivos del curso?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: `El curso Sugar Reset GLP-1 te ayudará a:
+● Regular glucosa e insulina para reducir antojos y mejorar tu metabolismo.
+● Optimizar la función del GLP-1 mediante alimentación, hábitos y suplementación.
+● Disminuir antojos de azúcar y romper el ciclo ansiedad–antojo–compulsión.
+● Reducir inflamación, fatiga y malestar digestivo.
+● Equilibrar tu microbiota y mejorar la comunicación intestino–cerebro.
+● Proteger tu masa muscular aunque comas menos o uses GLP-1.
+● Aprender a elegir alimentos correctos para un Plato GLP-1 sin inflamación.
+● Prevenir efectos secundarios como náuseas, estreñimiento e hipoglucemia.
+● Dominar estrategias como azúcar fasting, fibra inteligente y hacks metabólicos.
+● Crear hábitos sostenibles que transformen tu relación con el azúcar.
+● Ajustar dosis, suplementos y rutinas al usar GLP-1 para maximizar beneficios.
+● Evitar el rebote al dejar GLP-1 y mantener el metabolismo activo y saciedad.
+● Reprogramar apetito para comer por hambre real, no emocional.
+● Diseñar un plan de alimentación y fuerza que puedas sostener meses o años.
+● Construir un estilo de vida Sugar Reset que eleve tu energía y bienestar.`,
   },
   {
     id: 105,
     question: '¿Cuándo puedo descargar mi diploma?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: 'Podrás descargar tu diploma una vez que hayas visto todas las clases y descargado los materiales del curso.',
   },
   {
     id: 106,
     question: '¿Cuándo se sube la grabación de cada clase?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: 'La grabación se carga al día siguiente, alrededor del mediodía, y recibirás un correo avisando que ya está disponible.',
   },
   {
     id: 107,
     question: '¿Puedo descargar los videos?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: 'No. Los videos son propiedad del ISFMC, pero podrás verlos cuantas veces quieras durante tres meses.',
   },
   {
     id: 108,
     question: '¿Cómo ingreso al grupo de Telegram y Facebook?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: `Telegram: grupo informativo con contenido diario.
+● Facebook: espacio para preguntar dudas, compartir fotos e interactuar con la
+comunidad.
+Un día antes de iniciar el curso recibirás los accesos a ambos grupos.
+`,
   },
   {
     id: 109,
     question: '¿Puedo hacer preguntas a los ponentes?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: 'Sí. Al final de cada clase se destinan unos minutos para responder tus preguntas relacionadas con el tema.',
   },
   {
     id: 110,
     question: '¿Puedo descargar mi menú y recetario?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: 'Sí, puedes descargar e imprimir todos los materiales de apoyo del curso.',
   },
   {
     id: 111,
     question: '¿Al inscribirse se incluye el kit de suplementos?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: 'No, el kit de suplementos no está incluido. Sin embargo, al inscribirte obtienes descuentos especiales para adquirirlos.',
   },
   {
     id: 112,
     question: '¿Es obligatorio iniciar el menú desde la clase 1?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: 'No. Puedes comenzar el menú cuando te sientas listo(a). Desde la primera clase tendrás todas las bases y herramientas para iniciarlo en el momento que mejor se adapte a ti.',
   },
   {
     id: 113,
-    question: '¿Qué pasa si no tengo los ingredientes exactos del menú?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    question: '¿El menú es vegano?',
+    answer: 'No, el menú no es completamente vegano. Sin embargo, incluye varias opciones veganas y es posible adaptarlo fácilmente según tus necesidades.',
   },
   {
     id: 114,
-    question: '¿Qué pasa si no adquiero el kit de suplementos?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    question: '¿Qué pasa si no tengo los ingredientes exactos del menú?',
+    answer: 'No te preocupes. Puedes sustituirlos por ingredientes similares que tengas a la mano, siempre respetando la intención del plato.',
   },
   {
     id: 115,
+    question: '¿Qué pasa si no adquiero el kit de suplementos?',
+    answer: 'Puedes seguir tu menú y recetarios sin problema. Los suplementos no son obligatorios, aunque pueden acelerar y potenciar tus resultados. Sin ellos, el progreso simplemente puede ser un poco más lento.',
+  },
+  {
+    id: 116,
     question: '¿Qué hago si ya pagué y no me llega el correo?',
-    answer: 'Sí, se incluye un box lunch para todos los asistentes con opciones para dietas especiales.',
+    answer: 'Si ya realizaste tu pago y no has recibido tu correo de acceso, por favor escríbenos directamente al 55 7147 7728 y con gusto te ayudamos.',
   },
 ]);
 
@@ -165,7 +189,7 @@ const isFaqOpenB = id => {
 <template>
   <section class="py-10 md:py-20 px-4">
     <div class="mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row">
-      <div id="section5" class="w-full md:sticky md:top-20 md:w-5/12 md:order-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div id="section5" class="w-full md:sticky md:top-20 md:w-5/12 md:order-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="flex flex-col items-center justify-center text-center gap-6 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] h-[908px] mx-auto">
           <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">¡Inscríbete ahora y aprovecha nuestro precio de lanzamiento!</h3>
           <div class="flex flex-col items-center gap-1">

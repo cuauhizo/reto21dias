@@ -142,69 +142,86 @@ const scrollToSection = index => {
   </main>
 
   <!-- Footer -->
-  <footer>
-    <div class="container py-10 md:py-20">
-      <div class="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-y-12 md:gap-x-8">
-        <div class="text-[15px] md:col-span-4 xl:col-span-6 max-w-md">
-          <a class="flex items-center justify-start">
-            <img src="@/assets/img/logo-isfmc.svg" alt="Logo convension" loading="lazy" width="127" height="32" />
-          </a>
-          <!-- Social Icons -->
-          <div class="mt-4">
-            <span class="inline-flex gap-2.5 mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-              <a class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]" href="https://www.linkedin.com/company/amsofipo/?originalSubdomain=mx" alt="Linkedin" target="_blank">Linkedin</a>
-              <a class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]" href="https://www.facebook.com/Amsofipo/?locale=es_LA" alt="Facebook" target="_blank">Facebook</a>
-              <a class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]" href="https://x.com/amsofipo" alt="X" target="_blank">X</a>
+  <footer class="bg-teal-700 rounded-tl-[64px] rounded-tr-[64px] text-white">
+    <div class="container py-10 md:py-12">
+      <!-- <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8">
+        <div class="md:col-span-3">
+          <div class="flex items-center justify-start gap-5">
+            <img src="@/assets/img/logo-isfmc.svg" alt="Instituto Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
+            <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
+          </div>
+        </div>
+
+        <div class="md:col-span-6">
+          <div class="flex gap-2">
+            <img src="@/assets/img/icon-whatsapp.svg" alt="" />
+            <div class="text-base">55 7147 7728</div>
+          </div>
+          <div class="flex gap-2">
+            <img src="@/assets/img/icon-email.svg" alt="" />
+            <div class="text-base">info@isfmc.com</div>
+          </div>
+          <div class="flex gap-2">
+            <img src="@/assets/img/icon-check.svg" alt="" />
+            <div class="text-base">Herramienta de validación de certificados</div>
+          </div>
+        </div>
+
+        <div class="md:col-span-3">
+          <div>
+            <span class="flex gap-2.5 mt-2 justify-end">
+              <a class="cursor-pointer" href="#" alt="Facebook" target="_blank"><img src="@/assets/img/icon-facebook.svg" alt="" /></a>
+              <a class="cursor-pointer" href="#" alt="Instagram" target="_blank"><img src="@/assets/img/icon-instagram.svg" alt="" /></a>
+              <a class="cursor-pointer" href="#" alt="Youtube" target="_blank"><img src="@/assets/img/icon-youtube.svg" alt="" /></a>
+              <a class="cursor-pointer" href="#" alt="X" target="_blank"><img src="@/assets/img/icon-x.svg" alt="" /></a>
+              <a class="cursor-pointer" href="#" alt="Linkedin" target="_blank"><img src="@/assets/img/icon-linkedin.svg" alt="" /></a>
             </span>
           </div>
         </div>
-        <div class="hidden md:block md:col-span-1 lg:hidden"></div>
-        <div class="grid grid-cols-1 text-sm sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-6 col-span-1 md:col-span-7 xl:col-span-6 gap-y-8 sm:gap-x-8 md:gap-x-8 xl:gap-x-3">
-          <div class="sm:col-span-2 xl:col-span-3">
-            <h3 class="mb-3 font-bold">Dirección</h3>
-            <p>Ave. Insurgentes Sur #2047 Esq. Cracovia Edificio "B", Colonia San Ángel, Del. Álvaro Obregón C.P. 01000, CDMX</p>
+      </div> -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8 items-center text-center">
+        <div class="md:col-span-3">
+          <div class="flex items-center justify-start gap-5">
+            <img src="@/assets/img/logo-isfmc.svg" alt="Instituto Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
+            <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
           </div>
-          <div class="sm:col-span-1 xl:col-span-2">
-            <h3 class="mb-3 font-bold">Contacto</h3>
-            <nav class="mb-10 list-none">
-              <ul>
-                <li class="mt-3">
-                  <a class="cursor-pointer hover:text-gray-500" href="mailto:contacto@amsofipo.mx">contacto@amsofipo.mx</a>
-                </li>
-                <li class="">
-                  <a href="tel:+5550014851" class="cursor-pointer hover:text-gray-500">+55 5001 4851</a>
-                </li>
-              </ul>
-            </nav>
+        </div>
+
+        <div class="md:col-span-6 flex flex-col items-start gap-2">
+          <div class="flex items-center gap-2">
+            <img src="@/assets/img/icon-whatsapp.svg" alt="" />
+            <div class="text-base">55 7147 7728</div>
           </div>
-          <div class="sm:col-span-1 md:col-span-1 xl:-ml-3">
-            <h3 class="mb-3 font-bold">Ligas de interés</h3>
-            <nav class="mb-10 list-none">
-              <ul>
-                <li class="">
-                  <a href="https://www.gob.mx/shcp" target="_blank" alt="enlace a SHCP" class="cursor-pointer hover:text-gray-500">SHCP</a>
-                </li>
-                <li class="">
-                  <a href="https://www.gob.mx/cnbv" target="_blank" alt="enlace a CNBV" class="cursor-pointer hover:text-gray-500">CNBV</a>
-                </li>
-                <li class="">
-                  <a href="https://www.condusef.gob.mx/" target="_blank" alt="enlace a CONDUSEF" class="cursor-pointer hover:text-gray-500">CONDUSEF</a>
-                </li>
-                <li class="">
-                  <a href="https://www.fira.gob.mx/Nd/index.jsp" target="_blank" alt="enlace a FIRA" class="cursor-pointer hover:text-gray-500">FIRA</a>
-                </li>
-              </ul>
-            </nav>
+          <div class="flex items-center gap-2">
+            <img src="@/assets/img/icon-email.svg" alt="" />
+            <div class="text-base">info@isfmc.com</div>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="@/assets/img/icon-check.svg" alt="" />
+            <div class="text-base">Herramienta de validación de certificados</div>
+          </div>
+        </div>
+
+        <div class="md:col-span-3">
+          <div>
+            <span class="flex gap-2.5 justify-end">
+              <a class="cursor-pointer" href="#" alt="Facebook" target="_blank"><img src="@/assets/img/icon-facebook.svg" alt="" /></a>
+              <a class="cursor-pointer" href="#" alt="Instagram" target="_blank"><img src="@/assets/img/icon-instagram.svg" alt="" /></a>
+              <a class="cursor-pointer" href="#" alt="Youtube" target="_blank"><img src="@/assets/img/icon-youtube.svg" alt="" /></a>
+              <a class="cursor-pointer" href="#" alt="X" target="_blank"><img src="@/assets/img/icon-x.svg" alt="" /></a>
+              <a class="cursor-pointer" href="#" alt="Linkedin" target="_blank"><img src="@/assets/img/icon-linkedin.svg" alt="" /></a>
+            </span>
           </div>
         </div>
       </div>
-      <div class="mt-16 pt-6 border-t border-[#3A3482]">
+      <div class="mt-6 pt-6 border-t border-white/35">
         <div class="flex flex-col text-sm justify-center items-center text-center md:flex-row md:justify-between">
+          <div>© {{ anio }} Instituto de Salud Funcional Mente - Cuerpo. Todos los derechos reservados.</div>
           <div class="flex space-x-6 mb-4 md:mb-0">
             <a href="#" class="cursor-pointer hover:text-gray-500">Aviso de privacidad</a>
           </div>
           <div class="">
-            <p class="">Todos los derechos reservados. AMS® {{ anio }}</p>
+            <p class="">Términos y Condiciones</p>
           </div>
         </div>
       </div>
