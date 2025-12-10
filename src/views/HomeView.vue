@@ -1,9 +1,9 @@
 <script setup>
-import { useHead } from '@vueuse/head';
-import Hero from '@/components/hero.vue';
-import Beneficios from '@/components/beneficios.vue';
-import Temario from '@/components/temario.vue';
-import Ponentes from '@/components/ponentes.vue';
+import { useHead } from '@vueuse/head'
+import Hero from '@/components/hero.vue'
+import Beneficios from '@/components/beneficios.vue'
+import Ponentes from '@/components/ponentes.vue'
+import Temario from '@/components/temario.vue'
 
 useHead({
   title: 'Reto 21 Días - Instituto de Salud Funcional',
@@ -32,7 +32,7 @@ useHead({
     { name: 'twitter:image', content: 'https://reto21dias.com/logo-isfmc.svg' },
     { name: 'twitter:url', content: 'https://reto21dias.com/' },
   ],
-});
+})
 </script>
 
 <template>

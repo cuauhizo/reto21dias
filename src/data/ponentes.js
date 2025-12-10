@@ -16,7 +16,7 @@ export const ponentes = [
   {
     id: 3,
     imagen: 'michelle-hernandez.png',
-    nombre: 'Dra. Michelle Hernández',
+    nombre: 'Dra. Michelle Hernández drgttert dfsd',
     titulo: 'Dra. Michelle Hernández',
   },
   {
@@ -37,4 +37,4 @@ export const ponentes = [
     nombre: 'Sebastian de nys',
     titulo: 'Sebastian de nys',
   },
-];
+]
