@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { trackEvent } from '@/utils/analytics' // Importar utilidad
 
 // ----------------------------------------------------
 // DATOS: Temario (Acordeón A)
@@ -253,7 +254,7 @@ const isFaqOpen = (group, id) => {
           <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">¡Inscríbete ahora y aprovecha nuestro precio de lanzamiento!</h3>
           <div class="flex flex-col items-center gap-1">
             <span class="text-zinc-700 text-lg font-thin font-nexa line-through">$4,800.00 MXN</span>
-            <div class="flex items-baseline text-teal-700 font-nexa">
+            <div class="flex items-center text-teal-700 font-nexa">
               <span class="text-xl font-thin mr-1">$</span>
               <span class="text-6xl font-black font-nexa-bold tracking-tight">3,500.</span>
               <sup class="text-3xl font-black font-nexa-bold top-[-0.5em]">00</sup>
@@ -261,7 +262,10 @@ const isFaqOpen = (group, id) => {
             </div>
             <span class="text-zinc-700 text-base font-thin font-nexa mt-2">Descuento por tiempo limitado</span>
           </div>
-          <a href="#" class="flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-10 transition-all duration-500">
+          <a
+            href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
+            @click="trackEvent('click_registro', { location: 'sticky_temario' })"
+            class="flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-10 transition-all duration-500">
             <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Regístrate aquí!</span></span>
             <i><img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="icono contacto" /></i>
           </a>

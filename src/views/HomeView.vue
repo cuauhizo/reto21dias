@@ -21,16 +21,16 @@ useHead({
       property: 'og:description',
       content: 'Únete al reto de 21 días para transformar tu salud...',
     },
-    { property: 'og:image', content: 'https://reto21dias.com/logo-isfmc.svg' },
-    { property: 'og:url', content: 'https://reto21dias.com/' },
+    { property: 'og:image', content: 'https://reset21dias.com/logo-isfmc.svg' },
+    { property: 'og:url', content: 'https://reset21dias.com/' },
     { property: 'og:type', content: 'website' },
 
     // Twitter Card
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Reto 21 Días - Instituto de Salud Funcional' },
     { name: 'twitter:description', content: 'Únete al reto de 21 días para transformar tu salud...' },
-    { name: 'twitter:image', content: 'https://reto21dias.com/logo-isfmc.svg' },
-    { name: 'twitter:url', content: 'https://reto21dias.com/' },
+    { name: 'twitter:image', content: 'https://reset21dias.com/logo-isfmc.svg' },
+    { name: 'twitter:url', content: 'https://reset21dias.com/' },
   ],
 })
 </script>

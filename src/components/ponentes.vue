@@ -2,9 +2,9 @@
 import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { ponentes } from '@/data/ponentes.js'
 
-const getImageUrl = imageName => {
-  return new URL(`/src/assets/img/ponentes/${imageName}`, import.meta.url).href
-}
+// const getImageUrl = imageName => {
+//   return new URL(`/src/assets/img/ponentes/${imageName}`, import.meta.url).href
+// }
 
 // --- El resto de tu lógica de carrusel permanece intacta ---
 const currentIndex = ref(0)
@@ -90,7 +90,7 @@ onUnmounted(() => {
               , asegurando que obtengas resultados reales y duraderos.
             </p>
             <a
-              href="#"
+              href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
               class="flex items-center gap-2 w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">
               <span>¡Regístrate aquí!</span>
               <img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="icono contacto" />
@@ -103,18 +103,20 @@ onUnmounted(() => {
       <div class="relative">
         <div id="carousel" class="overflow-hidden relative" @mouseenter="pauseAutoSlide" @mouseleave="startAutoSlide">
           <div ref="carouselTrack" id="ponente-track" class="flex transition-transform duration-500 ease-in-out" :style="{ transform: transformStyle }">
-            <figure v-for="ponente in ponentes" :key="ponente.id" class="ponente-card flex-shrink-0 h-auto max-w-[332px] px-4">
-              <div class="relative">
-                <img :src="getImageUrl(ponente.imagen)" :alt="ponente.nombre" class="" loading="lazy" />
+            <figure v-for="ponente in ponentes" :key="ponente.id" class="ponente-card flex-shrink-0 relative h-auto max-w-[332px] px-4">
+              <!-- Enlace en imagen -->
+              <a :href="ponente.enlace" target="_blank" rel="noopener noreferrer" class="block">
+                <img :src="ponente.imagen" :alt="ponente.nombre" class="rounded-2xl" loading="lazy" />
+              </a>
 
-                <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] text-center">
-                  <div class="bg-white/80 backdrop-blur-md border border-white/40 rounded-xl py-2 px-4 shadow-sm">
-                    <span class="text-zinc-800 text-sm md:text-base font-nexa-bold block truncate">
-                      {{ ponente.nombre }}
-                    </span>
-                  </div>
-                </figcaption>
-              </div>
+              <!-- Enlace en figcaption -->
+              <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 w-[85%] text-center">
+                <a :href="ponente.enlace" target="_blank" rel="noopener noreferrer" class="block bg-white/80 backdrop-blur-md border border-white/40 rounded-xl py-2 px-4 shadow-sm hover:bg-white transition">
+                  <span class="text-zinc-800 text-sm md:text-base font-nexa-bold block truncate">
+                    {{ ponente.nombre }}
+                  </span>
+                </a>
+              </figcaption>
             </figure>
           </div>
         </div>

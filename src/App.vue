@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-// import Responsive from '@/components/responsive.vue'
+import { trackEvent } from '@/utils/analytics'
+import Responsive from '@/components/responsive.vue'
 
 const anio = ref(new Date().getFullYear())
 const showScrollTopButton = ref(false)
@@ -100,7 +101,8 @@ onUnmounted(() => {
                 </li>
                 <li class="md:hidden">
                   <a
-                    href="#"
+                    href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
+                    @click="trackEvent('click_registro', { location: 'header_movil' })"
                     class="flex items-center justify-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-4 transition-all duration-500">
                     <span>¡Regístrate aquí!</span>
                     <i><img src="@/assets/img/icon-contacto.svg" class="pl-2" alt="icono contacto" /></i>
@@ -112,7 +114,8 @@ onUnmounted(() => {
         </div>
 
         <a
-          href="#"
+          href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
+          @click="trackEvent('click_registro', { location: 'header_desktop' })"
           class="hidden md:flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-7 transition-all duration-500 lg:pl-10">
           <span>¡Regístrate aquí!</span>
           <i><img src="@/assets/img/icon-contacto.svg" class="pl-4 md:pl-0 lg:pl-8" alt="icono contacto" /></i>
@@ -147,7 +150,7 @@ onUnmounted(() => {
           </div>
 
           <div class="col-span-4 md:col-span-8 lg:col-span-6 flex flex-col items-start gap-2 sm:items-center md:items-start">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2" @click="trackEvent('click_contacto', { method: 'whatsapp' })">
               <img src="@/assets/img/icon-whatsapp.svg" alt="WhatsApp" loading="lazy" />
               <div class="text-base">55 7147 7728</div>
             </div>
@@ -163,11 +166,11 @@ onUnmounted(() => {
 
           <div class="col-span-4 md:col-span-12 lg:col-span-3">
             <div class="flex gap-2.5 justify-center lg:justify-end">
-              <a class="cursor-pointer hover:opacity-80 transition-opacity" href="#" target="_blank"><img src="@/assets/img/icon-facebook.svg" alt="Facebook" /></a>
-              <a class="cursor-pointer hover:opacity-80 transition-opacity" href="#" target="_blank"><img src="@/assets/img/icon-instagram.svg" alt="Instagram" /></a>
-              <a class="cursor-pointer hover:opacity-80 transition-opacity" href="#" target="_blank"><img src="@/assets/img/icon-youtube.svg" alt="Youtube" /></a>
-              <a class="cursor-pointer hover:opacity-80 transition-opacity" href="#" target="_blank"><img src="@/assets/img/icon-x.svg" alt="X" /></a>
-              <a class="cursor-pointer hover:opacity-80 transition-opacity" href="#" target="_blank"><img src="@/assets/img/icon-linkedin.svg" alt="Linkedin" /></a>
+              <a class="cursor-pointer hover:opacity-80 transition-opacity" href="https://www.facebook.com/isfmcmx" target="_blank"><img src="@/assets/img/icon-facebook.svg" alt="Facebook" /></a>
+              <a class="cursor-pointer hover:opacity-80 transition-opacity" href="https://www.instagram.com/isfmcmx/" target="_blank"><img src="@/assets/img/icon-instagram.svg" alt="Instagram" /></a>
+              <a class="cursor-pointer hover:opacity-80 transition-opacity" href="https://www.youtube.com/@isfmc645" target="_blank"><img src="@/assets/img/icon-youtube.svg" alt="Youtube" /></a>
+              <a class="cursor-pointer hover:opacity-80 transition-opacity" href="https://x.com/isfmcmx" target="_blank"><img src="@/assets/img/icon-x.svg" alt="X" /></a>
+              <a class="cursor-pointer hover:opacity-80 transition-opacity" href="https://mx.linkedin.com/company/isfmcmx" target="_blank"><img src="@/assets/img/icon-linkedin.svg" alt="Linkedin" /></a>
             </div>
           </div>
         </div>
@@ -176,15 +179,15 @@ onUnmounted(() => {
           <div class="flex flex-col text-sm justify-center items-center text-center md:flex-row md:justify-between gap-4 md:gap-0">
             <div>© {{ anio }} Instituto de Salud Funcional Mente - Cuerpo. Todos los derechos reservados.</div>
             <div class="flex flex-col md:flex-row gap-2 md:gap-6">
-              <a href="#" class="cursor-pointer hover:text-gray-300 transition-colors">Aviso de privacidad</a>
-              <p class="hover:text-gray-300 transition-colors cursor-pointer">Términos y Condiciones</p>
+              <a href="https://isfmc.mx/aviso-de-privacidad" class="cursor-pointer hover:text-gray-300 transition-colors">Aviso de privacidad</a>
+              <a href="https://isfmc.mx/terminos-y-condiciones" class="cursor-pointer hover:text-gray-300 transition-colors">Términos y Condiciones</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  <!-- <Responsive /> -->
+  <Responsive />
 </template>
 
 <style scoped>
