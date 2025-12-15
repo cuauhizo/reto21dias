@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import { trackEvent } from '@/utils/analytics'
-import Responsive from '@/components/responsive.vue'
+// import Responsive from '@/components/responsive.vue'
 
 const anio = ref(new Date().getFullYear())
 const showScrollTopButton = ref(false)
@@ -102,9 +101,10 @@ onUnmounted(() => {
                 <li class="md:hidden">
                   <a
                     href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
-                    @click="trackEvent('click_registro', { location: 'header_movil' })"
+                    target="_blank"
+                    id="clic_header_movil"
                     class="flex items-center justify-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-4 transition-all duration-500">
-                    <span>¡Regístrate aquí!</span>
+                    <span>¡Inscríbete aquí!</span>
                     <i><img src="@/assets/img/icon-contacto.svg" class="pl-2" alt="icono contacto" /></i>
                   </a>
                 </li>
@@ -115,9 +115,10 @@ onUnmounted(() => {
 
         <a
           href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
-          @click="trackEvent('click_registro', { location: 'header_desktop' })"
+          target="_blank"
+          id="clic_header_desktop"
           class="hidden md:flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-7 transition-all duration-500 lg:pl-10">
-          <span>¡Regístrate aquí!</span>
+          <span>¡Inscríbete aquí!</span>
           <i><img src="@/assets/img/icon-contacto.svg" class="pl-4 md:pl-0 lg:pl-8" alt="icono contacto" /></i>
         </a>
       </nav>
@@ -150,7 +151,7 @@ onUnmounted(() => {
           </div>
 
           <div class="col-span-4 md:col-span-8 lg:col-span-6 flex flex-col items-start gap-2 sm:items-center md:items-start">
-            <div class="flex items-center gap-2" @click="trackEvent('click_contacto', { method: 'whatsapp' })">
+            <div class="flex items-center gap-2">
               <img src="@/assets/img/icon-whatsapp.svg" alt="WhatsApp" loading="lazy" />
               <div class="text-base">55 7147 7728</div>
             </div>
@@ -187,7 +188,7 @@ onUnmounted(() => {
       </div>
     </div>
   </footer>
-  <Responsive />
+  <!-- <Responsive /> -->
 </template>
 
 <style scoped>

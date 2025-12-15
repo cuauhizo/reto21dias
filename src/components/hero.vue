@@ -1,5 +1,5 @@
 <template>
-  <section id="section1" class="relative flex items-center justify-center overflow-hidden mx-6 rounded-[48px] mt-2 md:mt-16 min-h-[600px] md:h-screen lg:h-[824px]">
+  <section id="section1" class="relative flex items-center justify-center overflow-hidden mx-6 rounded-[48px] mt-2 md:mt-12 min-h-[600px] md:h-screen lg:h-[824px]">
     <!-- <div class="absolute inset-0 w-full h-full z-0">
       <video class="w-full h-full object-cover" autoplay loop muted playsinline poster="@/assets/img/SugarResetGLP1.svg" aria-hidden="true">
         <source src="/video/TLK_MainHeaderEs.mp4" type="video/mp4" />
@@ -25,6 +25,7 @@
         <span class="text-[1.8rem] md:text-[2.244rem] leading-tight font-nexa-bold block sm:inline-block">
           al 9
           <span class="font-nexa">de febrero</span>
+          del 2026
         </span>
       </h2>
 

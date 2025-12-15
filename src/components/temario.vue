@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import { trackEvent } from '@/utils/analytics' // Importar utilidad
 
 // ----------------------------------------------------
 // DATOS: Temario (Acordeón A)
@@ -49,15 +48,15 @@ const faqsA = ref([
         <li>Menú funcional para 21 días (estructura y distribución).</li>
         <li>Suplementación obligada y opcional:</li>
           <ul class="list-disc pl-8 space-y-2 text-zinc-700">
-            <li>proteína vegana</li>
-            <li>magnesio</li>
-            <li>omega 3</li>
-            <li>electrolitos</li>
-            <li>colágeno + glicina</li>
-            <li>akkermansia</li>
-            <li>omega</li>
-            <li>berberina</li>
-            <li> Vinagre de manzana orgánico </li>
+            <li>Proteína vegana</li>
+            <li>Magnesio</li>
+            <li>Omega 3</li>
+            <li>Electrolitos</li>
+            <li>Colágeno + glicina</li>
+            <li>Akkermansia</li>
+            <li>Omega</li>
+            <li>Berberina</li>
+            <li>Vinagre de manzana orgánico </li>
             <li>Canela</li>
           </ul>
         <li>Cómo prevenir náuseas, reflujo y diarrea desde la comida.</li>
@@ -249,8 +248,8 @@ const isFaqOpen = (group, id) => {
 <template>
   <section class="py-10 md:py-20 px-4 relative">
     <div class="mx-auto flex max-w-7xl flex-col items-start gap-10 lg:flex-row">
-      <div id="section5" class="w-full lg:sticky lg:top-24 lg:w-5/12 lg:order-2 z-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div class="flex flex-col items-center justify-center text-center gap-6 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] h-[908px] mx-auto">
+      <div class="w-full lg:sticky lg:top-24 lg:w-5/12 lg:order-2 z-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div id="section5" class="flex flex-col items-center justify-center text-center gap-6 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] h-[908px] mx-auto">
           <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">¡Inscríbete ahora y aprovecha nuestro precio de lanzamiento!</h3>
           <div class="flex flex-col items-center gap-1">
             <span class="text-zinc-700 text-lg font-thin font-nexa line-through">$4,800.00 MXN</span>
@@ -264,9 +263,10 @@ const isFaqOpen = (group, id) => {
           </div>
           <a
             href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
-            @click="trackEvent('click_registro', { location: 'sticky_temario' })"
+            target="_blank"
+            id="clic_temario"
             class="flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-10 transition-all duration-500">
-            <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Regístrate aquí!</span></span>
+            <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Inscríbete aquí!</span></span>
             <i><img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="icono contacto" /></i>
           </a>
           <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="w-[233px] h-auto object-contain" loading="lazy" />
@@ -275,8 +275,8 @@ const isFaqOpen = (group, id) => {
         </div>
       </div>
 
-      <div id="section4" class="flex flex-col gap-12 w-full flex-1 lg:w-7/12 lg:order-1" data-aos-anchor-placement="top-bottom">
-        <div class="px-6 py-10 text-white rounded-[32px] bg-temario shadow-lg" data-aos="fade-down">
+      <div class="flex flex-col gap-12 w-full flex-1 lg:w-7/12 lg:order-1" data-aos-anchor-placement="top-bottom">
+        <div id="section4" class="px-6 py-10 text-white rounded-[32px] bg-temario shadow-lg" data-aos="fade-down">
           <h2 class="text-2xl mb-4 font-thin">Temario</h2>
           <h3 class="text-4xl font-nexa-bold mb-6 leading-tight">¿Qué lograrás en Sugar Reset GLP-1: Reto de 21 Días?</h3>
 
@@ -304,9 +304,9 @@ const isFaqOpen = (group, id) => {
           </div>
         </div>
 
-        <hr class="border-gray-300/50" />
+        <hr id="section6" class="border-gray-300/50 md:py-10" />
 
-        <div id="section6" data-aos="fade-up">
+        <div data-aos="fade-up">
           <div class="px-6 py-10 rounded-[48px] bg-gray-50/80 border border-gray-100">
             <h3 class="text-teal-700 text-3xl text-center md:text-4xl font-nexa-bold mb-8">Preguntas frecuentes</h3>
 

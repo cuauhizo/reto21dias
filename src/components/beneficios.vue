@@ -62,8 +62,10 @@ const beneficiosAdicionales = [
 
         <a
           href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
+          target="_blank"
+          id="clic_beneficios"
           class="flex items-center gap-2 w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">
-          <span>¡Regístrate aquí!</span>
+          <span>¡Inscríbete aquí!</span>
           <img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="" aria-hidden="true" />
         </a>
       </div>
