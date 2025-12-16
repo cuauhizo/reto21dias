@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-// import Responsive from '@/components/responsive.vue'
+import BtnWhatsapp from '@/components/btnWhatsapp.vue'
+import Responsive from '@/components/responsive.vue'
 
 const anio = ref(new Date().getFullYear())
 const showScrollTopButton = ref(false)
@@ -128,6 +129,7 @@ onUnmounted(() => {
   <main>
     <router-view></router-view>
 
+    <BtnWhatsapp />
     <transition name="fade">
       <button class="btn-irArriba transition-opacity duration-300 hover:scale-110" @click="scrollToTop" v-show="showScrollTopButton" aria-label="Ir al inicio">
         <span class="sr-only">Ir Arriba</span>
@@ -188,7 +190,7 @@ onUnmounted(() => {
       </div>
     </div>
   </footer>
-  <!-- <Responsive /> -->
+  <Responsive />
 </template>
 
 <style scoped>

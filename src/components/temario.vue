@@ -249,7 +249,9 @@ const isFaqOpen = (group, id) => {
   <section class="py-10 md:py-20 px-4 relative">
     <div class="mx-auto flex max-w-7xl flex-col items-start gap-10 lg:flex-row">
       <div class="w-full lg:sticky lg:top-24 lg:w-5/12 lg:order-2 z-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div id="section5" class="flex flex-col items-center justify-center text-center gap-6 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] h-[908px] mx-auto">
+        <div
+          id="section5"
+          class="flex flex-col items-center justify-center text-center gap-3 md:gap-6 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] lg:max-h-[908px] mx-auto">
           <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">¡Inscríbete ahora y aprovecha nuestro precio de lanzamiento!</h3>
           <div class="flex flex-col items-center gap-1">
             <span class="text-zinc-700 text-lg font-thin font-nexa line-through">$4,800.00 MXN</span>
