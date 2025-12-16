@@ -17,25 +17,13 @@ const beneficiosAdicionales = [
       <div class="w-full xl:w-[505px] justify-start text-zinc-700">
         <p class="text-2xl font-thin font-Nexa leading-8 mb-7">
           En este
-          <strong class="font-nexa-bold">reset intensivo, impartido por expertos de primer nivel</strong>
-          , te guiaremos paso a paso para
-          <strong class="font-nexa-bold">eliminar tu dependencia del azúcar</strong>
-          ,
-          <strong class="font-nexa-bold">proteger tu masa muscular</strong>
-          y crear un
-          <strong class="font-nexa-bold">estilo de vida sostenible</strong>
-          ,
-          <strong class="font-nexa-bold">funcional</strong>
-          y
-          <strong class="font-nexa-bold">sin rebote</strong>
-          .
+          <strong class="font-nexa-bold">reset intensivo, impartido por expertos de primer nivel</strong>, te guiaremos paso a paso para <strong class="font-nexa-bold">eliminar tu dependencia del azúcar</strong>, <strong class="font-nexa-bold">proteger tu masa muscular</strong> y crear un <strong class="font-nexa-bold">estilo de vida sostenible</strong>, <strong class="font-nexa-bold">funcional</strong> y <strong class="font-nexa-bold">sin rebote</strong>.
         </p>
         <p class="text-lg font-thin font-Nexa">
           También aprenderás a dominar el
           <strong class="font-nexa-bold">poder del GLP-1</strong>
           (ya sea que lo uses o busques activarlo de forma natural) y a
-          <strong class="font-nexa-bold">transformar tu metabolismo desde la raíz</strong>
-          .
+          <strong class="font-nexa-bold">transformar tu metabolismo desde la raíz</strong>.
         </p>
       </div>
     </div>

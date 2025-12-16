@@ -278,7 +278,7 @@ const isFaqOpen = (group, id) => {
       <div class="flex flex-col gap-12 w-full flex-1 lg:w-7/12 lg:order-1" data-aos-anchor-placement="top-bottom">
         <div id="section4" class="px-6 py-10 text-white rounded-[32px] bg-temario shadow-lg" data-aos="fade-down">
           <h2 class="text-2xl mb-4 font-thin">Temario</h2>
-          <h3 class="text-4xl font-nexa-bold mb-6 leading-tight">¿Qué lograrás en Sugar Reset GLP-1: Reto de 21 Días?</h3>
+          <h3 class="text-4xl font-nexa-bold mb-6 leading-tight">¿Qué aprenderás en Sugar Reset GLP-1: Reto de 21 Días?</h3>
 
           <div class="space-y-1">
             <div v-for="(faq, index) in faqsA" :key="faq.id" class="overflow-hidden rounded-2xl transition-all duration-300" :class="isFaqOpen('A', faq.id) ? 'bg-white shadow-md' : 'bg-white/60 backdrop-blur-3xl'">
