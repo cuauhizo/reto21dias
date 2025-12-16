@@ -44,8 +44,7 @@ const beneficiosAdicionales = [
           de febrero
           <br />
           De
-          <span class="font-nexa-bold">19 a 21 horas</span>
-          , CST - tiempo CDMX
+          <span class="font-nexa-bold">19 a 21 horas</span>, CST - tiempo CDMX
         </p>
 
         <a

@@ -85,9 +85,7 @@ onUnmounted(() => {
           <div>
             <h2 class="text-teal-700 text-4xl font-nexa-bold leading-10">Aprende de los mejores</h2>
             <p class="mb-6">
-              Nuestros expertos te
-              <span class="font-nexa-bold">ofrecen la ruta más directa y probada para conocer más de GLP-1 y cómo lograr la desintoxicación del azúcar</span>
-              , asegurando que obtengas resultados reales y duraderos.
+              Nuestros expertos te <span class="font-nexa-bold">ofrecen la ruta más directa y probada para conocer más de GLP-1 y cómo lograr la desintoxicación del azúcar</span>, asegurando que obtengas resultados reales y duraderos.
             </p>
             <a
               href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"

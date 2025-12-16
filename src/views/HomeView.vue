@@ -6,20 +6,20 @@ import Ponentes from '@/components/ponentes.vue'
 import Temario from '@/components/temario.vue'
 
 useHead({
-  title: 'Reto 21 Días - Instituto de Salud Funcional',
+  title: 'Sugar Reset GLP-1: Elimina el Azúcar, Protege Músculo y Transforma tu Metabolismo en 21 Días',
   meta: [
     {
       name: 'description',
-      content: 'Únete al reto de 21 días para transformar tu salud...',
+      content: 'Únete al Reto Sugar Reset GLP-1 de 21 días. Aprende con expertos a eliminar tu dependencia del azúcar, proteger tu masa muscular y optimizar tu metabolismo. ¡Transforma tu salud sin efecto rebote!',
     },
     {
       name: 'keywords',
-      content: '',
+      content: 'reto 21 días, Sugar Reset, GLP-1, semaglutida, ozempic, dependencia del azúcar, eliminar antojos, transformar metabolismo, perder peso, proteger masa muscular, efectos secundarios GLP-1, dieta funcional, Nathaly Marcus',
     },
-    { property: 'og:title', content: 'Reto 21 Días - Instituto de Salud Funcional' },
+    { property: 'og:title', content: 'Sugar Reset GLP-1: Elimina el Azúcar, Protege Músculo y Transforma tu Metabolismo en 21 Días' },
     {
       property: 'og:description',
-      content: 'Únete al reto de 21 días para transformar tu salud...',
+      content: 'Únete al Reto Sugar Reset GLP-1 de 21 días. Aprende con expertos a eliminar tu dependencia del azúcar, proteger tu masa muscular y optimizar tu metabolismo. ¡Transforma tu salud sin efecto rebote!',
     },
     { property: 'og:image', content: 'https://reset21dias.com/logo-isfmc.svg' },
     { property: 'og:url', content: 'https://reset21dias.com/' },
@@ -27,8 +27,8 @@ useHead({
 
     // Twitter Card
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Reto 21 Días - Instituto de Salud Funcional' },
-    { name: 'twitter:description', content: 'Únete al reto de 21 días para transformar tu salud...' },
+    { name: 'twitter:title', content: 'Sugar Reset GLP-1: Elimina el Azúcar, Protege Músculo y Transforma tu Metabolismo en 21 Días' },
+    { name: 'twitter:description', content: 'Únete al Reto Sugar Reset GLP-1 de 21 días. Aprende con expertos a eliminar tu dependencia del azúcar, proteger tu masa muscular y optimizar tu metabolismo. ¡Transforma tu salud sin efecto rebote!' },
     { name: 'twitter:image', content: 'https://reset21dias.com/logo-isfmc.svg' },
     { name: 'twitter:url', content: 'https://reset21dias.com/' },
   ],
