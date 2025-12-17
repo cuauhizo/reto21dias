@@ -14,6 +14,13 @@
   .bg-temario {
     background-image: url('@/assets/img/bg-temario.png');
     background-size: cover;
+    background-position: center
+  }
+
+  .bg-hero {
+    background-image: url('@/assets/img/bg-hero.png');
+    background-size: cover;
+    background-position: center
   }
 
   .titulo-seccion {
