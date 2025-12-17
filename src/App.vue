@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import BtnWhatsapp from '@/components/btnWhatsapp.vue'
-import Responsive from '@/components/responsive.vue'
+// import Responsive from '@/components/responsive.vue'
 
 const anio = ref(new Date().getFullYear())
 const showScrollTopButton = ref(false)
@@ -190,7 +190,7 @@ onUnmounted(() => {
       </div>
     </div>
   </footer>
-  <Responsive />
+  <!-- <Responsive /> -->
 </template>
 
 <style scoped>

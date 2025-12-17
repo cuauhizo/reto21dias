@@ -1,10 +1,10 @@
 <template>
-  <section id="section1" class="container flex flex-wrap justify-items-center items-center content-center min-h-lvh gap-12 py-[5rem] xl:min-h-[695px]">
+  <section id="section1" class="container flex flex-wrap justify-items-center items-center content-center gap-6 mt-12 py-24">
     <div class="w-full" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-      <h1 class="hero-text text-center text-[2.244rem] md:text-[3.196rem] font-bold">¡Ups! Página no encontrada</h1>
+      <h1 class="text-center font-nexa-bold text-[2.244rem] md:text-[3.196rem] font-bold">¡Ups! Página no encontrada</h1>
     </div>
     <div class="space-y-6 md:space-y-8 w-full" data-aos="fade-left">
-      <h2 class="uppercase text-center leading-7">
+      <h2 class="uppercase font-nexa text-center leading-7">
         <span class="text-[1.246rem]">Lo sentimos, la página que buscas no existe.</span>
       </h2>
     </div>
