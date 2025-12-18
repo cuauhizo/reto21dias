@@ -153,7 +153,7 @@ onUnmounted(() => {
             </div>
             <div class="flex items-center gap-2">
               <img src="@/assets/img/icon-check.svg" alt="Validación" loading="lazy" />
-              <div class="text-base">Herramienta de validación de certificados</div>
+              <div class="text-base text-start">Herramienta de validación de certificados</div>
             </div>
           </div>
 
