@@ -12,15 +12,16 @@
   }
 
   .bg-temario {
-    background-image: url('@/assets/img/bg-temario.png');
+    background-color: #3a3a82;
+    background-image: url('@/assets/img/bg-temario.webp');
     background-size: cover;
-    background-position: center
+    background-position: center;
   }
 
   .bg-hero {
-    background-image: url('@/assets/img/bg-hero.png');
+    background-image: url('@/assets/img/bg-hero.webp');
     background-size: cover;
-    background-position: center
+    background-position: center;
   }
 
   .titulo-seccion {
@@ -46,6 +47,7 @@
   src: url('@/assets/font/Nexa/nexa-extralight-webfont.woff2') format('woff2'), url('@/assets/font/Nexa/nexa-extralight-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -53,6 +55,7 @@
   src: url('@/assets/font/Nexa/nexa-heavy-webfont.woff2') format('woff2'), url('@/assets/font/Nexa/nexa-heavy-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 body {

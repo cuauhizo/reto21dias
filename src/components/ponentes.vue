@@ -106,7 +106,7 @@ onUnmounted(() => {
             <figure v-for="ponente in ponentes" :key="ponente.id" class="ponente-card flex-shrink-0 relative h-auto max-w-[332px] px-4">
               <!-- Enlace en imagen -->
               <a :href="ponente.enlace" target="_blank" rel="noopener noreferrer" class="block">
-                <img :src="ponente.imagen" :alt="ponente.nombre" class="rounded-2xl" loading="lazy" />
+                <img :src="ponente.imagen" :alt="ponente.nombre" class="rounded-2xl" loading="lazy" width="332" />
               </a>
 
               <!-- Enlace en figcaption -->

@@ -1,9 +1,9 @@
-import nathaly_marcus from '@/assets/img/ponentes/nathaly-marcus.png'
-import gabriela_pineda from '@/assets/img/ponentes/gabriela-pineda.png'
-import michelle_hernandez from '@/assets/img/ponentes/michelle-hernandez.png'
-import candy_garcia from '@/assets/img/ponentes/candy-garcia.png'
-import patricia_gonzalez from '@/assets/img/ponentes/patricia-gonzalez.png'
-import sebastian_de_nys from '@/assets/img/ponentes/sebastian-de-nys.png'
+import nathaly_marcus from '@/assets/img/ponentes/nathaly-marcus.webp'
+import gabriela_pineda from '@/assets/img/ponentes/gabriela-pineda.webp'
+import michelle_hernandez from '@/assets/img/ponentes/michelle-hernandez.webp'
+import candy_garcia from '@/assets/img/ponentes/candy-garcia.webp'
+import patricia_gonzalez from '@/assets/img/ponentes/patricia-gonzalez.webp'
+import sebastian_de_nys from '@/assets/img/ponentes/sebastian-de-nys.webp'
 
 export const ponentes = [
   {

@@ -350,11 +350,4 @@ const isFaqOpen = (group, id) => {
   }
 }
 
-/* Background para la sección de temario si no tienes la clase global */
-.bg-temario {
-  background-color: #3a3a82; /* Fallback color */
-  /* background-image: url('@/assets/img/bg-temario.png'); */ /* Descomentar si tienes la imagen */
-  background-size: cover;
-  background-position: center;
-}
 </style>
