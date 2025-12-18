@@ -103,7 +103,7 @@ const infoCards = [
   target="_blank"
   id="clic_header_desktop"
   rel="noopener noreferrer"
-  class="flex items-center justify-center gap-2 bg-teal-700 rounded-full shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-7 transition-all duration-500 w-full md:w-fit border-2 border-white lg:pl-10"
+  class="flex items-center justify-center gap-2 bg-teal-700 rounded-full shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-7 transition-all duration-500 w-fit border-2 border-white lg:pl-10"
 >
   <span>¡Inscríbete aquí!</span>
   <img src="@/assets/img/icon-contacto.svg" class="pl-0 lg:ml-8 rounded-full w-9 md:w-auto" alt="icono contacto" aria-hidden="true" />
