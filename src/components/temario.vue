@@ -251,7 +251,7 @@ const isFaqOpen = (group, id) => {
       <div class="w-full lg:sticky lg:top-24 lg:w-5/12 lg:order-2 z-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div
           id="section5"
-          class="flex flex-col items-center justify-center text-center gap-3 md:gap-6 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] lg:max-h-[908px] mx-auto">
+          class="flex flex-col items-center justify-center text-center gap-3 md:gap-4 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] lg:max-h-[908px] mx-auto">
           <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">¡Inscríbete ahora y aprovecha nuestro precio de lanzamiento!</h3>
           <div class="flex flex-col items-center gap-1">
             <span class="text-zinc-700 text-lg font-thin font-nexa line-through">$4,800.00 MXN</span>
@@ -261,7 +261,7 @@ const isFaqOpen = (group, id) => {
               <sup class="text-3xl font-black font-nexa-bold top-[-0.5em]">00</sup>
               <span class="text-xl font-thin ml-2">MXN</span>
             </div>
-            <span class="text-zinc-700 text-base font-thin font-nexa mt-2">Descuento por tiempo limitado</span>
+            <span class="text-zinc-700 text-xs font-thin font-nexa">Descuento por tiempo limitado <br>Vigencia hasta el 6 de enero 2026</span>
           </div>
           <a
             href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
@@ -272,7 +272,7 @@ const isFaqOpen = (group, id) => {
             <i><img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="icono contacto" /></i>
           </a>
           <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="w-[233px] h-auto object-contain" loading="lazy" />
-          <p class="max-w-[320px] text-zinc-700 text-sm font-thin font-nexa leading-tight">Paga a meses sin intereses con tarjetas de crédito participantes.</p>
+          <p class="max-w-[320px] text-zinc-700 text-xs font-thin font-nexa leading-tight">Paga a meses sin intereses con tarjetas de crédito participantes.</p>
           <img src="@/assets/img/pago.png" alt="Métodos de pago" class="w-[320px] h-auto object-contain" loading="lazy" />
         </div>
       </div>
