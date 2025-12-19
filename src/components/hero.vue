@@ -37,7 +37,7 @@ const infoCards = [
     id="section1" 
     class="relative flex items-center justify-center overflow-hidden bg-hero mx-4 md:mx-6 rounded-[32px] md:rounded-[48px] mt-4 md:mt-12 min-h-[auto] py-12 md:py-0 lg:h-[824px]"
   >
-    <div class="absolute inset-0 bg-violet-950/40 backdrop-blur-[6px] z-10"></div>
+    <div class="absolute inset-0 bg-violet-950 md:bg-violet-950/40 backdrop-blur-[6px] z-10"></div>
 
     <div class="relative z-20 text-white w-full h-full flex flex-col justify-center items-center mt-20 px-4 md:px-0 md:mt-24 md:mb-8 xl:mt-0">
       <div class="container mx-auto">
