@@ -1,8 +1,10 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
 import BtnWhatsapp from '@/components/btnWhatsapp.vue'
 // import Responsive from '@/components/responsive.vue'
 
+const route = useRoute()
 const anio = ref(new Date().getFullYear())
 const showScrollTopButton = ref(false)
 const activeSection = ref(null)
@@ -71,7 +73,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <header>
+  <header v-if="!route.meta.hideUI">
     <div class="fixed z-30 w-full nav-menu bg-white bg-opacity-15 mt-2 md:-mt-10">
       <nav class="container h-30 flex items-center justify-between px-8 py-4 relative text-white">
         <div class="flex items-center gap-6 md:gap-0 lg:gap-6">
@@ -80,11 +82,11 @@ onUnmounted(() => {
           </a>
         </div>
           <div class="flex items-center justify-start gap-2 text-[14px]">
-            <button @click="toggleMenu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer transition-all z-20 md:hidden relative" :class="{ 'bg-close-menu': isMenuOpen, 'bg-open-menu': !isMenuOpen }" aria-label="Abrir menú"></button>
+            <button @click="toggleMenu" class="w-6 h-5 bg-cover bg-center cursor-pointer transition-all z-20 md:hidden relative" :class="{ 'bg-close-menu': isMenuOpen, 'bg-open-menu': !isMenuOpen }" aria-label="Abrir menú"></button>
 
             <div class="fixed inset-0 bg-gradient-to-b from-white/20 to-[#3a3a82]/95 transition-transform duration-300 md:static md:translate-x-0 md:bg-none z-10" :class="isMenuOpen ? 'translate-x-0' : 'translate-x-full'">
               <ul
-                class="absolute inset-x-0 top-24 p-10 items-center  text-[15px] bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 md:gap-0 lg:gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
+                class="absolute inset-x-0 top-24 p-10 items-center  text-[15px] bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
                 <li>
                   <a href="#beneficios" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(2)">Beneficios</a>
                 </li>
@@ -97,6 +99,11 @@ onUnmounted(() => {
                 <li>
                   <a href="#preguntas_frecuentes" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(6)">
                     Preguntas frecuentes
+                  </a>
+                </li>
+                <li class="hidden">
+                  <a href="master-class" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">
+                    Master Class
                   </a>
                 </li>
                 <li class="hidden">
@@ -131,7 +138,7 @@ onUnmounted(() => {
     </transition>
   </main>
 
-  <footer>
+  <footer v-if="!route.meta.hideUI">
     <div class="bg-teal-700 rounded-tl-[64px] rounded-tr-[64px] text-white">
       <div class="container py-10 md:py-12">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8 items-center text-center">

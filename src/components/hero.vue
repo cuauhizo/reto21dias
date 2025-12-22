@@ -16,7 +16,7 @@ const infoCards = [
   },
   {
     id: 2,
-    label: 'Clases',
+    label: 'Clases virtuales',
     text: '20 de Enero, 27 de Enero y 3 de Febrero',
     icon: iconClases,
     alt: 'Icono clases'

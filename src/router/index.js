@@ -7,6 +7,12 @@ const routes = [
     name: 'Home',
     component: () => import('@/views/HomeView.vue'),
   },
+  {
+    path: '/master-class',
+    name: 'MasterClass',
+    component: () => import('@/views/MasterClassView.vue'),
+    meta: { hideUI: true }
+  },
   // Ruta comodín para 404
   {
     path: '/:pathMatch(.*)*',
