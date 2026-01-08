@@ -257,11 +257,15 @@ const isFaqOpen = (group, id) => {
             <span class="text-zinc-700 text-lg font-thin font-nexa line-through">$4,800.00 MXN</span>
             <div class="flex items-center text-teal-700 font-nexa">
               <span class="text-xl font-thin mr-1">$</span>
-              <span class="text-6xl font-black font-nexa-bold tracking-tight">3,500.</span>
+              <span class="text-6xl font-black font-nexa-bold tracking-tight">2,105.</span>
               <sup class="text-3xl font-black font-nexa-bold top-[-0.5em]">00</sup>
               <span class="text-xl font-thin ml-2">MXN</span>
             </div>
-            <span class="text-zinc-700 text-xs font-thin font-nexa">Descuento por tiempo limitado <br>Vigencia hasta el 6 de enero 2026</span>
+            <span class="text-zinc-700 text-xs font-thin font-nexa">
+              Descuento por tiempo limitado
+              <br />
+              <span class="hidden">Vigencia hasta el 6 de enero 2026</span>
+            </span>
           </div>
           <a
             href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
@@ -349,5 +353,4 @@ const isFaqOpen = (group, id) => {
     transform: translateY(0);
   }
 }
-
 </style>
