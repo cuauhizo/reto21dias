@@ -89,7 +89,7 @@ const infoCards = [
             </p>
 
             <a
-              href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
+              href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10&bid=1767899719130&fromExitPopup=true"
               target="_blank"
               id="clic_header_desktop"
               rel="noopener noreferrer"

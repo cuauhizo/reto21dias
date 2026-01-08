@@ -85,10 +85,12 @@ onUnmounted(() => {
           <div>
             <h2 class="text-teal-700 text-4xl font-nexa-bold leading-10">Aprende de los mejores</h2>
             <p class="mb-6">
-              Nuestros expertos te <span class="font-nexa-bold">ofrecen la ruta más directa y probada para conocer más de GLP-1 y cómo lograr la desintoxicación del azúcar</span>, asegurando que obtengas resultados reales y duraderos.
+              Nuestros expertos te
+              <span class="font-nexa-bold">ofrecen la ruta más directa y probada para conocer más de GLP-1 y cómo lograr la desintoxicación del azúcar</span>
+              , asegurando que obtengas resultados reales y duraderos.
             </p>
             <a
-              href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
+              href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10&bid=1767899719130&fromExitPopup=true"
               target="_blank"
               id="clic_ponentes"
               class="flex items-center gap-2 w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">

@@ -17,13 +17,25 @@ const beneficiosAdicionales = [
       <div class="w-full xl:w-[505px] justify-start text-zinc-700">
         <p class="text-2xl font-thin font-Nexa leading-8 mb-7">
           En este
-          <strong class="font-nexa-bold">reset intensivo, impartido por expertos de primer nivel</strong>, te guiaremos paso a paso para <strong class="font-nexa-bold">eliminar tu dependencia del azúcar</strong>, <strong class="font-nexa-bold">proteger tu masa muscular</strong> y crear un <strong class="font-nexa-bold">estilo de vida sostenible</strong>, <strong class="font-nexa-bold">funcional</strong> y <strong class="font-nexa-bold">sin rebote</strong>.
+          <strong class="font-nexa-bold">reset intensivo, impartido por expertos de primer nivel</strong>
+          , te guiaremos paso a paso para
+          <strong class="font-nexa-bold">eliminar tu dependencia del azúcar</strong>
+          ,
+          <strong class="font-nexa-bold">proteger tu masa muscular</strong>
+          y crear un
+          <strong class="font-nexa-bold">estilo de vida sostenible</strong>
+          ,
+          <strong class="font-nexa-bold">funcional</strong>
+          y
+          <strong class="font-nexa-bold">sin rebote</strong>
+          .
         </p>
         <p class="text-lg font-thin font-Nexa">
           También aprenderás a dominar el
           <strong class="font-nexa-bold">poder del GLP-1</strong>
           (ya sea que lo uses o busques activarlo de forma natural) y a
-          <strong class="font-nexa-bold">transformar tu metabolismo desde la raíz</strong>.
+          <strong class="font-nexa-bold">transformar tu metabolismo desde la raíz</strong>
+          .
         </p>
       </div>
     </div>
@@ -44,11 +56,12 @@ const beneficiosAdicionales = [
           de febrero
           <br />
           De
-          <span class="font-nexa-bold">19 a 21 horas</span>, CST - tiempo CDMX
+          <span class="font-nexa-bold">19 a 21 horas</span>
+          , CST - tiempo CDMX
         </p>
 
         <a
-          href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
+          href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10&bid=1767899719130&fromExitPopup=true"
           target="_blank"
           id="clic_beneficios"
           class="flex items-center gap-2 w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">

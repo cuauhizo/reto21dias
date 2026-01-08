@@ -81,44 +81,42 @@ onUnmounted(() => {
             <img src="@/assets/img/logo-isfmc.svg" alt="Logo convension" width="55" height="55" loading="lazy" />
           </a>
         </div>
-          <div class="flex items-center justify-start gap-2 text-[14px]">
-            <button @click="toggleMenu" class="w-6 h-5 bg-cover bg-center cursor-pointer transition-all z-20 md:hidden relative" :class="{ 'bg-close-menu': isMenuOpen, 'bg-open-menu': !isMenuOpen }" aria-label="Abrir menú"></button>
+        <div class="flex items-center justify-start gap-2 text-[14px]">
+          <button @click="toggleMenu" class="w-6 h-5 bg-cover bg-center cursor-pointer transition-all z-20 md:hidden relative" :class="{ 'bg-close-menu': isMenuOpen, 'bg-open-menu': !isMenuOpen }" aria-label="Abrir menú"></button>
 
-            <div class="fixed inset-0 bg-gradient-to-b from-white/20 to-[#3a3a82]/95 transition-transform duration-300 md:static md:translate-x-0 md:bg-none z-10" :class="isMenuOpen ? 'translate-x-0' : 'translate-x-full'">
-              <ul
-                class="absolute inset-x-0 top-24 p-10 items-center  text-[15px] bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
-                <li>
-                  <a href="#beneficios" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(2)">Beneficios</a>
-                </li>
-                <li>
-                  <a href="#temario" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section4' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(4)">Temario</a>
-                </li>
-                <li>
-                  <a href="#costo" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section5' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(5)">Costo</a>
-                </li>
-                <li>
-                  <a href="#preguntas_frecuentes" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(6)">
-                    Preguntas frecuentes
-                  </a>
-                </li>
-                <li class="hidden">
-                  <a href="master-class" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">
-                    Master Class
-                  </a>
-                </li>
-                <li class="hidden">
-                  <a
-                    href="https://pay.hotmart.com/T103270473P?checkoutMode=10&bid=1765329714305&fromExitPopup=true"
-                    target="_blank"
-                    id="clic_header_movil"
-                    class="flex items-center justify-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-4 transition-all duration-500">
-                    <span>¡Inscríbete aquí!</span>
-                    <i><img src="@/assets/img/icon-contacto.svg" class="pl-2" alt="icono contacto" /></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div class="fixed inset-0 bg-gradient-to-b from-white/20 to-[#3a3a82]/95 transition-transform duration-300 md:static md:translate-x-0 md:bg-none z-10" :class="isMenuOpen ? 'translate-x-0' : 'translate-x-full'">
+            <ul
+              class="absolute inset-x-0 top-24 p-10 items-center text-[15px] bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
+              <li>
+                <a href="#beneficios" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(2)">Beneficios</a>
+              </li>
+              <li>
+                <a href="#temario" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section4' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(4)">Temario</a>
+              </li>
+              <li>
+                <a href="#costo" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section5' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(5)">Costo</a>
+              </li>
+              <li>
+                <a href="#preguntas_frecuentes" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(6)">
+                  Preguntas frecuentes
+                </a>
+              </li>
+              <li class="hidden">
+                <a href="master-class" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">Master Class</a>
+              </li>
+              <li class="hidden">
+                <a
+                  href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10&bid=1767899719130&fromExitPopup=true"
+                  target="_blank"
+                  id="clic_header_movil"
+                  class="flex items-center justify-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-4 transition-all duration-500">
+                  <span>¡Inscríbete aquí!</span>
+                  <i><img src="@/assets/img/icon-contacto.svg" class="pl-2" alt="icono contacto" /></i>
+                </a>
+              </li>
+            </ul>
           </div>
+        </div>
       </nav>
     </div>
   </header>
