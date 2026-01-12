@@ -16,19 +16,7 @@ const beneficiosAdicionales = [
     <div data-aos="fade-down" data-aos-anchor-placement="top-center">
       <div class="w-full xl:w-[505px] justify-start text-zinc-700">
         <p class="text-2xl font-thin font-Nexa leading-8 mb-7">
-          En este
-          <strong class="font-nexa-bold">reset intensivo, impartido por expertos de primer nivel</strong>
-          , te guiaremos paso a paso para
-          <strong class="font-nexa-bold">eliminar tu dependencia del azúcar</strong>
-          ,
-          <strong class="font-nexa-bold">proteger tu masa muscular</strong>
-          y crear un
-          <strong class="font-nexa-bold">estilo de vida sostenible</strong>
-          ,
-          <strong class="font-nexa-bold">funcional</strong>
-          y
-          <strong class="font-nexa-bold">sin rebote</strong>
-          .
+          En este <strong class="font-nexa-bold">reset intensivo, impartido por expertos de primer nivel</strong>, te guiaremos paso a paso para <strong class="font-nexa-bold">eliminar tu dependencia del azúcar</strong>, <strong class="font-nexa-bold">proteger tu masa muscular</strong> y crear un <strong class="font-nexa-bold">estilo de vida sostenible</strong>, <strong class="font-nexa-bold">funcional</strong> y <strong class="font-nexa-bold">sin rebote</strong>.
         </p>
         <p class="text-lg font-thin font-Nexa">
           También aprenderás a dominar el
@@ -48,11 +36,11 @@ const beneficiosAdicionales = [
           <span class="font-nexa-bold block">3 clases en vivo</span>
         </h3>
         <p class="text-zinc-700 text-lg font-black mt-4 mb-8">
-          <time datetime="2024-01-20" class="font-nexa-bold">20</time>
+          <time datetime="2026-01-27" class="font-nexa-bold">27</time>
+          de enero,
+          <time datetime="2026-02-03" class="font-nexa-bold">3</time>
           y
-          <time datetime="2024-01-27" class="font-nexa-bold">27</time>
-          de enero, y
-          <time datetime="2024-02-03" class="font-nexa-bold">3</time>
+          <time datetime="2026-02-10" class="font-nexa-bold">10</time>
           de febrero
           <br />
           De
@@ -61,7 +49,7 @@ const beneficiosAdicionales = [
         </p>
 
         <a
-          href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10&bid=1767899719130&fromExitPopup=true"
+          href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
           target="_blank"
           id="clic_beneficios"
           class="flex items-center gap-2 w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">

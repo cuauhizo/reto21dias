@@ -106,7 +106,7 @@ onUnmounted(() => {
               </li>
               <li class="hidden">
                 <a
-                  href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10&bid=1767899719130&fromExitPopup=true"
+                  href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
                   target="_blank"
                   id="clic_header_movil"
                   class="flex items-center justify-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-4 transition-all duration-500">

@@ -7,17 +7,17 @@ import iconHorario from '@/assets/img/icon-horario.svg'
 
 // Datos de las tarjetas (Fácil de editar en un solo lugar)
 const infoCards = [
-  {
-    id: 1,
-    label: 'Duración',
-    text: '21 días del 20 de Enero al 9 de Febrero',
-    icon: iconCalendario,
-    alt: 'Icono calendario',
-  },
+  // {
+  //   id: 1,
+  //   label: 'Duración',
+  //   text: '21 días del 20 de Enero al 9 de Febrero',
+  //   icon: iconCalendario,
+  //   alt: 'Icono calendario',
+  // },
   {
     id: 2,
     label: 'Clases virtuales',
-    text: '20 de Enero, 27 de Enero y 3 de Febrero',
+    text: '27 de Enero, 3 de Febrero y 10 de Febrero',
     icon: iconClases,
     alt: 'Icono clases',
   },
@@ -52,16 +52,9 @@ const infoCards = [
 
             <div class="w-full text-white/90">
               <p class="text-xl md:text-2xl font-thin font-Nexa leading-relaxed text-center md:text-left">
-                <strong class="font-nexa-bold text-white">Durante 21 días</strong>
-                , te daremos las herramientas para que
-                <strong class="font-nexa-bold text-white">reduzcas tu dependencia del azúcar</strong>
-                , actives el poder del GLP1 (de manera natural o ya sea que lo uses),
-                <strong class="font-nexa-bold text-white">protejas tu masa muscular</strong>
-                y crees un
-                <strong class="font-nexa-bold text-white">estilo de vida sostenible, funcional</strong>
-                y
-                <strong class="font-nexa-bold text-white">sin rebote</strong>
-                .
+                <strong class="font-nexa-bold text-white">Durante 21 días</strong>, te daremos las herramientas para que
+                <strong class="font-nexa-bold text-white">reduzcas tu dependencia del azúcar</strong>, actives el poder del GLP1 (de manera natural o ya sea que lo uses),
+                <strong class="font-nexa-bold text-white">protejas tu masa muscular</strong> y crees un <strong class="font-nexa-bold text-white">estilo de vida sostenible, funcional</strong> y <strong class="font-nexa-bold text-white">sin rebote</strong>.
               </p>
             </div>
 
@@ -89,7 +82,7 @@ const infoCards = [
             </p>
 
             <a
-              href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10&bid=1767899719130&fromExitPopup=true"
+              href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
               target="_blank"
               id="clic_header_desktop"
               rel="noopener noreferrer"
