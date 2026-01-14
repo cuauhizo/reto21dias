@@ -1,5 +1,11 @@
 <script setup>
-import { ref } from 'vue'
+// Función para desplazamiento suave
+const scrollToForm = () => {
+  const element = document.getElementById('inscribete')
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 </script>
 
 <template>
@@ -29,11 +35,9 @@ import { ref } from 'vue'
                 <strong class="font-nexa-bold text-white">Lunes 27 de enero, 7 PM (hora de CDMX)</strong>
               </p>
               <a
-                href="#"
-                target="_blank"
-                id="clic_header_desktop"
-                rel="noopener noreferrer"
-                class="flex items-center justify-center gap-2 bg-teal-700 rounded-full shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-3 px-7 transition-all duration-500 w-fit border-2 border-white lg:pl-10">
+                href="#inscribete"
+                @click.prevent="scrollToForm"
+                class="flex items-center justify-center gap-2 bg-teal-700 rounded-full shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-3 px-7 transition-all duration-500 w-fit border-2 border-white lg:pl-10 cursor-pointer hover:bg-teal-600 hover:scale-105">
                 <span>Inscríbete y mejora tu vida</span>
               </a>
             </div>

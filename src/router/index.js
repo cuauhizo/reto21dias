@@ -11,7 +11,13 @@ const routes = [
     path: '/master-class',
     name: 'MasterClass',
     component: () => import('@/views/MasterClassView.vue'),
-    meta: { hideUI: true }
+    meta: { hideUI: true },
+  },
+  {
+    path: '/gracias',
+    name: 'Gracias',
+    component: () => import('@/views/GraciasView.vue'),
+    meta: { hideUI: true }, // Opcional: si quieres ocultar el menú aquí también
   },
   // Ruta comodín para 404
   {

@@ -1,12 +1,28 @@
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
-// Cargar el script de validación de Mailchimp de forma segura (Opcional)
+const router = useRouter()
+const isLoading = ref(false)
+const errorMessage = ref('')
+
+// Datos del formulario
+const formData = ref({
+  EMAIL: '',
+  FNAME: '',
+  PHONE: '',
+})
+
+// Referencia para la instancia del input de teléfono
+let phoneInputInstance = null
+
+// Cargar estilos y scripts del teléfono
 useHead({
+  link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css' }],
   script: [
     {
-      src: '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js',
       async: true,
       defer: true,
     },
@@ -14,70 +30,129 @@ useHead({
 })
 
 onMounted(() => {
-  // Configuración necesaria para que funcione la validación de Mailchimp sin jQuery
-  window.fnames = new Array()
-  window.ftypes = new Array()
-  window.fnames[0] = 'EMAIL'
-  window.ftypes[0] = 'email'
-  window.fnames[1] = 'FNAME'
-  window.ftypes[1] = 'text'
-  window.fnames[4] = 'PHONE'
-  window.ftypes[4] = 'phone'
+  // Inicializar intl-tel-input
+  const checkIntl = setInterval(() => {
+    if (window.intlTelInput) {
+      clearInterval(checkIntl)
+      const input = document.querySelector('#mce-PHONE')
+      if (input) {
+        phoneInputInstance = window.intlTelInput(input, {
+          initialCountry: 'auto',
+          preferredCountries: ['mx', 'us', 'co', 'es'],
+          geoIpLookup: cb =>
+            fetch('https://ipapi.co/json')
+              .then(r => r.json())
+              .then(d => cb(d.country_code))
+              .catch(() => cb('mx')),
+          utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
+        })
+      }
+    }
+  }, 100)
 })
+
+// Función nativa para enviar a Mailchimp (JSONP) sin librerías extra
+const submitForm = () => {
+  isLoading.value = true
+  errorMessage.value = ''
+
+  // 1. Obtener teléfono con formato internacional
+  if (phoneInputInstance) {
+    const fullNumber = phoneInputInstance.getNumber()
+    // Si el usuario escribió algo, usamos el número formateado
+    if (fullNumber) formData.value.PHONE = fullNumber
+  }
+
+  // 2. Preparar URL de Mailchimp (jsonp)
+  // NOTA: Cambiamos '/post?' por '/post-json?' para que funcione vía script
+  const baseUrl = 'https://tolkogroup.us9.list-manage.com/subscribe/post-json?u=7cf16f1918720e2f7ee24374a&id=30837c0ae2&f_id=00a6eee3f0'
+
+  // 3. Crear nombre único para la función de retorno
+  const callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random())
+
+  // 4. Construir parámetros
+  const params = new URLSearchParams({
+    EMAIL: formData.value.EMAIL,
+    FNAME: formData.value.FNAME,
+    PHONE: formData.value.PHONE,
+    tags: '15369803', // Tu etiqueta
+    b_7cf16f1918720e2f7ee24374a_30837c0ae2: '', // Anti-bot vacío
+    c: callbackName, // Mailchimp ejecutará esta función al responder
+  }).toString()
+
+  // 5. Definir qué hacer cuando Mailchimp responda
+  window[callbackName] = response => {
+    // Limpieza
+    delete window[callbackName]
+    document.body.removeChild(script)
+    isLoading.value = false
+
+    if (response.result === 'success') {
+      // ✅ ÉXITO: Redirigir a la página de gracias
+      router.push('/gracias')
+    } else {
+      // ❌ ERROR: Mostrar mensaje (limpiando el prefijo "0 -")
+      errorMessage.value = response.msg ? response.msg.replace(/^\d\s-\s/, '') : 'Ocurrió un error. Intenta de nuevo.'
+    }
+  }
+
+  // 6. Inyectar el script para enviar los datos
+  const script = document.createElement('script')
+  script.src = `${baseUrl}&${params}`
+  document.body.appendChild(script)
+}
 </script>
 
 <template>
-  <div class="bg-[#2D0A6C] w-full max-w-lg mx-auto p-8 py-16 rounded-2xl shadow-xl font-nexa">
+  <div class="bg-[#2D0A6C] w-full mx-auto p-8 py-16 rounded-2xl shadow-xl font-nexa">
     <h2 class="text-2xl font-nexa-bold text-white text-center mb-6">Regístrate para la Master Class</h2>
-    <form
-      action="https://tolkogroup.us9.list-manage.com/subscribe/post?u=7cf16f1918720e2f7ee24374a&amp;id=30837c0ae2&amp;f_id=00a6eee3f0"
-      method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
-      class="validate"
-      target="_blank"
-      novalidate>
-      <div id="mc_embed_signup_scroll" class="flex flex-col gap-5">
-        <div class="flex flex-col text-left">
-          <label for="mce-EMAIL" class="block text-white font-light mb-2">
-            Correo Electrónico
-            <span class="text-red-500">*</span>
-          </label>
-          <input type="email" name="EMAIL" class="required email w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all" id="mce-EMAIL" placeholder="tu@correo.com" required />
-        </div>
 
-        <div class="flex flex-col text-left">
-          <label for="mce-FNAME" class="block text-white font-light mb-2">
-            Nombre y Apellido
-            <span class="text-red-500">*</span>
-          </label>
-          <input type="text" name="FNAME" class="required w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all" id="mce-FNAME" placeholder="Ej. Juan Pérez" required />
-        </div>
+    <form @submit.prevent="submitForm" class="flex flex-col gap-5">
+      <div class="flex flex-col text-left">
+        <label for="mce-EMAIL" class="block text-white font-light mb-2">
+          Correo Electrónico
+          <span class="text-red-500">*</span>
+        </label>
+        <input v-model="formData.EMAIL" type="email" class="w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500 text-black" placeholder="tu@correo.com" required />
+      </div>
 
-        <div class="flex flex-col text-left">
-          <label for="mce-PHONE" class="block text-white font-light mb-2">Número de teléfono</label>
-          <input type="text" name="PHONE" class="w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all" id="mce-PHONE" placeholder="Ej. 55 1234 5678" />
-        </div>
+      <div class="flex flex-col text-left">
+        <label for="mce-FNAME" class="block text-white font-light mb-2">
+          Nombre y Apellido
+          <span class="text-red-500">*</span>
+        </label>
+        <input v-model="formData.FNAME" type="text" class="w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500 text-black" placeholder="Ej. Juan Pérez" required />
+      </div>
 
-        <div id="mce-responses" class="clear foot text-sm mt-2">
-          <div class="response text-red-600 font-bold" id="mce-error-response" style="display: none"></div>
-          <div class="response text-green-600 font-bold" id="mce-success-response" style="display: none"></div>
-        </div>
+      <div class="flex flex-col text-left text-black">
+        <label for="mce-PHONE" class="block text-white font-light mb-2">Número de teléfono</label>
+        <input id="mce-PHONE" type="tel" class="w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="55 1234 5678" />
+      </div>
 
-        <div aria-hidden="true" style="position: absolute; left: -5000px">
-          <input type="text" name="b_7cf16f1918720e2f7ee24374a_30837c0ae2" tabindex="-1" value="" />
-        </div>
-        <div hidden=""><input type="hidden" name="tags" value="15369803" /></div>
+      <div v-if="errorMessage" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-sm text-center">
+        <span v-html="errorMessage"></span>
+      </div>
 
-        <div class="mt-2">
-          <input
-            type="submit"
-            name="subscribe"
-            id="mc-embedded-subscribe"
-            class="w-full bg-teal-700 hover:bg-teal-600 text-white font-nexa-bold py-4 rounded-full cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-lg"
-            value="Inscríbete y mejora tu vida" />
-        </div>
+      <div class="mt-2">
+        <button
+          type="submit"
+          :disabled="isLoading"
+          class="w-full bg-teal-700 hover:bg-teal-600 text-white font-nexa-bold py-4 rounded-full cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-lg flex justify-center items-center gap-2">
+          <span v-if="isLoading">Enviando...</span>
+          <span v-else>Inscríbete y mejora tu vida</span>
+        </button>
       </div>
     </form>
   </div>
 </template>
+
+<style scoped>
+/* Ajustes para que la librería de teléfonos se vea bien */
+:deep(.iti) {
+  width: 100%;
+}
+:deep(.iti__country-list) {
+  color: #333;
+  z-index: 50;
+}
+</style>
