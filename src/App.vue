@@ -2,7 +2,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import BtnWhatsapp from '@/components/btnWhatsapp.vue'
-import Responsive from '@/components/responsive.vue'
+// import Responsive from '@/components/responsive.vue'
 
 const route = useRoute()
 const anio = ref(new Date().getFullYear())
@@ -101,7 +101,7 @@ onUnmounted(() => {
                   Preguntas frecuentes
                 </a>
               </li>
-              <li class="">
+              <li class="hidden">
                 <a href="master-class" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">Master Class</a>
               </li>
               <li class="hidden">
@@ -150,7 +150,7 @@ onUnmounted(() => {
           <div class="col-span-4 md:col-span-8 lg:col-span-6 flex flex-col items-start gap-2 sm:items-center md:items-start">
             <div class="flex items-center gap-2">
               <img src="@/assets/img/icon-whatsapp.svg" alt="WhatsApp" loading="lazy" />
-              <div class="text-base">55 7147 7728</div>
+              <div class="text-base">56 4000 7778</div>
             </div>
             <div class="flex items-center gap-2">
               <img src="@/assets/img/icon-email.svg" alt="Email" loading="lazy" />
@@ -185,7 +185,7 @@ onUnmounted(() => {
       </div>
     </div>
   </footer>
-  <Responsive />
+  <!-- <Responsive /> -->
 </template>
 
 <style scoped>

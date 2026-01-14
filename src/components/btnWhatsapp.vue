@@ -2,10 +2,13 @@
 import { computed } from 'vue'
 
 // Definimos las propiedades para hacerlo reutilizable
+// 525571477728 - old
+// 525640007778 - new
+
 const props = defineProps({
   phone: {
     type: String,
-    default: '525571477728', // Tu número por defecto
+    default: '525640007778', // Tu número por defecto
   },
   message: {
     type: String,

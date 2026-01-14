@@ -1,6 +1,7 @@
 <script setup>
 import { useHead } from '@vueuse/head'
 import HeroMaster from '@/components/heroMaster.vue'
+import NewsletterForm from '@/components/NewsletterForm.vue'
 
 // SEO específico para esta página
 useHead({
@@ -14,39 +15,8 @@ useHead({
 
 <template>
   <HeroMaster />
-  <!-- <section class="py-16">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 lg:gap-x-12 items-center">
-        <div class="flex flex-col col-span-12 lg:col-span-8">
-          <div class="p-4 my-8 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
-            <p class="text-center text-teal-700 text-4xl font-black font-nexa-bold leading-10">¿Te pasa que…?</p>
-
-            <div class="w-fit mx-auto md:mx-0 py-3 rounded-[32px]">
-              <p class="text-center md:text-left text-2xl font-nexa-bold leading-tight mb-4">¿Empiezas el día con energía, pero los antojos de dulce te vencen por la tarde?</p>
-
-              <p class="text-center md:text-left text-2xl font-nexa-bold leading-tight mb-4">¿Sientes inflamación constante y "neblina mental"?</p>
-
-              <p class="text-center md:text-left text-2xl font-nexa-bold leading-tight mb-4">¿Has probado dietas restrictivas que solo te dejan con más hambre?</p>
-            </div>
-
-            <div class="w-full">
-              <p class="mb-8 font-thin font-Nexa leading-relaxed text-center md:text-left">
-                El problema no es tu fuerza de voluntad, es tu bioquímica. Mucho se habla de los fármacos de moda, pero pocos te enseñan cómo estimular tu propia hormona de la saciedad (GLP-1), a través de la medicina funcional.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-col col-span-12 lg:col-span-4">
-          <div class="p-4 my-8 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2">
-            <img src="@/assets/img/SugarResetGLP1.svg" alt="Logo Reto Sugar Reset GLP1" class="w-full max-w-[320px] md:max-w-[490px] h-auto drop-shadow-2xl mb-8 lg:mb-3 animate-fade-in-up" width="490" height="491" fetchpriority="high" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <section class="py-8">
-    <div class="container mx-auto px-4">
+  <section>
+    <div class="container mx-auto px-4 py-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 lg:gap-x-12 items-center">
         <div class="flex flex-col col-span-12 lg:col-span-7">
           <p class="text-teal-700 text-4xl font-black font-nexa-bold leading-10">Lo que vas a descubrir en esta Masterclass Gratuita:</p>
@@ -70,17 +40,17 @@ useHead({
           </div>
         </div>
         <div class="flex flex-col col-span-12 lg:col-span-5">
-          <div class="p-4 my-8 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2">
-            <img src="@/assets/img/SugarResetGLP1.svg" alt="Logo Reto Sugar Reset GLP1" class="w-full max-w-[320px] md:max-w-[490px] h-auto drop-shadow-2xl mb-8 lg:mb-3 animate-fade-in-up" width="490" height="491" fetchpriority="high" />
+          <div class="my-8 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2">
+            <NewsletterForm />
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="">
+  <section>
     <div class="container mx-auto px-4 py-8">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 lg:gap-x-12 items-center p-4 my-2 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
-        <div class="flex flex-col col-span-12 lg:col-span-5">
+      <div class="grid grid-cols-1 md:grid-cols-12 lg:gap-x-12 items-center p-4 my-2 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
+        <div class="flex flex-col col-span-12">
           <p class="text-teal-700 text-4xl font-black font-nexa-bold leading-10">Aprende de la mano de Nathaly Marcus</p>
           <p class="text-base">
             Nutrióloga Funcional, autora y pionera en bienestar integral. Con más de 25 años de experiencia, Nathaly se ha especializado también en neurociencia, psicología transpersonal y epigenética, enfocada en salud mente-cuerpo y longevidad,
@@ -95,7 +65,7 @@ useHead({
       </div>
     </div>
   </section>
-  <section id="estas_listo" class="">
+  <section>
     <div class="container mx-auto px-4 py-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 lg:gap-x-12">
         <div class="flex flex-col col-span-12 lg:col-start-3 lg:col-span-8 lg:mx-auto text-center items-center">
