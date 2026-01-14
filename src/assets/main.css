@@ -11,9 +11,8 @@
     background: radial-gradient(145.19% 74.62% at 56.02% 43.56%, rgba(234, 0, 41, 0.64) 0%, rgba(24, 24, 24, 0.64) 100%);
   }
 
-  .bg-temario {
-    background-color: #3a3a82;
-    background-image: url('@/assets/img/bg-temario.webp');
+  .bg-hero-master {
+    background-image: url('@/assets/img/bg-hero-master.png');
     background-size: cover;
     background-position: center;
   }

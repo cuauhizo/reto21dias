@@ -2,7 +2,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import BtnWhatsapp from '@/components/btnWhatsapp.vue'
-// import Responsive from '@/components/responsive.vue'
+import Responsive from '@/components/responsive.vue'
 
 const route = useRoute()
 const anio = ref(new Date().getFullYear())
@@ -101,7 +101,7 @@ onUnmounted(() => {
                   Preguntas frecuentes
                 </a>
               </li>
-              <li class="hidden">
+              <li class="">
                 <a href="master-class" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">Master Class</a>
               </li>
               <li class="hidden">
@@ -136,7 +136,7 @@ onUnmounted(() => {
     </transition>
   </main>
 
-  <footer v-if="!route.meta.hideUI">
+  <footer>
     <div class="bg-teal-700 rounded-tl-[64px] rounded-tr-[64px] text-white">
       <div class="container py-10 md:py-12">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8 items-center text-center">
@@ -185,7 +185,7 @@ onUnmounted(() => {
       </div>
     </div>
   </footer>
-  <!-- <Responsive /> -->
+  <Responsive />
 </template>
 
 <style scoped>

@@ -1,5 +1,6 @@
 <script setup>
 import { useHead } from '@vueuse/head'
+import HeroMaster from '@/components/heroMaster.vue'
 
 // SEO específico para esta página
 useHead({
@@ -12,26 +13,105 @@ useHead({
 </script>
 
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-violet-950 to-[#3a3a82] flex flex-col items-center justify-center p-6 text-white text-center">
-    <div class="max-w-4xl w-full bg-white/10 backdrop-blur-md rounded-[40px] border border-white/20 p-8 md:p-12 shadow-2xl">
-      <img src="@/assets/img/logo-isfmc.svg" alt="Logo ISFMC" class="w-20 mx-auto mb-8" />
+  <HeroMaster />
+  <!-- <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 lg:gap-x-12 items-center">
+        <div class="flex flex-col col-span-12 lg:col-span-8">
+          <div class="p-4 my-8 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
+            <p class="text-center text-teal-700 text-4xl font-black font-nexa-bold leading-10">¿Te pasa que…?</p>
 
-      <h1 class="text-3xl md:text-5xl font-nexa-bold mb-6 text-teal-300">Bienvenido a la Master Class</h1>
+            <div class="w-fit mx-auto md:mx-0 py-3 rounded-[32px]">
+              <p class="text-center md:text-left text-2xl font-nexa-bold leading-tight mb-4">¿Empiezas el día con energía, pero los antojos de dulce te vencen por la tarde?</p>
 
-      <p class="text-lg md:text-xl font-nexa mb-10 max-w-2xl mx-auto">Prepárate para descubrir cómo transformar tu metabolismo. Disfruta el contenido exclusivo que hemos preparado para ti.</p>
+              <p class="text-center md:text-left text-2xl font-nexa-bold leading-tight mb-4">¿Sientes inflamación constante y "neblina mental"?</p>
 
-      <div class="w-full aspect-video bg-black/50 rounded-2xl mb-10 flex items-center justify-center border border-white/10 shadow-inner">
-        <span class="text-white/50 font-nexa">Aquí iría tu reproductor de video (YouTube/Vimeo)</span>
+              <p class="text-center md:text-left text-2xl font-nexa-bold leading-tight mb-4">¿Has probado dietas restrictivas que solo te dejan con más hambre?</p>
+            </div>
+
+            <div class="w-full">
+              <p class="mb-8 font-thin font-Nexa leading-relaxed text-center md:text-left">
+                El problema no es tu fuerza de voluntad, es tu bioquímica. Mucho se habla de los fármacos de moda, pero pocos te enseñan cómo estimular tu propia hormona de la saciedad (GLP-1), a través de la medicina funcional.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col col-span-12 lg:col-span-4">
+          <div class="p-4 my-8 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2">
+            <img src="@/assets/img/SugarResetGLP1.svg" alt="Logo Reto Sugar Reset GLP1" class="w-full max-w-[320px] md:max-w-[490px] h-auto drop-shadow-2xl mb-8 lg:mb-3 animate-fade-in-up" width="490" height="491" fetchpriority="high" />
+          </div>
+        </div>
       </div>
-
-      <router-link to="/" class="inline-flex items-center gap-3 bg-teal-600 hover:bg-teal-500 text-white font-nexa-bold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-teal-500/40 hover:-translate-y-1">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-        </svg>
-        Regresar al Inicio
-      </router-link>
     </div>
+  </section> -->
+  <section class="py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 lg:gap-x-12 items-center">
+        <div class="flex flex-col col-span-12 lg:col-span-7">
+          <p class="text-teal-700 text-4xl font-black font-nexa-bold leading-10">Lo que vas a descubrir en esta Masterclass Gratuita:</p>
+          <div class="p-4 my-2 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
+            <p class="text-teal-700 text-center md:text-left text-xl font-nexa-bold leading-tight">El Secreto del GLP-1:</p>
+            <p class="text-base">Qué es esta hormona y cómo activarla naturalmente para silenciar el "ruido de comida" en tu cerebro.</p>
+          </div>
 
-    <p class="mt-8 text-sm text-white/40 font-nexa">© {{ new Date().getFullYear() }} Instituto de Salud Funcional Mente - Cuerpo.</p>
-  </div>
+          <div class="p-4 my-2 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
+            <p class="text-teal-700 text-center md:text-left text-xl font-nexa-bold leading-tight">Proteger y conservar tus músculos</p>
+            <p class="text-base">Importancia de combinar ejercicio y nutrución.</p>
+          </div>
+
+          <div class="p-4 my-2 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
+            <p class="text-teal-700 text-center md:text-left text-xl font-nexa-bold leading-tight">Biohacking Metabólico:</p>
+            <p class="text-base">Herramientas de nutrición funcional para mejorar tu sensibilidad a la insulina.</p>
+          </div>
+          <div class="p-4 my-2 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
+            <p class="text-teal-700 text-center md:text-left text-xl font-nexa-bold leading-tight">Propósitos 2026:</p>
+            <p class="text-base">Cómo hacer que este sea, finalmente, el año en que logres tu peso ideal con salud y no castigándote.</p>
+          </div>
+        </div>
+        <div class="flex flex-col col-span-12 lg:col-span-5">
+          <div class="p-4 my-8 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2">
+            <img src="@/assets/img/SugarResetGLP1.svg" alt="Logo Reto Sugar Reset GLP1" class="w-full max-w-[320px] md:max-w-[490px] h-auto drop-shadow-2xl mb-8 lg:mb-3 animate-fade-in-up" width="490" height="491" fetchpriority="high" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 lg:gap-x-12 items-center p-4 my-2 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
+        <div class="flex flex-col col-span-12 lg:col-span-5">
+          <p class="text-teal-700 text-4xl font-black font-nexa-bold leading-10">Aprende de la mano de Nathaly Marcus</p>
+          <p class="text-base">
+            Nutrióloga Funcional, autora y pionera en bienestar integral. Con más de 25 años de experiencia, Nathaly se ha especializado también en neurociencia, psicología transpersonal y epigenética, enfocada en salud mente-cuerpo y longevidad,
+            ayudando a miles de personas a reprogramar su metabolismo. Su enfoque es construir salud.
+          </p>
+        </div>
+        <div class="flex flex-col col-span-12 lg:col-span-7">
+          <!-- <div class="p-4 my-2 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
+            <p class="text-teal-700 text-center md:text-left text-xl font-nexa-bold leading-tight">El Secreto del GLP-1:</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="estas_listo" class="">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 lg:gap-x-12">
+        <div class="flex flex-col col-span-12 lg:col-start-3 lg:col-span-8 lg:mx-auto text-center items-center">
+          <p class="text-teal-700 text-4xl font-black font-nexa-bold leading-10">¿Estás listo para resetear tu metabolismo?</p>
+          <p class="text-lg">La ciencia ha avanzado. Tu cuerpo tiene la capacidad de sanar si le das las señales correctas. No dejes que otro año pase sintiéndote igual.</p>
+          <p class="text-lg font-nexa-bold"><strong>Masterclass GRATUITA: 27 de enero, 7 PM (hora de CDMX)</strong></p>
+          <a
+            href="#"
+            target="_blank"
+            id="clic_header_desktop"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 bg-teal-700 rounded-full shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-3 my-4 px-7 transition-all duration-500 w-fit border-2 border-white lg:pl-10">
+            <span>Inscríbete y mejora tu vida</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
