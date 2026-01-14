@@ -2,6 +2,7 @@
 import { useHead } from '@vueuse/head'
 import HeroMaster from '@/components/heroMaster.vue'
 import NewsletterForm from '@/components/NewsletterForm.vue'
+// import NewsletterFormCopy from '@/components/NewsletterForm-copy.vue'
 
 // SEO específico para esta página
 useHead({
@@ -15,7 +16,7 @@ useHead({
 
 <template>
   <HeroMaster />
-  <section>
+  <section id="inscribete">
     <div class="container mx-auto px-4 py-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 lg:gap-x-12 items-center">
         <div class="flex flex-col col-span-12 lg:col-span-7">
@@ -42,6 +43,7 @@ useHead({
         <div class="flex flex-col col-span-12 lg:col-span-5">
           <div class="my-8 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2">
             <NewsletterForm />
+            <!-- <NewsletterFormCopy /> -->
           </div>
         </div>
       </div>
