@@ -12,7 +12,7 @@
   }
 
   .bg-hero-master {
-    background-image: url('@/assets/img/bg-hero-master.png');
+    background-image: url('@/assets/img/bg-hero-master.webp');
     background-size: cover;
     background-position: center;
   }

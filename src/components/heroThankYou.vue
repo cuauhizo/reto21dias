@@ -18,14 +18,17 @@ import { ref } from 'vue'
               <div class="mx-auto md:mx-0 py-3 rounded-[32px]">
                 <h1 class="text-white text-center text-4xl md:text-6xl lg:text-7xl font-nexa-bold leading-tight">¡Gracias!</h1>
                 <p class="text-lg md:text-xl font-black font-nexa-bold leading-tight mb-4 text-center mt-4">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos harum eveniet debitis numquam ducimus eligendi ab esse delectus cum, exercitationem quas corporis culpa quae sapiente laboriosam facilis neque, quaerat praesentium!
+                  ¡Te damos la bienvenida a tu nueva realidad! Gracias por decir "sí" a la Masterclass de Sugar Reset con Nathaly Marcos, y por decidirte a transformar tu salud desde la raíz.
+                </p>
+                <p class="text-lg md:text-xl font-black font-nexa-bold leading-tight mb-4 text-center mt-4">
+                  Estás a punto de comenzar el camino para tener el cuerpo que quieres. Da el siguiente paso uniéndote a nuestra comunidad en WhatsApp y descargando nuestro e-book.
                 </p>
               </div>
             </div>
 
             <div class="flex flex-col lg:flex-row justify-center items-center gap-4 w-full">
               <a
-                href="#"
+                href="https://wa.me/525640007778?text=Hola, me interesa unirme al grupo"
                 target="_blank"
                 id="clic_whatsapp_gracias"
                 rel="noopener noreferrer"
@@ -34,12 +37,30 @@ import { ref } from 'vue'
               </a>
 
               <a
-                href="#"
+                href="https://bit.ly/3LEFPsl"
                 target="_blank"
                 id="clic_ebook_gracias"
                 rel="noopener noreferrer"
                 class="flex items-center justify-center gap-2 bg-teal-700 rounded-full shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-base md:text-lg text-white py-3 px-7 transition-all duration-500 w-full md:w-auto md:min-w-[347px] border-2 border-white text-center hover:bg-teal-600 hover:scale-105">
                 <span>Descarga el eBook</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-start-3 lg:col-span-8 flex flex-col gap-6">
+            <div>
+              <div class="mx-auto md:mx-0 py-3 rounded-[32px]">
+                <p class="text-lg md:text-xl font-black font-nexa-bold leading-tight mb-4 text-center mt-4">También puedes inscribirte de una vez al SUGAR RESET GLP-1 EN 21 DÍAS. ¡Comenzamos el 27 de enero!</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-4 w-full">
+              <a
+                href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-center gap-2 bg-teal-700 rounded-full shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-base md:text-lg text-white py-3 px-7 transition-all duration-500 w-full md:w-auto md:min-w-[347px] border-2 border-white text-center hover:bg-teal-600 hover:scale-105">
+                <span>Sí quiero transormarme en 21 días</span>
               </a>
             </div>
           </div>

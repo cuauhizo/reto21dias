@@ -103,10 +103,11 @@ onUnmounted(() => {
         </div>
       </nav>
 
-      <nav v-else class="container h-30 flex items-center justify-center px-8 py-4 relative text-white">
+      <nav v-else class="container h-30 flex items-center justify-center gap-4 px-8 py-4 relative text-white">
         <a href="./" class="transition-transform hover:scale-105">
           <img src="@/assets/img/logo-isfmc.svg" alt="Logo Instituto" width="65" height="65" loading="lazy" />
         </a>
+        <div class="flex items-center justify-start font-nexa-bold">Masterclass Gratuita</div>
       </nav>
     </div>
   </header>

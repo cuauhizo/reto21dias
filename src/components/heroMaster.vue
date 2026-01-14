@@ -44,7 +44,7 @@ const scrollToForm = () => {
           </div>
 
           <div class="lg:col-span-4 flex flex-col items-center">
-            <img src="@/assets/img/nathaly-master.png" alt="Logo Reto Sugar Reset GLP1" class="w-full max-w-[320px] md:max-w-[490px] h-auto mb-8 lg:mb-3 animate-fade-in-up" width="490" height="491" fetchpriority="high" />
+            <img src="@/assets/img/nathaly-master.webp" alt="Logo Reto Sugar Reset GLP1" class="w-full max-w-[320px] md:max-w-[490px] h-auto mb-8 lg:mb-3 animate-fade-in-up" width="490" height="491" fetchpriority="high" />
           </div>
         </div>
       </div>
