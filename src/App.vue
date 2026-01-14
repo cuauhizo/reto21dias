@@ -148,10 +148,6 @@ onUnmounted(() => {
               <img src="@/assets/img/icon-email.svg" alt="Email" loading="lazy" />
               <div class="text-base">info@isfmc.com</div>
             </div>
-            <div class="flex items-center gap-2">
-              <img src="@/assets/img/icon-check.svg" alt="Validación" loading="lazy" />
-              <div class="text-base text-start">Herramienta de validación de certificados</div>
-            </div>
           </div>
 
           <div class="col-span-4 md:col-span-12 lg:col-span-3">
