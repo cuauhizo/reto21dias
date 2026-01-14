@@ -28,7 +28,7 @@ import { ref } from 'vue'
 
             <div class="flex flex-col lg:flex-row justify-center items-center gap-4 w-full">
               <a
-                href="https://wa.me/525640007778?text=Hola, me interesa unirme al grupo"
+                href="https://chat.whatsapp.com/FJFEzdUGSNwIlknvv9hFdI"
                 target="_blank"
                 id="clic_whatsapp_gracias"
                 rel="noopener noreferrer"
