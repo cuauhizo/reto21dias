@@ -8,7 +8,7 @@ const routes = [
     component: () => import('@/views/HomeView.vue'),
   },
   {
-    path: '/master-class',
+    path: '/masterClass',
     name: 'MasterClass',
     component: () => import('@/views/MasterClassView.vue'),
     meta: { hideUI: true },

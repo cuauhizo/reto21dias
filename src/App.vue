@@ -2,20 +2,19 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import BtnWhatsapp from '@/components/btnWhatsapp.vue'
-// import Responsive from '@/components/responsive.vue'
 
 const route = useRoute()
 const anio = ref(new Date().getFullYear())
 const showScrollTopButton = ref(false)
 const activeSection = ref(null)
-const isMenuOpen = ref(false) // Estado reactivo para el menú
+const isMenuOpen = ref(false)
 const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6']
 
 let observer = null
 
 // Control del Scroll Button (Optimizado)
 const handleScrollButtonVisibility = () => {
-  showScrollTopButton.value = window.scrollY > 100 // Mostrar después de 100px
+  showScrollTopButton.value = window.scrollY > 100
 }
 
 const scrollToTop = () => {
@@ -40,10 +39,8 @@ const closeMenu = () => {
 }
 
 onMounted(() => {
-  // 1. Evento Scroll optimizado (solo para el botón)
   window.addEventListener('scroll', handleScrollButtonVisibility, { passive: true })
 
-  // 2. Intersection Observer para Active Section (Alto Rendimiento)
   observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -52,14 +49,9 @@ onMounted(() => {
         }
       })
     },
-    {
-      // rootMargin define el área de detección.
-      // '-50% 0px -50% 0px' crea una línea invisible en el centro exacto de la pantalla.
-      rootMargin: '-50% 0px -50% 0px',
-    }
+    { rootMargin: '-50% 0px -50% 0px' }
   )
 
-  // Observar las secciones existentes
   sectionIds.forEach(id => {
     const el = document.getElementById(id)
     if (el) observer.observe(el)
@@ -73,9 +65,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <header v-if="!route.meta.hideUI">
+  <header>
     <div class="fixed z-30 w-full nav-menu bg-white bg-opacity-15 mt-2 md:-mt-10">
-      <nav class="container h-30 flex items-center justify-between px-8 py-4 relative text-white">
+      <nav v-if="!route.meta.hideUI" class="container h-30 flex items-center justify-between px-8 py-4 relative text-white">
         <div class="flex items-center gap-6 md:gap-0 lg:gap-6">
           <a href="./" class="lg:w-1/3 min-w-[55px]">
             <img src="@/assets/img/logo-isfmc.svg" alt="Logo convension" width="55" height="55" loading="lazy" />
@@ -87,23 +79,15 @@ onUnmounted(() => {
           <div class="fixed inset-0 bg-gradient-to-b from-white/20 to-[#3a3a82]/95 transition-transform duration-300 md:static md:translate-x-0 md:bg-none z-10" :class="isMenuOpen ? 'translate-x-0' : 'translate-x-full'">
             <ul
               class="absolute inset-x-0 top-24 p-10 items-center text-[15px] bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
-              <li>
-                <a href="#beneficios" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(2)">Beneficios</a>
-              </li>
-              <li>
-                <a href="#temario" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section4' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(4)">Temario</a>
-              </li>
-              <li>
-                <a href="#costo" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section5' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(5)">Costo</a>
-              </li>
+              <li><a href="#beneficios" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(2)">Beneficios</a></li>
+              <li><a href="#temario" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section4' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(4)">Temario</a></li>
+              <li><a href="#costo" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section5' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(5)">Costo</a></li>
               <li>
                 <a href="#preguntas_frecuentes" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(6)">
                   Preguntas frecuentes
                 </a>
               </li>
-              <li class="hidden">
-                <a href="master-class" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">Master Class</a>
-              </li>
+              <li class="hidden"><a href="masterClass" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">Master Class</a></li>
               <li class="hidden">
                 <a
                   href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
@@ -118,6 +102,12 @@ onUnmounted(() => {
           </div>
         </div>
       </nav>
+
+      <nav v-else class="container h-30 flex items-center justify-center px-8 py-4 relative text-white">
+        <a href="./" class="transition-transform hover:scale-105">
+          <img src="@/assets/img/logo-isfmc.svg" alt="Logo Instituto" width="65" height="65" loading="lazy" />
+        </a>
+      </nav>
     </div>
   </header>
 
@@ -125,6 +115,7 @@ onUnmounted(() => {
     <router-view></router-view>
 
     <BtnWhatsapp />
+
     <transition name="fade">
       <button class="btn-irArriba transition-opacity duration-300 hover:scale-110" @click="scrollToTop" v-show="showScrollTopButton" aria-label="Ir al inicio">
         <span class="sr-only">Ir Arriba</span>
@@ -185,7 +176,6 @@ onUnmounted(() => {
       </div>
     </div>
   </footer>
-  <!-- <Responsive /> -->
 </template>
 
 <style scoped>

@@ -7,7 +7,7 @@ import { ref } from 'vue'
     <div class="absolute inset-0 bg-violet-950 md:bg-violet-950/40 backdrop-blur-[6px] z-10"></div>
 
     <div class="relative z-20 text-white w-full h-full flex flex-col justify-center items-center mt-10 px-4 md:px-0 md:mt-24 md:mb-8 xl:mt-0">
-      <div class="container mx-auto my-10 md:my-20">
+      <div class="container mx-auto my-10 md:my-20 md:py-4">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-x-12 items-center">
           <div class="lg:col-start-3 lg:col-span-8 flex flex-col items-center">
             <img src="@/assets/img/SugarResetGLP1.svg" alt="Logo Reto Sugar Reset GLP1" class="w-full max-w-[280px] md:max-w-[332px] h-auto drop-shadow-2xl mb-4 md:mb-3 animate-fade-in-up" width="332" height="491" fetchpriority="high" />
