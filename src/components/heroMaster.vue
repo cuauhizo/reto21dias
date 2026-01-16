@@ -10,7 +10,7 @@ const scrollToForm = () => {
 
 <template>
   <div class="h-20 md:hidden"></div>
-  <section id="section1" class="relative flex items-center justify-center overflow-hidden bg-hero-master-movil md:bg-hero-master mt-4 mx-4 rounded-2xl min-h-[auto] py-12 md:mx-6 md:mt-12 md:py-0 lg:h-[824px] lg:mt-4">
+  <section id="section1" class="relative flex items-center justify-center overflow-hidden bg-hero-master-movil md:bg-hero-master mt-4 mx-4 rounded-2xl min-h-[auto] py-12 mb-4 md:mx-6 md:mt-12 md:py-0 lg:h-[824px] lg:mt-4">
     <div class="absolute inset-0 mix-blend-multiply bg-[#486b8b] z-10"></div>
 
     <div class="relative z-20 text-white w-full h-full flex flex-col justify-center items-center px-4 md:px-0 md:mt-12 md:mb-8">
@@ -52,7 +52,7 @@ const scrollToForm = () => {
                     <span>Inscríbete y mejora tu vida</span>
                   </a>
                   <p class="text-lg md:text-2xl font-thin nunito-sans leading-relaxed text-center md:text-left">
-                    <strong class="nunito-sans-bold text-white">Lunes 27 de enero, 7 PM (hora de CDMX)</strong>
+                    <strong class="nunito-sans-bold text-white">Lunes 26 de enero, 7 PM (hora de CDMX)</strong>
                   </p>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const scrollToForm = () => {
               </a>
               <p class="text-lg nunito-sans leading-relaxed text-center lg:text-left">
                 <strong class="nunito-sans-bold text-white">
-                  Lunes 27 de enero,
+                  Lunes 26 de enero,
                   <span class="lg:hidden"><br /></span>
                   7 PM (hora de CDMX)
                 </strong>
