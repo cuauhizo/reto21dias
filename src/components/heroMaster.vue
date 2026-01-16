@@ -11,25 +11,30 @@ const scrollToForm = () => {
 <template>
   <div class="h-20 md:hidden"></div>
   <section id="section1" class="relative flex items-center justify-center overflow-hidden bg-hero-master-movil md:bg-hero-master mt-4 mx-4 rounded-2xl min-h-[auto] py-12 md:mx-6 md:mt-12 md:py-0 lg:h-[824px] lg:mt-4">
-    <div class="absolute inset-0 bg-sky-950/70 backdrop-blur-[6px] z-10"></div>
+    <div class="absolute inset-0 mix-blend-multiply bg-[#486b8b] z-10"></div>
+
     <div class="relative z-20 text-white w-full h-full flex flex-col justify-center items-center px-4 md:px-0 md:mt-12 md:mb-8">
       <div class="md:container md:mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-4 items-center">
           <div class="lg:col-span-6 flex flex-col gap-6">
-            <d class="overflow-hidden rounded-2xl p-4 py-6 transition-all duration-300 bg-white/15 backdrop-blur-3xl lg:py-16 lg:px-12">
+            <div class="overflow-hidden rounded-2xl p-4 py-6 transition-all duration-300 bg-white/15 backdrop-blur-md lg:py-16 lg:px-12">
               <h1 class="text-white text-center mb-6 lg:text-left text-3xl lg:text-4xl nunito-sans-bold leading-10">
                 <span class="nunito-sans">¿Sientes que</span>
                 el azúcar controla tu vida?
               </h1>
-              <p class="text-lg  leading-tight mb-6 text-center lg:text-left  text-white"><span class="nunito-sans">¡Inicia el 2026</span> <span class="font-black nunito-sans-bold"> transformando tu metabolismo</span> <span class="nunito-sans">en 21 días!</span></p>
+              <p class="text-lg leading-tight mb-6 text-center lg:text-left text-white">
+                <span class="nunito-sans">¡Inicia el 2026</span>
+                <span class="font-black nunito-sans-bold">transformando tu metabolismo</span>
+                <span class="nunito-sans">en 21 días!</span>
+              </p>
               <div class="w-full text-white">
-                <p class="text-lg mb-6  font-thin nunito-sans leading-relaxed text-center lg:text-left">
+                <p class="text-lg mb-6 font-thin nunito-sans leading-relaxed text-center lg:text-left">
                   Acompaña a
                   <strong class="nunito-sans-bold">Nathaly Marcus</strong>
                   en esta
                   <strong class="nunito-sans-bold">Masterclass Gratuita.</strong>
                 </p>
-                <p class="text-lg mb-6  font-thin nunito-sans leading-relaxed text-center lg:text-left">
+                <p class="text-lg mb-6 font-thin nunito-sans leading-relaxed text-center lg:text-left">
                   <strong class="nunito-sans-bold">Olvida las dietas que fallan</strong>
                   y convierte la frustración en resultados sostenibles, entendiendo la hormona
                   <strong class="nunito-sans-bold">GLP-1</strong>
@@ -46,12 +51,12 @@ const scrollToForm = () => {
                     <img src="@/assets/img/icon-lapiz.svg" class="pl-4 lg:pl-8" alt="" />
                     <span>Inscríbete y mejora tu vida</span>
                   </a>
-                  <p class="text-lg  md:text-2xl font-thin nunito-sans leading-relaxed text-center md:text-left">
+                  <p class="text-lg md:text-2xl font-thin nunito-sans leading-relaxed text-center md:text-left">
                     <strong class="nunito-sans-bold text-white">Lunes 27 de enero, 7 PM (hora de CDMX)</strong>
                   </p>
                 </div>
               </div>
-            </d iv>
+            </div>
             <div class="movil flex flex-col gap-4 lg:hidden">
               <a
                 href="#inscribete"
@@ -60,7 +65,7 @@ const scrollToForm = () => {
                 <img src="@/assets/img/icon-lapiz.svg" class="pl-4 lg:pl-8" alt="" />
                 <span>Inscríbete y mejora tu vida</span>
               </a>
-              <p class="text-lg  nunito-sans leading-relaxed text-center lg:text-left">
+              <p class="text-lg nunito-sans leading-relaxed text-center lg:text-left">
                 <strong class="nunito-sans-bold text-white">
                   Lunes 27 de enero,
                   <span class="lg:hidden"><br /></span>
