@@ -104,44 +104,56 @@ const submitForm = () => {
 </script>
 
 <template>
-  <div class="bg-[#2D0A6C] w-full mx-auto p-8 py-16 rounded-2xl shadow-xl font-nexa">
-    <h2 class="text-2xl font-nexa-bold text-white text-center mb-6">Regístrate para la Master Class</h2>
-
+  <div class="bg-[#2D0A6C] w-full mx-auto p-8 rounded-2xl nunito-sans lg:p-12 lg:py-16">
+    <p class="text-white text-3xl leading-9 mb-5">
+      ¿Estás listo para
+      <span class="font-black nunito-sans-bold">resetear tu metabolismo?</span>
+    </p>
+    <p class="text-base text-white mb-4">
+      La ciencia ha avanzado.
+      <span class="font-black nunito-sans-bold">Tu cuerpo tiene la capacidad de sanar si le das las señales correctas.</span>
+      No dejes que otro año pase sintiéndote igual.
+    </p>
+    <p class="text-base text-white mb-4 nunito-sans">
+      ¡Regístrate ahora a la
+      <strong class="font-black nunito-sans-bold">Masterclass Gratuita</strong>
+      y mejora tu vida!
+    </p>
     <form @submit.prevent="submitForm" class="flex flex-col gap-5">
-      <div class="flex flex-col text-left">
-        <label for="mce-EMAIL" class="block text-white font-light mb-2">
-          Correo Electrónico
-          <span class="text-red-500">*</span>
-        </label>
-        <input v-model="formData.EMAIL" type="email" class="w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500 text-black" placeholder="tu@correo.com" required />
-      </div>
+      <div class="overflow-hidden rounded-2xl p-4 py-6 space-y-6 transition-all duration-300 bg-white/15 backdrop-blur-md lg:py-16 lg:px-12">
+        <div class="flex flex-col text-left">
+          <label for="mce-FNAME" class="block text-base text-white font-light mb-2">
+            Escribe tu nombre y apellido
+            <span class="text-red-500">*</span>
+          </label>
+          <input v-model="formData.FNAME" type="text" class="w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500 text-black" placeholder="Ej. Juan Pérez" required />
+        </div>
 
-      <div class="flex flex-col text-left">
-        <label for="mce-FNAME" class="block text-white font-light mb-2">
-          Nombre y Apellido
-          <span class="text-red-500">*</span>
-        </label>
-        <input v-model="formData.FNAME" type="text" class="w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500 text-black" placeholder="Ej. Juan Pérez" required />
-      </div>
+        <div class="flex flex-col text-left">
+          <label for="mce-EMAIL" class="block text-base text-white font-light mb-2">
+            Ingresa tu e-mail
+            <span class="text-red-500">*</span>
+          </label>
+          <input v-model="formData.EMAIL" type="email" class="w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500 text-black" placeholder="tu@correo.com" required />
+        </div>
 
-      <div class="flex flex-col text-left text-black">
-        <label for="mce-PHONE" class="block text-white font-light mb-2">Número de teléfono</label>
-        <input id="mce-PHONE" type="tel" class="w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="55 1234 5678" />
-      </div>
+        <div class="flex flex-col text-left text-black">
+          <label for="mce-PHONE" class="block text-base text-white font-light mb-2">Ingresa tu número de WhatsApp</label>
+          <input id="mce-PHONE" type="tel" class="w-full px-5 py-3 rounded-2xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="55 1234 5678" />
+        </div>
 
-      <div v-if="errorMessage" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-sm text-center">
-        <span v-html="errorMessage"></span>
+        <div v-if="errorMessage" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-sm text-center">
+          <span v-html="errorMessage"></span>
+        </div>
       </div>
-
-      <div class="mt-2">
-        <button
-          type="submit"
-          :disabled="isLoading"
-          class="w-full bg-teal-700 hover:bg-teal-600 text-white font-nexa-bold py-4 rounded-full cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-lg flex justify-center items-center gap-2">
-          <span v-if="isLoading">Enviando...</span>
-          <span v-else>Inscríbete y mejora tu vida</span>
-        </button>
-      </div>
+      <button
+        type="submit"
+        :disabled="isLoading"
+        class="relative inline-flex items-center w-full gap-2 text-gray-100 rounded-2xl border border-teal-700 bg-teal-700 px-2 py-4 shadow-[0_6px_0_#168b82] hover:bg-teal-600 hover:border-teal-600 active:translate-y-1 active:shadow-[0_2px_0_#168b82] transition-all duration-100 justify-center nunito-sans-bold text-base">
+        <img src="@/assets/img/icon-lapiz.svg" class="pl-4 lg:pl-8" alt="" />
+        <span v-if="isLoading">Enviando...</span>
+        <span v-else>Inscríbete y mejora tu vida</span>
+      </button>
     </form>
   </div>
 </template>
