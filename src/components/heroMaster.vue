@@ -52,7 +52,7 @@ const scrollToForm = () => {
                     <span>Inscríbete y mejora tu vida</span>
                   </a>
                   <p class="text-lg md:text-2xl font-thin nunito-sans leading-relaxed text-center md:text-left">
-                    <strong class="nunito-sans-bold text-white">Lunes 27 de enero, 7 PM (hora de CDMX)</strong>
+                    <strong class="nunito-sans-bold text-white">Lunes 26 de enero, 7 PM (hora de CDMX)</strong>
                   </p>
                 </div>
               </div>
