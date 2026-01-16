@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
-// import Responsive from '@/components/responsive.vue'
+import Responsive from '@/components/responsive.vue'
 import BtnWhatsapp from '@/components/btnWhatsapp.vue'
 
 const route = useRoute()
@@ -105,16 +105,17 @@ onUnmounted(() => {
       </nav>
     </div>
     <div v-else class="fixed z-30 min-w-7xl md:w-full nav-menu-master flex justify-center w-full rounded-2xl bg-opacity-100 mt-2 mx-auto md:-mt-10 lg:mt-4">
-      <nav class="min-w-7xl h-30 flex items-center justify-between gap-4 px-8 py-4 relative text-white rounded-2xl lg:px-20 lg:text-sky-950 2xl:px-40">
+      <nav class="min-w-7xl h-30 flex items-center justify-between gap-4 px-8 py-4 relative text-white rounded-2xl md:px-20 lg:px-20 lg:text-sky-950 2xl:px-40">
         <div class="flex gap-4">
           <a href="./" class="transition-transform hover:scale-105">
             <img src="@/assets/img/logo-isfmc.svg" class="lg:hidden" alt="Logo Instituto" width="40" height="40" loading="lazy" />
             <img src="@/assets/img/logo-isfmc-alt.svg" class="hidden lg:block" alt="Logo Instituto" width="40" height="40" loading="lazy" />
           </a>
-          <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="lg:hidden h-auto object-contain" loading="lazy" width="40" height="40" />
+          <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="lg:hidden" loading="lazy" width="40" height="40" />
+          <div class="flex items-center justify-start font-nexa-bold">Masterclass Gratuita</div>
         </div>
         <div class="flex items-center justify-start gap-8 text-base">
-          <span class="md:hidden nunito-sans-bold">Master Class</span>
+          <span class="hidden nunito-sans-bold">Master Class</span>
           <span class="hidden md:block">
             <a href="/" class="cursor-pointer">Conoce más</a>
           </span>
@@ -139,7 +140,7 @@ onUnmounted(() => {
       </button>
     </transition>
 
-    <!-- <Responsive /> -->
+    <Responsive />
   </main>
 
   <footer>

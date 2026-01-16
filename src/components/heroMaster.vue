@@ -22,10 +22,10 @@ const scrollToForm = () => {
                 <span class="nunito-sans">¿Sientes que</span>
                 el azúcar controla tu vida?
               </h1>
-              <p class="text-lg leading-tight mb-6 text-center lg:text-left text-white">
-                <span class="nunito-sans">¡Inicia el 2026</span>
+              <p class="text-lg nunito-sans leading-tight mb-6 text-center lg:text-left text-white">
+                ¡Inicia el 2026
                 <span class="font-black nunito-sans-bold">transformando tu metabolismo</span>
-                <span class="nunito-sans">en 21 días!</span>
+                en 21 días!
               </p>
               <div class="w-full text-white">
                 <p class="text-lg mb-6 font-thin nunito-sans leading-relaxed text-center lg:text-left">
