@@ -144,28 +144,28 @@ onUnmounted(() => {
   </main>
 
   <footer>
-    <div class="bg-teal-700 rounded-tl-[64px] rounded-tr-[64px] text-white">
+    <div class="bg-gray-100 rounded-tl-2xl rounded-tr-2xl text-sky-950">
       <div class="container py-10 md:py-12">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-x-8 items-center text-center">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-y-8 items-center text-center">
           <div class="col-span-4 md:col-span-4 lg:col-span-3">
             <div class="flex items-center justify-center md:justify-start gap-5">
-              <img src="@/assets/img/logo-isfmc.svg" alt="Instituto Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
+              <img src="@/assets/img/logo-isfmc-alt.svg" alt="Instituto Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
               <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="h-auto object-contain" loading="lazy" width="112" height="114" />
             </div>
           </div>
 
-          <div class="col-span-4 md:col-span-8 lg:col-span-6 flex flex-col items-start gap-2 sm:items-center md:items-start">
+          <div class="col-span-4 md:col-span-4 lg:col-span-6 flex flex-col gap-2 order-2 items-center lg:flex-row md:gap-8 md:justify-center md:order-2">
             <div class="flex items-center gap-2">
-              <img src="@/assets/img/icon-whatsapp.svg" alt="WhatsApp" loading="lazy" />
+              <img src="@/assets/img/icon-whatsapp-alt.svg" alt="WhatsApp" loading="lazy" />
               <div class="text-base">56 4000 7778</div>
             </div>
             <div class="flex items-center gap-2">
-              <img src="@/assets/img/icon-email.svg" alt="Email" loading="lazy" />
+              <img src="@/assets/img/icon-email-alt.svg" alt="Email" loading="lazy" />
               <div class="text-base">info@isfmc.com</div>
             </div>
           </div>
 
-          <div class="col-span-4 md:col-span-12 lg:col-span-3">
+          <div class="col-span-4 lg:col-span-3 md:order-3">
             <div class="flex gap-2.5 justify-center lg:justify-end">
               <a class="cursor-pointer hover:opacity-80 transition-opacity" href="https://www.facebook.com/isfmcmx" target="_blank"><img src="@/assets/img/icon-facebook.svg" alt="Facebook" /></a>
               <a class="cursor-pointer hover:opacity-80 transition-opacity" href="https://www.instagram.com/isfmcmx/" target="_blank"><img src="@/assets/img/icon-instagram.svg" alt="Instagram" /></a>
@@ -176,12 +176,12 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <div class="mt-6 pt-6 border-t border-white/35">
+        <div class="mt-6 pt-6 border-t border-sky-950/20">
           <div class="flex flex-col text-sm justify-center items-center text-center md:flex-row md:justify-between gap-4 md:gap-0">
-            <div>© {{ anio }} Instituto de Salud Funcional Mente - Cuerpo. Todos los derechos reservados.</div>
-            <div class="flex flex-col md:flex-row gap-2 md:gap-6">
-              <a href="https://isfmc.mx/aviso-de-privacidad" class="cursor-pointer hover:text-gray-300 transition-colors">Aviso de privacidad</a>
-              <a href="https://isfmc.mx/terminos-y-condiciones" class="cursor-pointer hover:text-gray-300 transition-colors">Términos y Condiciones</a>
+            <div class="order-2 md:order-1">© {{ anio }} Instituto de Salud Funcional Mente - Cuerpo. Todos los derechos reservados.</div>
+            <div class="flex flex-col md:flex-row gap-2 md:gap-6 md:order-2">
+              <a href="https://isfmc.mx/aviso-de-privacidad" class="cursor-pointer hover:text-sky-600 transition-colors">Aviso de privacidad</a>
+              <a href="https://isfmc.mx/terminos-y-condiciones" class="cursor-pointer hover:text-sky-600 transition-colors">Términos y Condiciones</a>
             </div>
           </div>
         </div>

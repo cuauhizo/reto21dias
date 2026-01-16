@@ -52,9 +52,16 @@ const infoCards = [
 
             <div class="w-full text-white/90">
               <p class="text-xl md:text-2xl font-thin font-Nexa leading-relaxed text-center md:text-left">
-                <strong class="font-nexa-bold text-white">Durante 21 días</strong>, te daremos las herramientas para que
-                <strong class="font-nexa-bold text-white">reduzcas tu dependencia del azúcar</strong>, actives el poder del GLP1 (de manera natural o ya sea que lo uses),
-                <strong class="font-nexa-bold text-white">protejas tu masa muscular</strong> y crees un <strong class="font-nexa-bold text-white">estilo de vida sostenible, funcional</strong> y <strong class="font-nexa-bold text-white">sin rebote</strong>.
+                <strong class="font-nexa-bold text-white">Durante 21 días</strong>
+                , te daremos las herramientas para que
+                <strong class="font-nexa-bold text-white">reduzcas tu dependencia del azúcar</strong>
+                , actives el poder del GLP1 (de manera natural o ya sea que lo uses),
+                <strong class="font-nexa-bold text-white">protejas tu masa muscular</strong>
+                y crees un
+                <strong class="font-nexa-bold text-white">estilo de vida sostenible, funcional</strong>
+                y
+                <strong class="font-nexa-bold text-white">sin rebote</strong>
+                .
               </p>
             </div>
 
