@@ -27,7 +27,7 @@ const scrollToForm = () => {
   <section id="inscribete">
     <div class="container mx-auto px-4 py-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 lg:gap-x-12 items-center">
-        <div class="flex flex-col col-span-12 lg:col-span-7">
+        <div class="flex flex-col col-start-3 col-span-8">
           <p class="text-teal-700 text-4xl font-black font-nexa-bold leading-10">Lo que vas a descubrir en esta Masterclass Gratuita:</p>
           <div class="p-4 my-2 rounded-2xl shadow-[0px_0px_24px_0px_rgba(0,0,0,0.16)] border-2 md:p-8">
             <p class="text-teal-700 text-center md:text-left text-xl font-nexa-bold leading-tight">El Secreto del GLP-1:</p>
