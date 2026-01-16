@@ -140,7 +140,7 @@ onUnmounted(() => {
       </button>
     </transition>
 
-    <Responsive />
+    <!-- <Responsive /> -->
   </main>
 
   <footer>
