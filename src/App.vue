@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
+// import Responsive from '@/components/responsive.vue'
 import BtnWhatsapp from '@/components/btnWhatsapp.vue'
 
 const route = useRoute()
@@ -66,8 +67,8 @@ onUnmounted(() => {
 
 <template>
   <header>
-    <div class="fixed z-30 w-full nav-menu bg-white bg-opacity-15 mt-2 md:-mt-10">
-      <nav v-if="!route.meta.hideUI" class="container h-30 flex items-center justify-between px-8 py-4 relative text-white">
+    <div v-if="!route.meta.hideUI" class="fixed z-30 w-full nav-menu bg-white bg-opacity-15 mt-2 md:-mt-10">
+      <nav class="container h-30 flex items-center justify-between px-8 py-4 relative text-white">
         <div class="flex items-center gap-6 md:gap-0 lg:gap-6">
           <a href="./" class="lg:w-1/3 min-w-[55px]">
             <img src="@/assets/img/logo-isfmc.svg" alt="Logo convension" width="55" height="55" loading="lazy" />
@@ -102,12 +103,23 @@ onUnmounted(() => {
           </div>
         </div>
       </nav>
-
-      <nav v-else class="container h-30 flex items-center justify-center gap-4 px-8 py-4 relative text-white">
-        <a href="./" class="transition-transform hover:scale-105">
-          <img src="@/assets/img/logo-isfmc.svg" alt="Logo Instituto" width="65" height="65" loading="lazy" />
-        </a>
-        <div class="flex items-center justify-start font-nexa-bold">Masterclass Gratuita</div>
+    </div>
+    <div v-else class="fixed z-30 min-w-7xl md:w-full nav-menu-master flex justify-center w-full rounded-2xl bg-opacity-100 mt-2 mx-auto md:-mt-10 lg:mt-4">
+      <nav class="min-w-7xl h-30 flex items-center justify-between gap-4 px-8 py-4 relative text-white rounded-2xl lg:px-20 lg:text-sky-950 2xl:px-40">
+        <div class="flex gap-4">
+          <a href="./" class="transition-transform hover:scale-105">
+            <img src="@/assets/img/logo-isfmc.svg" class="lg:hidden" alt="Logo Instituto" width="40" height="40" loading="lazy" />
+            <img src="@/assets/img/logo-isfmc-alt.svg" class="hidden lg:block" alt="Logo Instituto" width="40" height="40" loading="lazy" />
+          </a>
+          <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="lg:hidden h-auto object-contain" loading="lazy" width="40" height="40" />
+        </div>
+        <div class="flex items-center justify-start gap-8 text-base">
+          <span class="md:hidden nunito-sans-bold">Master Class</span>
+          <span class="hidden md:block">
+            <a href="/" class="cursor-pointer">Conoce más</a>
+          </span>
+          <span class="hidden md:block">Masterclass</span>
+        </div>
       </nav>
     </div>
   </header>
@@ -126,6 +138,8 @@ onUnmounted(() => {
         </svg>
       </button>
     </transition>
+
+    <!-- <Responsive /> -->
   </main>
 
   <footer>
@@ -191,6 +205,17 @@ nav {
   background: rgba(25, 130, 127, 0.65);
 }
 
+.nav-menu-master::before {
+  content: '';
+  position: absolute;
+  width: 93%;
+  height: 100%;
+  /* -webkit-backdrop-filter: blur(16px); */
+  /* backdrop-filter: blur(16px); */
+  background: rgba(25, 130, 127);
+  border-radius: 16px;
+}
+
 .btn-irArriba {
   padding: 15px;
   background-color: #3a3a82;
@@ -213,5 +238,13 @@ nav {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+@media (min-width: 1024px) {
+  .nav-menu-master::before {
+    width: 93%;
+    background: #f1f2f6;
+    border-radius: 16px;
+  }
 }
 </style>

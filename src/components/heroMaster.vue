@@ -9,41 +9,67 @@ const scrollToForm = () => {
 </script>
 
 <template>
-  <section id="section1" class="relative flex items-center justify-center overflow-hidden bg-hero-master mx-4 md:mx-6 rounded-[32px] md:rounded-[48px] mt-4 md:mt-12 min-h-[auto] py-12 md:py-0 lg:h-[824px]">
-    <div class="absolute inset-0 bg-violet-950 md:bg-violet-950/40 backdrop-blur-[6px] z-10"></div>
-
-    <div class="relative z-20 text-white w-full h-full flex flex-col justify-center items-center mt-20 px-4 md:px-0 md:mt-24 md:mb-8 xl:mt-0">
-      <div class="container mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-12 items-center">
-          <div class="lg:col-span-8 flex flex-col gap-6">
-            <div>
-              <div class="w-fit mx-auto md:mx-0 py-3 rounded-[32px]">
-                <h1 class="text-white text-center md:text-left text-3xl md:text-4xl font-nexa-bold leading-tight">¿Sientes que el azúcar controla tu vida?</h1>
-                <p class="text-lg font-black font-nexa-bold leading-tight mb-4 text-center md:text-left text-teal-300 md:text-white">¡Inicia el 2026 transformando tu metabolismo en 21 días!</p>
+  <div class="h-20 md:hidden"></div>
+  <section id="section1" class="relative flex items-center justify-center overflow-hidden bg-hero-master-movil md:bg-hero-master mt-4 mx-4 rounded-2xl min-h-[auto] py-12 md:mx-6 md:mt-12 md:py-0 lg:h-[824px] lg:mt-4">
+    <div class="absolute inset-0 bg-sky-950/70 backdrop-blur-[6px] z-10"></div>
+    <div class="relative z-20 text-white w-full h-full flex flex-col justify-center items-center px-4 md:px-0 md:mt-12 md:mb-8">
+      <div class="md:container md:mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-4 items-center">
+          <div class="lg:col-span-6 flex flex-col gap-6">
+            <d class="overflow-hidden rounded-2xl p-4 py-6 transition-all duration-300 bg-white/15 backdrop-blur-3xl lg:py-16 lg:px-12">
+              <h1 class="text-white text-center mb-6 lg:text-left text-3xl lg:text-4xl nunito-sans-bold leading-10">
+                <span class="nunito-sans">¿Sientes que</span>
+                el azúcar controla tu vida?
+              </h1>
+              <p class="text-lg  leading-tight mb-6 text-center lg:text-left  text-white"><span class="nunito-sans">¡Inicia el 2026</span> <span class="font-black nunito-sans-bold"> transformando tu metabolismo</span> <span class="nunito-sans">en 21 días!</span></p>
+              <div class="w-full text-white">
+                <p class="text-lg mb-6  font-thin nunito-sans leading-relaxed text-center lg:text-left">
+                  Acompaña a
+                  <strong class="nunito-sans-bold">Nathaly Marcus</strong>
+                  en esta
+                  <strong class="nunito-sans-bold">Masterclass Gratuita.</strong>
+                </p>
+                <p class="text-lg mb-6  font-thin nunito-sans leading-relaxed text-center lg:text-left">
+                  <strong class="nunito-sans-bold">Olvida las dietas que fallan</strong>
+                  y convierte la frustración en resultados sostenibles, entendiendo la hormona
+                  <strong class="nunito-sans-bold">GLP-1</strong>
+                  y usándola a tu favor.
+                </p>
+                <div class="flex flex-col items-center lg:hidden">
+                  <img src="@/assets/img/nathaly-master.webp" alt="Logo Reto Sugar Reset GLP1" class="w-full max-w-[320px] md:max-w-[490px] h-auto animate-fade-in-up" width="490" height="491" fetchpriority="high" />
+                </div>
+                <div class="hidden lg:flex flex-col gap-7 escritorio">
+                  <a
+                    href="#inscribete"
+                    @click.prevent="scrollToForm"
+                    class="relative inline-flex items-center gap-2 text-gray-100 rounded-2xl border border-teal-700 bg-teal-700 px-6 py-4 w-full shadow-[0_6px_0_#168b82] hover:bg-teal-600 hover:border-teal-600 active:translate-y-1 active:shadow-[0_2px_0_#168b82] transition-all duration-100 justify-center nunito-sans-bold text-lg">
+                    <img src="@/assets/img/icon-lapiz.svg" class="pl-4 lg:pl-8" alt="" />
+                    <span>Inscríbete y mejora tu vida</span>
+                  </a>
+                  <p class="text-lg  md:text-2xl font-thin nunito-sans leading-relaxed text-center md:text-left">
+                    <strong class="nunito-sans-bold text-white">Lunes 27 de enero, 7 PM (hora de CDMX)</strong>
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div class="w-full text-white/90">
-              <p class="text-xl mb-8 md:text-2xl font-thin font-Nexa leading-relaxed text-center md:text-left">
-                <strong class="font-nexa-bold text-white">Acompaña a Nathaly Marcus en esta Masterclass Gratuita.</strong>
-              </p>
-              <p class="text-xl mb-8 md:text-2xl font-thin font-Nexa leading-relaxed text-center md:text-left">
-                <strong class="font-nexa-bold text-white">Olvida las dietas que fallan y convierte la frustración en resultados sostenibles, entendiendo la hormona GLP-1 y usándola a tu favor.</strong>
-              </p>
-
-              <p class="text-xl mb-8 md:text-2xl font-thin font-Nexa leading-relaxed text-center md:text-left">
-                <strong class="font-nexa-bold text-white">Lunes 27 de enero, 7 PM (hora de CDMX)</strong>
-              </p>
+            </d iv>
+            <div class="movil flex flex-col gap-4 lg:hidden">
               <a
                 href="#inscribete"
                 @click.prevent="scrollToForm"
-                class="flex items-center justify-center gap-2 bg-teal-700 rounded-full shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-3 px-7 transition-all duration-500 w-fit border-2 border-white lg:pl-10 cursor-pointer hover:bg-teal-600 hover:scale-105">
+                class="relative inline-flex items-center gap-2 text-gray-100 rounded-2xl border border-teal-700 bg-teal-700 px-6 py-4 shadow-[0_6px_0_#168b82] hover:bg-teal-600 hover:border-teal-600 active:translate-y-1 active:shadow-[0_2px_0_#168b82] transition-all duration-100 justify-center nunito-sans-bold text-lg">
+                <img src="@/assets/img/icon-lapiz.svg" class="pl-4 lg:pl-8" alt="" />
                 <span>Inscríbete y mejora tu vida</span>
               </a>
+              <p class="text-lg  nunito-sans leading-relaxed text-center lg:text-left">
+                <strong class="nunito-sans-bold text-white">
+                  Lunes 27 de enero,
+                  <span class="lg:hidden"><br /></span>
+                  7 PM (hora de CDMX)
+                </strong>
+              </p>
             </div>
           </div>
-
-          <div class="lg:col-span-4 flex flex-col items-center">
+          <div class="lg:col-span-6 hidden lg:flex flex-col items-center">
             <img src="@/assets/img/nathaly-master.webp" alt="Logo Reto Sugar Reset GLP1" class="w-full max-w-[320px] md:max-w-[490px] h-auto mb-8 lg:mb-3 animate-fade-in-up" width="490" height="491" fetchpriority="high" />
           </div>
         </div>
