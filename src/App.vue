@@ -88,7 +88,7 @@ onUnmounted(() => {
                   Preguntas frecuentes
                 </a>
               </li>
-              <li class=""><a href="gracias" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">Master Class</a></li>
+              <li class=""><a href="masterClass" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">Masterclass</a></li>
               <li class="hidden">
                 <a
                   href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
