@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
-import Responsive from '@/components/responsive.vue'
+// import Responsive from '@/components/responsive.vue'
 import BtnWhatsapp from '@/components/btnWhatsapp.vue'
 
 const route = useRoute()
@@ -88,7 +88,7 @@ onUnmounted(() => {
                   Preguntas frecuentes
                 </a>
               </li>
-              <li class="hidden"><a href="masterClass" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">Master Class</a></li>
+              <li class=""><a href="gracias" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">Master Class</a></li>
               <li class="hidden">
                 <a
                   href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
@@ -104,7 +104,7 @@ onUnmounted(() => {
         </div>
       </nav>
     </div>
-    <div v-else class="fixed z-30 min-w-7xl md:w-full nav-menu-master flex justify-center w-full rounded-2xl bg-opacity-100 mt-2 mx-auto md:-mt-10 lg:mt-4">
+    <div v-else class="fixed z-30 min-w-7xl md:w-full nav-menu-master flex justify-center w-full rounded-2xl bg-opacity-100 mt-2 mx-auto md:mt-4 lg:mt-4">
       <nav class="min-w-7xl h-30 flex items-center justify-between gap-4 px-8 py-4 relative text-white rounded-2xl md:px-20 lg:px-20 lg:text-sky-950 2xl:px-40">
         <div class="flex gap-4">
           <a href="./" class="transition-transform hover:scale-105">
