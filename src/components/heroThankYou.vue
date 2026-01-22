@@ -32,7 +32,7 @@ import { ref } from 'vue'
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full max-w-7xl mx-auto pb-5 lg:pb-28">
         <div class="lg:col-start-2 lg:col-span-3 bg-sky-200/25 rounded-2xl backdrop-blur-md p-8 flex flex-col justify-center items-center h-full hover:bg-sky-200/30 transition-colors">
-          <a href="https://chat.whatsapp.com/H1m0dlOjm20FMuB3b44c8Z" target="_blank" rel="noopener noreferrer" class="w-full h-full flex flex-col items-center justify-center gap-4 text-center group">
+          <a href="https://chat.whatsapp.com/CtpAzbqUTdm5oNpxmKFnnT" target="_blank" rel="noopener noreferrer" class="w-full h-full flex flex-col items-center justify-center gap-4 text-center group">
             <p class="text-sky-950 text-lg font-normal nunito-sans leading-snug">
               Únete a nuestra
               <br />
