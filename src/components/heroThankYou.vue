@@ -32,7 +32,7 @@ import { ref } from 'vue'
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full max-w-7xl mx-auto pb-5 lg:pb-28">
         <div class="lg:col-start-2 lg:col-span-3 bg-sky-200/25 rounded-2xl backdrop-blur-md p-8 flex flex-col justify-center items-center h-full hover:bg-sky-200/30 transition-colors">
-          <a href="https://chat.whatsapp.com/CtpAzbqUTdm5oNpxmKFnnT" target="_blank" rel="noopener noreferrer" class="w-full h-full flex flex-col items-center justify-center gap-4 text-center group">
+          <a href="https://chat.whatsapp.com/CtpAzbqUTdm5oNpxmKFnnT" target="_blank" id="clic_whatsapp_gracias" rel="noopener noreferrer" class="w-full h-full flex flex-col items-center justify-center gap-4 text-center group">
             <p class="text-sky-950 text-lg font-normal nunito-sans leading-snug">
               Únete a nuestra
               <br />
@@ -43,7 +43,7 @@ import { ref } from 'vue'
         </div>
 
         <div class="lg:col-span-3 bg-sky-200/25 rounded-2xl backdrop-blur-md p-8 flex flex-col justify-center items-center h-full hover:bg-sky-200/30 transition-colors">
-          <a href="https://bit.ly/3LEFPsl" target="_blank" rel="noopener noreferrer" class="w-full h-full flex flex-col items-center justify-center gap-4 text-center group">
+          <a href="https://bit.ly/3LEFPsl" target="_blank" id="clic_ebook_gracias" rel="noopener noreferrer" class="w-full h-full flex flex-col items-center justify-center gap-4 text-center group">
             <p class="text-sky-950 text-lg font-normal nunito-sans leading-snug">
               Descarga nuestro
               <br />
@@ -61,6 +61,7 @@ import { ref } from 'vue'
             </p>
             <a
               href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
+              id="clic_hotmart_gracias"
               class="relative inline-flex items-center gap-2 text-gray-100 rounded-2xl border border-teal-700 bg-teal-700 px-6 py-4 w-full shadow-[0_6px_0_#168b82] hover:bg-teal-600 hover:border-teal-600 active:translate-y-1 active:shadow-[0_2px_0_#168b82] transition-all duration-100 justify-center nunito-sans-bold text-lg">
               <img src="@/assets/img/icon-lapiz.svg" class="w-5 h-5" alt="" />
               <span>¡Mejora tu vida!</span>
