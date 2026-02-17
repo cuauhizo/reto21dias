@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Ubicación del Sitemap
-Sitemap: https://www.reto21dias.com/sitemap.xml
+Sitemap: https://reset21dias.com/sitemap.xml
