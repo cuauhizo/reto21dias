@@ -1,9 +1,14 @@
 <script setup>
 import { useHead } from '@vueuse/head'
-import Hero from '@/components/hero.vue'
-import Beneficios from '@/components/beneficios.vue'
-import Ponentes from '@/components/ponentes.vue'
-import Temario from '@/components/temario.vue'
+import { ref, onMounted, shallowRef } from 'vue'
+
+// Importamos las dos versiones completas
+import HomeVariantA from '@/components/home/HomeVariantA.vue' // Diseño Original
+import HomeVariantB from '@/components/home/HomeVariantB.vue' // Diseño Nuevo (Challenger)
+
+// Usamos shallowRef para componentes (es más eficiente en rendimiento que ref)
+const currentComponent = shallowRef(null)
+const isLoading = ref(true)
 
 useHead({
   title: 'Sugar Reset GLP-1: Elimina el Azúcar, Protege Músculo y Transforma tu Metabolismo en 21 Días',
@@ -33,11 +38,46 @@ useHead({
     { name: 'twitter:url', content: 'https://reset21dias.com/' },
   ],
 })
+
+onMounted(() => {
+  if (typeof window !== 'undefined') {
+    // 1. Persistencia: Checar si el usuario ya tiene una versión asignada
+    const storedVariant = sessionStorage.getItem('ab_test_home_2026')
+    let selectedVariant = 'A'
+
+    if (storedVariant) {
+      selectedVariant = storedVariant
+    } else {
+      // 2. Asignación aleatoria (50/50)
+      selectedVariant = Math.random() < 0.5 ? 'A' : 'B'
+      sessionStorage.setItem('ab_test_home_2026', selectedVariant)
+
+      // 3. ENVIAR A ANALYTICS (GTM)
+      if (window.dataLayer) {
+        window.dataLayer.push({
+          event: 'experiment_impression',
+          experiment_id: 'home_redesign_v2', // ID único de tu prueba
+          variant_id: selectedVariant, // 'A' o 'B'
+        })
+      }
+    }
+
+    // 4. Cargar el componente correspondiente
+    if (selectedVariant === 'B') {
+      currentComponent.value = HomeVariantB
+    } else {
+      currentComponent.value = HomeVariantA
+    }
+
+    isLoading.value = false
+  }
+})
 </script>
 
 <template>
-  <Hero />
-  <Beneficios />
-  <Ponentes />
-  <Temario />
+  <div v-if="isLoading" class="min-h-screen flex items-center justify-center bg-violet-950">
+    <div class="animate-pulse text-white font-nexa-bold">Cargando experiencia...</div>
+  </div>
+
+  <component v-else :is="currentComponent" />
 </template>
