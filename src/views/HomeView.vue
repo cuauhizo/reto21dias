@@ -50,7 +50,8 @@ onMounted(() => {
     } else {
       // 2. Asignación aleatoria (50/50)
       selectedVariant = Math.random() < 0.5 ? 'A' : 'B'
-      sessionStorage.setItem('ab_test_home_2026', selectedVariant)
+      // sessionStorage.setItem('ab_test_home_2026', selectedVariant)
+      sessionStorage.setItem('ab_test_home_2026', 'A')
 
       // 3. ENVIAR A ANALYTICS (GTM)
       if (window.dataLayer) {

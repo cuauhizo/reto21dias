@@ -37,7 +37,7 @@
             </p>
 
             <a
-              href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
+              href="https://buy.stripe.com/bJe8wQ2yOdyBgDNbqR4Jb12"
               target="_blank"
               id="clic_header_desktop"
               rel="noopener noreferrer"

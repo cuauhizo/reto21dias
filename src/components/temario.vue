@@ -267,7 +267,7 @@ const isFaqOpen = (group, id) => {
             </li>
           </ul>
           <a
-            href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
+            href="https://buy.stripe.com/bJe8wQ2yOdyBgDNbqR4Jb12"
             target="_blank"
             id="clic_temario"
             class="flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-10 transition-all duration-500">
