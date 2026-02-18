@@ -2,7 +2,6 @@
 const beneficiosAdicionales = [
   { text: 'Ebook', color: 'bg-violet-700' },
   { text: 'Libro digital: The blood sugar solution', color: 'bg-violet-700' },
-  { text: 'Grupos exclusivos de Telegram y Facebook por 21 días', color: 'bg-violet-800' },
   { text: 'Menú y recetario de 21 días', color: 'bg-violet-800' },
   { text: 'Meditación para reset de cuerpo', color: 'bg-violet-900' },
   { text: 'Paquete de suplementos con precio especial', color: 'bg-violet-900' },
@@ -16,37 +15,20 @@ const beneficiosAdicionales = [
     <div data-aos="fade-down" data-aos-anchor-placement="top-center">
       <div class="w-full xl:w-[505px] justify-start text-zinc-700">
         <p class="text-2xl font-thin font-Nexa leading-8 mb-7">
-          En este <strong class="font-nexa-bold">reset intensivo, impartido por expertos de primer nivel</strong>, te guiaremos paso a paso para <strong class="font-nexa-bold">eliminar tu dependencia del azúcar</strong>, <strong class="font-nexa-bold">proteger tu masa muscular</strong> y crear un <strong class="font-nexa-bold">estilo de vida sostenible</strong>, <strong class="font-nexa-bold">funcional</strong> y <strong class="font-nexa-bold">sin rebote</strong>.
-        </p>
-        <p class="text-lg font-thin font-Nexa">
-          También aprenderás a dominar el
-          <strong class="font-nexa-bold">poder del GLP-1</strong>
-          (ya sea que lo uses o busques activarlo de forma natural) y a
-          <strong class="font-nexa-bold">transformar tu metabolismo desde la raíz</strong>
-          .
+          Este curso está
+          <strong class="font-nexa-bold">dirigido a cualquier persona interesada en salud y bienestar</strong>
+          , así como a profesionales de la salud que deseen profundizar en el uso funcional del GLP-1.
         </p>
       </div>
     </div>
     <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="w-10/12 mt-24 lg:w-full lg:mt-0">
-      <div class="text-center justify-start w-full 2xl:w-[616px] bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-5 pt-28 sm:pt-20 md:p-12">
+      <div class="text-center justify-start w-full 2xl:w-[616px] bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-5 pt-28 sm:pt-20 md:py-24 md:px-12">
         <img src="@/assets/img/SugarResetGLP1.svg" alt="Logo Sugar Reset" class="w-[232px] absolute -top-36 -left-3 md:-top-24 -rotate-45 md:-left-20 lg:-top-32" loading="lazy" width="232" height="100" />
 
         <h3 class="text-teal-700 text-4xl leading-10">
-          <span class="font-thin font-Nexa block">Incluye</span>
-          <span class="font-nexa-bold block">3 clases en vivo</span>
+          <span class="font-thin font-Nexa block">Reset intensivo impartido por</span>
+          <span class="font-nexa-bold block">expertos de primer nivel.</span>
         </h3>
-        <p class="text-zinc-700 text-lg font-black mt-4 mb-8">
-          <time datetime="2026-01-27" class="font-nexa-bold">27</time>
-          de enero,
-          <time datetime="2026-02-03" class="font-nexa-bold">3</time>
-          y
-          <time datetime="2026-02-10" class="font-nexa-bold">10</time>
-          de febrero
-          <br />
-          De
-          <span class="font-nexa-bold">19 a 21 horas</span>
-          , CST - tiempo CDMX
-        </p>
 
         <a
           href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"

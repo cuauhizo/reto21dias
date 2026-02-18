@@ -119,16 +119,6 @@ const faqsA = ref([
 // ----------------------------------------------------
 const faqsB = ref([
   {
-    id: 101,
-    question: '¿Quedarán grabadas las clases?',
-    answer: '<p>Sí. Todas las clases quedan grabadas y estarán disponibles durante tres meses a partir de la última sesión, para que puedas verlas cuantas veces quieras.</p>',
-  },
-  {
-    id: 102,
-    question: '¿Cuánto tiempo tengo acceso al curso?',
-    answer: '<p>Tienes acceso completo al curso Sugar Reset GLP-1 por tres meses.</p>',
-  },
-  {
     id: 103,
     question: '¿Para quién está diseñado el curso?',
     answer: '<p>Está dirigido a cualquier persona interesada en salud y bienestar, así como a profesionales de la salud que deseen profundizar en el uso funcional del GLP-1.</p>',
@@ -172,22 +162,6 @@ const faqsB = ref([
     id: 107,
     question: '¿Puedo descargar los videos?',
     answer: '<p>No. Los videos son propiedad del ISFMC, pero podrás verlos cuantas veces quieras durante tres meses.</p>',
-  },
-  {
-    id: 108,
-    question: '¿Cómo ingreso al grupo de Telegram y Facebook?',
-    answer: `
-      <ul class="list-disc pl-5 space-y-1 mb-2">
-        <li><strong>Telegram:</strong> grupo informativo con contenido diario.</li>
-        <li><strong>Facebook:</strong> espacio para preguntar dudas, compartir fotos e interactuar con la comunidad.</li>
-      </ul>
-      <p>Un día antes de iniciar el curso recibirás los accesos a ambos grupos.</p>
-    `,
-  },
-  {
-    id: 109,
-    question: '¿Puedo hacer preguntas a los ponentes?',
-    answer: '<p>Sí. Al final de cada clase se destinan unos minutos para responder tus preguntas relacionadas con el tema.</p>',
   },
   {
     id: 110,
@@ -251,19 +225,47 @@ const isFaqOpen = (group, id) => {
       <div class="w-full lg:sticky lg:top-24 lg:w-5/12 lg:order-2 z-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div
           id="section5"
-          class="flex flex-col items-center justify-center text-center gap-3 md:gap-4 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] lg:max-h-[908px] mx-auto">
-          <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">¡Inscríbete ahora!</h3>
+          class="flex flex-col items-center justify-center text-center gap-3 md:gap-4 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] lg:max-h-[908px] mx-auto lg:mt-4">
+          <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">Pago único</h3>
           <div class="flex flex-col items-center gap-1">
             <div class="flex items-center text-teal-700 font-nexa">
               <span class="text-xl font-thin mr-1">$</span>
-              <span class="text-6xl font-black font-nexa-bold tracking-tight">111.</span>
+              <span class="text-6xl font-black font-nexa-bold tracking-tight">2,500.</span>
               <sup class="text-3xl font-black font-nexa-bold top-[-0.5em]">00</sup>
-              <span class="text-xl font-thin ml-2">USD</span>
+              <span class="text-xl font-thin ml-2">MXN</span>
             </div>
             <span class="text-zinc-700 text-xs font-thin font-nexa">
-              <span>El precio puede varias según el tipo de cambio y/o entidad bancaria</span>
+              <span>Paga con tarjeta de crédito o débito</span>
             </span>
           </div>
+
+          <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="w-[60px] h-auto object-contain" loading="lazy" />
+          <ul class="list-disc pl-5 space-y-1 text-start text-base text-zinc-700">
+            <li class="flex items-center">
+              <img class="flex-none w-6 h-full mr-2 -rotate-90" src="@/assets/img/toggler.svg" />
+              Certificado al aprobar el curso
+            </li>
+            <li class="flex items-center">
+              <img class="flex-none w-6 h-full mr-2 -rotate-90" src="@/assets/img/toggler.svg" />
+              Certificado al aprobar el curso
+            </li>
+            <li class="flex items-center">
+              <img class="flex-none w-6 h-full mr-2 -rotate-90" src="@/assets/img/toggler.svg" />
+              Acceso completo al curso
+            </li>
+            <li class="flex items-center">
+              <img class="flex-none w-6 h-full mr-2 -rotate-90" src="@/assets/img/toggler.svg" />
+              12 meses de acceso
+            </li>
+            <li class="flex items-center">
+              <img class="flex-none w-6 h-full mr-2 -rotate-90" src="@/assets/img/toggler.svg" />
+              Pago único
+            </li>
+            <li class="flex items-center">
+              <img class="flex-none w-6 h-full mr-2 -rotate-90" src="@/assets/img/toggler.svg" />
+              Pago a meses sin intereses, solo en México
+            </li>
+          </ul>
           <a
             href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
             target="_blank"
@@ -272,13 +274,12 @@ const isFaqOpen = (group, id) => {
             <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Inscríbete aquí!</span></span>
             <i><img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="icono contacto" /></i>
           </a>
-          <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="w-[233px] h-auto object-contain" loading="lazy" />
-          <p class="max-w-[320px] text-zinc-700 text-xs font-thin font-nexa leading-tight">Paga a meses sin intereses con tarjetas de crédito participantes.</p>
+          <p class="max-w-[320px] text-zinc-700 text-xs font-thin font-nexa leading-tight">Consultar bancos participantes.</p>
           <img src="@/assets/img/pago.png" alt="Métodos de pago" class="w-[320px] h-auto object-contain" loading="lazy" />
         </div>
       </div>
 
-      <div class="flex flex-col gap-12 w-full flex-1 lg:w-7/12 lg:order-1" data-aos-anchor-placement="top-bottom">
+      <div class="flex flex-col gap-12 w-full flex-1 lg:w-7/12 lg:order-1 lg:mt-4" data-aos-anchor-placement="top-bottom">
         <div id="section4" class="px-6 py-10 text-white rounded-[32px] bg-temario shadow-lg" data-aos="fade-down">
           <h2 class="text-2xl mb-4 font-thin">Temario</h2>
           <h3 class="text-4xl font-nexa-bold mb-6 leading-tight">¿Qué aprenderás en Sugar Reset GLP-1: Reto de 21 Días?</h3>

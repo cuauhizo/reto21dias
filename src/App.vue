@@ -88,17 +88,6 @@ onUnmounted(() => {
                   Preguntas frecuentes
                 </a>
               </li>
-              <li class=""><a href="masterClass" class="py-2 px-2 rounded-full border-2 border-solid transition-colors hover:bg-white hover:text-black">Masterclass</a></li>
-              <li class="hidden">
-                <a
-                  href="https://pay.hotmart.com/T103270473P?off=7gm88kj9&checkoutMode=10"
-                  target="_blank"
-                  id="clic_header_movil"
-                  class="flex items-center justify-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-4 transition-all duration-500">
-                  <span>¡Inscríbete aquí!</span>
-                  <i><img src="@/assets/img/icon-contacto.svg" class="pl-2" alt="icono contacto" /></i>
-                </a>
-              </li>
             </ul>
           </div>
         </div>

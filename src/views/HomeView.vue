@@ -57,7 +57,8 @@ onMounted(() => {
         window.dataLayer.push({
           event: 'experiment_impression',
           experiment_id: 'home_redesign_v2', // ID único de tu prueba
-          variant_id: selectedVariant, // 'A' o 'B'
+          // variant_id: selectedVariant, // 'A' o 'B'
+          variant_id: 'A', // 'A' o 'B'
         })
       }
     }
