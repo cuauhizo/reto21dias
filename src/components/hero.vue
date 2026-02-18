@@ -37,7 +37,7 @@
             </p>
 
             <a
-              href="https://buy.stripe.com/bJe8wQ2yOdyBgDNbqR4Jb12"
+              href="https://isfmc.app/course/60/purchase"
               target="_blank"
               id="clic_header_desktop"
               rel="noopener noreferrer"

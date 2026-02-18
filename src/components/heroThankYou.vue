@@ -60,7 +60,7 @@ import { ref } from 'vue'
               <span class="block mt-1 font-black nunito-sans-bold">¡Comenzamos el 27 de enero!</span>
             </p>
             <a
-              href="https://buy.stripe.com/bJe8wQ2yOdyBgDNbqR4Jb12"
+              href="https://isfmc.app/course/60/purchase"
               id="clic_hotmart_gracias"
               class="relative inline-flex items-center gap-2 text-gray-100 rounded-2xl border border-teal-700 bg-teal-700 px-6 py-4 w-full shadow-[0_6px_0_#168b82] hover:bg-teal-600 hover:border-teal-600 active:translate-y-1 active:shadow-[0_2px_0_#168b82] transition-all duration-100 justify-center nunito-sans-bold text-lg">
               <img src="@/assets/img/icon-lapiz.svg" class="w-5 h-5" alt="" />
