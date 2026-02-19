@@ -2,6 +2,9 @@
 import { useHead } from '@vueuse/head'
 import { ref, onMounted, shallowRef } from 'vue'
 
+// IMPORTAMOS LA VARIABLE GLOBAL
+import { globalVariant } from '@/store/abTest.js'
+
 // Importamos las dos versiones completas
 import HomeVariantA from '@/components/home/HomeVariantA.vue' // Diseño Original
 import HomeVariantB from '@/components/home/HomeVariantB.vue' // Diseño Nuevo (Challenger)
@@ -63,6 +66,9 @@ onMounted(() => {
         })
       }
     }
+
+    // ACTUALIZAMOS LA VARIABLE GLOBAL PARA QUE App.vue SE ENTERE
+    globalVariant.value = selectedVariant
 
     // 4. Cargar el componente correspondiente
     if (selectedVariant === 'B') {

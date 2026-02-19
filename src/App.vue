@@ -1,8 +1,9 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
-// import Responsive from '@/components/responsive.vue'
+import { globalVariant } from '@/store/abTest.js'
 import BtnWhatsapp from '@/components/btnWhatsapp.vue'
+// import Responsive from '@/components/responsive.vue'
 
 const route = useRoute()
 const anio = ref(new Date().getFullYear())
@@ -80,10 +81,14 @@ onUnmounted(() => {
           <div class="fixed inset-0 bg-gradient-to-b from-white/20 to-[#3a3a82]/95 transition-transform duration-300 md:static md:translate-x-0 md:bg-none z-10" :class="isMenuOpen ? 'translate-x-0' : 'translate-x-full'">
             <ul
               class="absolute inset-x-0 top-24 p-10 items-center text-[15px] bg-white text-black w-[90%] mx-auto rounded-md h-max text-center grid gap-6 shadow-2xl md:static md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:text-white md:shadow-none">
-              <li><a href="#beneficios" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(2)">Beneficios</a></li>
-              <li><a href="#temario" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section4' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(4)">Temario</a></li>
+              <li v-if="globalVariant === 'A'">
+                <a href="#beneficios" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(2)">Beneficios</a>
+              </li>
+              <li v-if="globalVariant === 'A'">
+                <a href="#temario" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section4' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(4)">Temario</a>
+              </li>
               <li><a href="#costo" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section5' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(5)">Costo</a></li>
-              <li>
+              <li v-if="globalVariant === 'A'">
                 <a href="#preguntas_frecuentes" :class="['py-2 px-2 rounded-full transition-colors hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']" @click.prevent="scrollToSection(6)">
                   Preguntas frecuentes
                 </a>
