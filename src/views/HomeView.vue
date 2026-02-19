@@ -50,16 +50,16 @@ onMounted(() => {
     } else {
       // 2. Asignación aleatoria (50/50)
       selectedVariant = Math.random() < 0.5 ? 'A' : 'B'
-      // sessionStorage.setItem('ab_test_home_2026', selectedVariant)
-      sessionStorage.setItem('ab_test_home_2026', 'A')
+      sessionStorage.setItem('ab_test_home_2026', selectedVariant)
+      // sessionStorage.setItem('ab_test_home_2026', 'A')
 
       // 3. ENVIAR A ANALYTICS (GTM)
       if (window.dataLayer) {
         window.dataLayer.push({
           event: 'experiment_impression',
           experiment_id: 'home_redesign_v2', // ID único de tu prueba
-          // variant_id: selectedVariant, // 'A' o 'B'
-          variant_id: 'A', // 'A' o 'B'
+          variant_id: selectedVariant, // 'A' o 'B'
+          // variant_id: 'A', // 'A' o 'B'
         })
       }
     }
