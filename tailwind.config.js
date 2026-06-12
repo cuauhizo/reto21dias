@@ -6,8 +6,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        nexa: ['"nexa"', 'sans-serif'],
-        'nexa-bold': ['"nexa-bold"', 'sans-serif'],
         montserrat: ['"montserrat"', 'sans-serif'],
         'montserrat-bold': ['"montserrat-bold"', 'sans-serif'],
       },
