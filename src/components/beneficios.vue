@@ -24,7 +24,7 @@ const beneficiosAdicionales = [
       <div class="text-center justify-start w-full 2xl:w-[616px] bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-5 pt-28 sm:pt-20 md:py-24 md:px-12">
         <img src="@/assets/img/SugarResetGLP1.svg" alt="Logo Sugar Reset" class="w-[232px] absolute -top-36 -left-3 md:-top-24 -rotate-45 md:-left-20 lg:-top-32" loading="lazy" width="232" height="100" />
 
-        <h3 class="text-teal-700 text-4xl leading-10">
+        <h3 class="text-teal-700 text-3xl leading-10">
           <span class="font-thin montserrat block">Reset intensivo impartido por</span>
           <span class="montserrat-bold block">expertos de primer nivel.</span>
         </h3>
