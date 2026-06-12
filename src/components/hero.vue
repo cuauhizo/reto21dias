@@ -9,22 +9,22 @@
           <div class="lg:col-span-6 flex flex-col gap-6">
             <div>
               <div class="w-fit mx-auto md:mx-0 py-3 px-6 bg-black/30 rounded-[32px] border border-white/25 backdrop-blur-md">
-                <h1 class="text-white text-center md:text-left text-3xl md:text-4xl font-nexa-bold leading-tight">
+                <h1 class="text-white text-center md:text-left text-3xl md:text-4xl montserrat-bold leading-tight">
                   Sugar Reset GLP1
                   <span class="block text-teal-400 md:text-white md:inline">en 21 días</span>
                 </h1>
               </div>
             </div>
             <div class="w-full text-white/90">
-              <p class="text-xl md:text-2xl font-thin font-Nexa leading-relaxed text-center md:text-left">
+              <p class="text-xl md:text-2xl font-thin montserrat leading-relaxed text-center md:text-left">
                 Te daremos las herramientas para que
-                <strong class="font-nexa-bold text-white">reduzcas tu dependencia del azúcar</strong>
+                <strong class="montserrat-bold text-white">reduzcas tu dependencia del azúcar</strong>
                 , actives el poder del GLP1 (de manera natural o ya sea que lo uses),
-                <strong class="font-nexa-bold text-white">protejas tu masa muscular</strong>
+                <strong class="montserrat-bold text-white">protejas tu masa muscular</strong>
                 y crees un
-                <strong class="font-nexa-bold text-white">estilo de vida sostenible, funcional</strong>
+                <strong class="montserrat-bold text-white">estilo de vida sostenible, funcional</strong>
                 y
-                <strong class="font-nexa-bold text-white">sin rebote</strong>
+                <strong class="montserrat-bold text-white">sin rebote</strong>
                 .
               </p>
             </div>
@@ -32,7 +32,7 @@
 
           <div class="lg:col-span-6 flex flex-col items-center">
             <img src="@/assets/img/SugarResetGLP1.svg" alt="Logo Reto Sugar Reset GLP1" class="w-full max-w-[320px] md:max-w-[490px] h-auto drop-shadow-2xl mb-8 lg:mb-3 animate-fade-in-up" width="490" height="491" fetchpriority="high" />
-            <p class="text-xl md:text-2xl font-thin font-Nexa text-center my-4">
+            <p class="text-xl md:text-2xl font-thin montserrat text-center my-4">
               <strong class="text-white">Con Nathaly Marcus</strong>
             </p>
 
@@ -41,7 +41,7 @@
               target="_blank"
               id="clic_header_desktop"
               rel="noopener noreferrer"
-              class="flex items-center justify-center gap-2 bg-teal-700 rounded-full shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-7 transition-all duration-500 w-fit border-2 border-white lg:pl-10">
+              class="flex items-center justify-center gap-2 bg-teal-700 rounded-full shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] montserrat-bold text-lg text-white py-2 px-1.5 pl-7 transition-all duration-500 w-fit border-2 border-white lg:pl-10">
               <span>¡Inscríbete aquí!</span>
               <img src="@/assets/img/icon-contacto.svg" class="pl-0 lg:ml-8 rounded-full w-9 md:w-auto" alt="icono contacto" aria-hidden="true" />
             </a>

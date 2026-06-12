@@ -31,7 +31,7 @@ const whatsappLink = computed(() => {
     rel="noopener noreferrer"
     class="group fixed bottom-24 right-5 z-50 flex items-center bg-[#25D366] p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out hover:pr-6 hover:rounded-3xl animate-pulse-green overflow-hidden"
     aria-label="Contactar por WhatsApp">
-    <span class="max-w-0 opacity-0 group-hover:max-w-xs group-hover:opacity-100 group-hover:mr-3 transition-all duration-500 ease-in-out text-white font-nexa-bold text-sm md:text-base whitespace-nowrap overflow-hidden">
+    <span class="max-w-0 opacity-0 group-hover:max-w-xs group-hover:opacity-100 group-hover:mr-3 transition-all duration-500 ease-in-out text-white montserrat-bold text-sm md:text-base whitespace-nowrap overflow-hidden">
       ¿Tienes dudas? Escríbenos
     </span>
     <img src="@/assets/img/icon-whatsapp.svg" alt="WhatsApp" class="w-8 h-8 md:w-9 md:h-9 brightness-0 invert shrink-0" />

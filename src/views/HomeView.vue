@@ -84,7 +84,7 @@ onMounted(() => {
 
 <template>
   <div v-if="isLoading" class="min-h-screen flex items-center justify-center bg-violet-950">
-    <div class="animate-pulse text-white font-nexa-bold">Cargando experiencia...</div>
+    <div class="animate-pulse text-white montserrat-bold">Cargando experiencia...</div>
   </div>
 
   <component v-else :is="currentComponent" />

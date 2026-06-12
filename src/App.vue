@@ -106,7 +106,7 @@ onUnmounted(() => {
             <img src="@/assets/img/logo-isfmc-alt.svg" class="hidden lg:block" alt="Logo Instituto" width="40" height="40" loading="lazy" />
           </a>
           <img src="@/assets/img/SugarResetGLP1.svg" alt="Sugar Reset Logo" class="lg:hidden" loading="lazy" width="40" height="40" />
-          <div class="flex items-center justify-start font-nexa-bold">Masterclass Gratuita</div>
+          <div class="flex items-center justify-start montserrat-bold">Masterclass Gratuita</div>
         </div>
         <div class="flex items-center justify-start gap-8 text-base">
           <span class="hidden nunito-sans-bold">Master Class</span>

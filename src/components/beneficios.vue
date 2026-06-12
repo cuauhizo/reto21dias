@@ -14,9 +14,9 @@ const beneficiosAdicionales = [
   <section id="section2" class="container grid gap-12 justify-items-center items-center pt-24 pb-10 md:py-20 md:pt-40 lg:pt-64 lg:grid-cols-2">
     <div data-aos="fade-down" data-aos-anchor-placement="top-center">
       <div class="w-full xl:w-[505px] justify-start text-zinc-700">
-        <p class="text-2xl font-thin font-Nexa leading-8 mb-7">
+        <p class="text-2xl font-thin montserrat leading-8 mb-7">
           Este curso está
-          <strong class="font-nexa-bold">dirigido a cualquier persona interesada en salud y bienestar</strong>
+          <strong class="montserrat-bold">dirigido a cualquier persona interesada en salud y bienestar</strong>
           , así como a profesionales de la salud que deseen profundizar en el uso funcional del GLP-1.
         </p>
       </div>
@@ -26,15 +26,15 @@ const beneficiosAdicionales = [
         <img src="@/assets/img/SugarResetGLP1.svg" alt="Logo Sugar Reset" class="w-[232px] absolute -top-36 -left-3 md:-top-24 -rotate-45 md:-left-20 lg:-top-32" loading="lazy" width="232" height="100" />
 
         <h3 class="text-teal-700 text-4xl leading-10">
-          <span class="font-thin font-Nexa block">Reset intensivo impartido por</span>
-          <span class="font-nexa-bold block">expertos de primer nivel.</span>
+          <span class="font-thin montserrat block">Reset intensivo impartido por</span>
+          <span class="montserrat-bold block">expertos de primer nivel.</span>
         </h3>
 
         <a
           href="https://isfmc.app/course/60/purchase"
           target="_blank"
           id="clic_beneficios"
-          class="flex items-center gap-2 w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">
+          class="flex items-center gap-2 w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] montserrat-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">
           <span>¡Inscríbete aquí!</span>
           <img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="" aria-hidden="true" />
         </a>

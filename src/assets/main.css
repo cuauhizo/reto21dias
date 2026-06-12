@@ -37,12 +37,12 @@
   }
 
   .titulo-seccion {
-    @apply text-sm font-normal font-nexa uppercase tracking-[0.56px];
+    @apply text-sm font-normal font-montserrat-bold uppercase tracking-[0.56px];
   }
 
   /* letter-spacing: 0.098rem; */
   .titulo {
-    @apply font-nexa-bold text-3xl md:text-[3.196rem] md:leading-[3.595rem] pt-4 mb-4;
+    @apply montserrat-bold text-3xl md:text-[3.196rem] md:leading-[3.595rem] pt-4 mb-4;
   }
 }
 
@@ -70,24 +70,27 @@
   font-variation-settings: 'wdth' 900, 'YTLC' 500;
 }
 
-@font-face {
-  font-family: 'nexa';
-  src: url('@/assets/font/Nexa/nexa-extralight-webfont.woff2') format('woff2'), url('@/assets/font/Nexa/nexa-extralight-webfont.woff') format('woff');
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
-@font-face {
-  font-family: 'nexa-bold';
-  src: url('@/assets/font/Nexa/nexa-heavy-webfont.woff2') format('woff2'), url('@/assets/font/Nexa/nexa-heavy-webfont.woff') format('woff');
-  font-weight: normal;
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
   font-style: normal;
-  font-display: swap;
 }
+
+
+
+
 
 body {
-  font-family: 'nexa', sans-serif;
+  font-family: 'montserrat', sans-serif;
 }
 
 .texto-con-bordes,

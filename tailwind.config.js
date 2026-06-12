@@ -8,6 +8,8 @@ export default {
       fontFamily: {
         nexa: ['"nexa"', 'sans-serif'],
         'nexa-bold': ['"nexa-bold"', 'sans-serif'],
+        montserrat: ['"montserrat"', 'sans-serif'],
+        'montserrat-bold': ['"montserrat-bold"', 'sans-serif'],
       },
       colors: {
         'tolko-red': 'rgb(204, 0, 50)',

@@ -226,15 +226,15 @@ const isFaqOpen = (group, id) => {
         <div
           id="section5"
           class="flex flex-col items-center justify-center text-center gap-3 md:gap-4 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] lg:max-h-[908px] mx-auto lg:mt-4">
-          <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">Pago único</h3>
+          <h3 class="text-teal-700 text-3xl lg:text-4xl montserrat-bold leading-tight">Pago único</h3>
           <div class="flex flex-col items-center gap-1">
-            <div class="flex items-center text-teal-700 font-nexa">
+            <div class="flex items-center text-teal-700 montserrat">
               <span class="text-xl font-thin mr-1">$</span>
-              <span class="text-6xl font-black font-nexa-bold tracking-tight">2,500.</span>
-              <sup class="text-3xl font-black font-nexa-bold top-[-0.5em]">00</sup>
+              <span class="text-6xl font-black montserrat-bold tracking-tight">2,500.</span>
+              <sup class="text-3xl font-black montserrat-bold top-[-0.5em]">00</sup>
               <span class="text-xl font-thin ml-2">MXN</span>
             </div>
-            <span class="text-zinc-700 text-xs font-thin font-nexa">
+            <span class="text-zinc-700 text-xs font-thin montserrat">
               <span>Paga con tarjeta de crédito o débito</span>
             </span>
           </div>
@@ -270,11 +270,11 @@ const isFaqOpen = (group, id) => {
             href="https://isfmc.app/course/60/purchase"
             target="_blank"
             id="clic_temario"
-            class="flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-10 transition-all duration-500">
+            class="flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] montserrat-bold text-lg text-white py-2 px-1.5 pl-10 transition-all duration-500">
             <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Inscríbete aquí!</span></span>
             <i><img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="icono contacto" /></i>
           </a>
-          <p class="max-w-[320px] text-zinc-700 text-xs font-thin font-nexa leading-tight">Consultar bancos participantes.</p>
+          <p class="max-w-[320px] text-zinc-700 text-xs font-thin montserrat leading-tight">Consultar bancos participantes.</p>
           <img src="@/assets/img/pago.png" alt="Métodos de pago" class="w-[320px] h-auto object-contain" loading="lazy" />
         </div>
       </div>
@@ -282,18 +282,18 @@ const isFaqOpen = (group, id) => {
       <div class="flex flex-col gap-12 w-full flex-1 lg:w-7/12 lg:order-1 lg:mt-4" data-aos-anchor-placement="top-bottom">
         <div id="section4" class="px-6 py-10 text-white rounded-[32px] bg-temario shadow-lg" data-aos="fade-down">
           <h2 class="text-2xl mb-4 font-thin">Temario</h2>
-          <h3 class="text-4xl font-nexa-bold mb-6 leading-tight">¿Qué aprenderás en Sugar Reset GLP-1: Reto de 21 Días?</h3>
+          <h3 class="text-4xl montserrat-bold mb-6 leading-tight">¿Qué aprenderás en Sugar Reset GLP-1: Reto de 21 Días?</h3>
 
           <div class="space-y-1">
             <div v-for="(faq, index) in faqsA" :key="faq.id" class="overflow-hidden rounded-2xl transition-all duration-300" :class="isFaqOpen('A', faq.id) ? 'bg-white shadow-md' : 'bg-white/60 backdrop-blur-3xl'">
               <button class="flex justify-between items-center w-full p-5 text-left focus:outline-none" @click="toggleFaq('A', faq.id)" :aria-expanded="isFaqOpen('A', faq.id)">
                 <div class="flex items-center gap-4 pr-4">
                   <span
-                    class="flex-shrink-0 flex items-center justify-center w-8 h-8 bg-gradient-to-b from-teal-700 to-teal-400 rounded-lg bg-teal-700 text-white font-nexa-bold text-sm transition-colors"
+                    class="flex-shrink-0 flex items-center justify-center w-8 h-8 bg-gradient-to-b from-teal-700 to-teal-400 rounded-lg bg-teal-700 text-white montserrat-bold text-sm transition-colors"
                     :class="isFaqOpen('A', faq.id) ? 'bg-teal-700 text-white' : 'bg-white/30 text-white'">
                     {{ index + 1 }}
                   </span>
-                  <span class="font-nexa-bold text-lg leading-snug transition-colors" :class="isFaqOpen('A', faq.id) ? 'text-teal-700' : 'text-white'">
+                  <span class="montserrat-bold text-lg leading-snug transition-colors" :class="isFaqOpen('A', faq.id) ? 'text-teal-700' : 'text-white'">
                     {{ faq.question }}
                   </span>
                 </div>
@@ -312,12 +312,12 @@ const isFaqOpen = (group, id) => {
 
         <div data-aos="fade-up">
           <div class="px-6 py-10 rounded-[48px] bg-gray-50/80 border border-gray-100">
-            <h3 class="text-teal-700 text-3xl text-center md:text-4xl font-nexa-bold mb-8">Preguntas frecuentes</h3>
+            <h3 class="text-teal-700 text-3xl text-center md:text-4xl montserrat-bold mb-8">Preguntas frecuentes</h3>
 
             <div class="space-y-1">
               <div v-for="faq in faqsB" :key="faq.id" class="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <button class="flex justify-between items-center w-full p-5 text-left focus:outline-none" @click="toggleFaq('B', faq.id)">
-                  <span class="font-nexa-bold text-lg text-teal-700 pr-4">
+                  <span class="montserrat-bold text-lg text-teal-700 pr-4">
                     {{ faq.question }}
                   </span>
                   <img src="@/assets/img/toggler.svg" alt="Toggle" class="w-6 h-6 transition-transform duration-300 flex-shrink-0" :class="{ 'rotate-180': isFaqOpen('B', faq.id) }" />

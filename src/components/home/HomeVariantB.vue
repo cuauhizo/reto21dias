@@ -37,15 +37,15 @@ import HeroVariantB from '@/components/heroVariantB.vue'
           <div
             id="section5"
             class="flex flex-col items-center justify-center text-center gap-3 md:gap-4 bg-white/90 rounded-[40px] shadow-[4px_4px_16px_0px_rgba(60,60,60,0.08)] border-2 border-teal-500 p-8 lg:p-12 w-full max-w-[505px] lg:max-h-[908px] mx-auto lg:mt-28 lg:mb-5">
-            <h3 class="text-teal-700 text-3xl lg:text-4xl font-nexa-bold leading-tight">Pago único</h3>
+            <h3 class="text-teal-700 text-3xl lg:text-4xl montserrat-bold leading-tight">Pago único</h3>
             <div class="flex flex-col items-center gap-1">
-              <div class="flex items-center text-teal-700 font-nexa">
+              <div class="flex items-center text-teal-700 montserrat">
                 <span class="text-xl font-thin mr-1">$</span>
-                <span class="text-6xl font-black font-nexa-bold tracking-tight">2,500.</span>
-                <sup class="text-3xl font-black font-nexa-bold top-[-0.5em]">00</sup>
+                <span class="text-6xl font-black montserrat-bold tracking-tight">2,500.</span>
+                <sup class="text-3xl font-black montserrat-bold top-[-0.5em]">00</sup>
                 <span class="text-xl font-thin ml-2">MXN</span>
               </div>
-              <span class="text-zinc-700 text-xs font-thin font-nexa">
+              <span class="text-zinc-700 text-xs font-thin montserrat">
                 <span>Paga con tarjeta de crédito o débito</span>
               </span>
             </div>
@@ -81,11 +81,11 @@ import HeroVariantB from '@/components/heroVariantB.vue'
               href="https://isfmc.app/course/60/purchase"
               target="_blank"
               id="clic_temario"
-              class="flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] font-nexa-bold text-lg text-white py-2 px-1.5 pl-10 transition-all duration-500">
+              class="flex items-center gap-2 bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] montserrat-bold text-lg text-white py-2 px-1.5 pl-10 transition-all duration-500">
               <span style="vertical-align: inherit"><span style="vertical-align: inherit">¡Inscríbete aquí!</span></span>
               <i><img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="icono contacto" /></i>
             </a>
-            <p class="max-w-[320px] text-zinc-700 text-xs font-thin font-nexa leading-tight">Consultar bancos participantes.</p>
+            <p class="max-w-[320px] text-zinc-700 text-xs font-thin montserrat leading-tight">Consultar bancos participantes.</p>
             <img src="@/assets/img/pago.png" alt="Métodos de pago" class="w-[320px] h-auto object-contain" loading="lazy" />
           </div>
         </div>
