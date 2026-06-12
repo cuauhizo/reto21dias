@@ -16,8 +16,7 @@ const beneficiosAdicionales = [
       <div class="w-full xl:w-[505px] justify-start text-zinc-700">
         <p class="text-2xl font-thin montserrat leading-8 mb-7">
           Este curso está
-          <strong class="montserrat-bold">dirigido a cualquier persona interesada en salud y bienestar</strong>
-          , así como a profesionales de la salud que deseen profundizar en el uso funcional del GLP-1.
+          <strong class="montserrat-bold">dirigido a cualquier persona interesada en salud y bienestar</strong>, así como a profesionales de la salud que deseen profundizar en el uso funcional del GLP-1.
         </p>
       </div>
     </div>
@@ -34,7 +33,7 @@ const beneficiosAdicionales = [
           href="https://isfmc.app/course/60/purchase"
           target="_blank"
           id="clic_beneficios"
-          class="flex items-center gap-2 w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] montserrat-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">
+          class="flex items-center w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] montserrat-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">
           <span>¡Inscríbete aquí!</span>
           <img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="" aria-hidden="true" />
         </a>

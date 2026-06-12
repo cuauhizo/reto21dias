@@ -86,14 +86,13 @@ onUnmounted(() => {
             <h2 class="text-teal-700 text-4xl montserrat-bold leading-10">Aprende de los mejores</h2>
             <p class="mb-6">
               Nuestros expertos te
-              <span class="montserrat-bold">ofrecen la ruta más directa y probada para conocer más de GLP-1 y cómo lograr la desintoxicación del azúcar</span>
-              , asegurando que obtengas resultados reales y duraderos.
+              <span class="montserrat-bold">ofrecen la ruta más directa y probada para conocer más de GLP-1 y cómo lograr la desintoxicación del azúcar</span>, asegurando que obtengas resultados reales y duraderos.
             </p>
             <a
               href="https://isfmc.app/course/60/purchase"
               target="_blank"
               id="clic_ponentes"
-              class="flex items-center gap-2 w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] montserrat-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">
+              class="flex items-center w-full max-w-[283px] mx-auto bg-gradient-to-r from-violet-950 to-violet-700 rounded-3xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.56)] montserrat-bold text-sm text-white py-2 px-1.5 pl-10 mt-6 transition-all duration-500 sm:text-lg">
               <span>¡Inscríbete aquí!</span>
               <img src="@/assets/img/icon-contacto.svg" class="pl-4 lg:pl-8" alt="icono contacto" />
             </a>

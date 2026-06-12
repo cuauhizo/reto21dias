@@ -18,14 +18,12 @@
             <div class="w-full text-white/90">
               <p class="text-xl md:text-2xl font-thin montserrat leading-relaxed text-center md:text-left">
                 Te daremos las herramientas para que
-                <strong class="montserrat-bold text-white">reduzcas tu dependencia del azúcar</strong>
-                , actives el poder del GLP1 (de manera natural o ya sea que lo uses),
+                <strong class="montserrat-bold text-white">reduzcas tu dependencia del azúcar</strong>, actives el poder del GLP1 (de manera natural o ya sea que lo uses),
                 <strong class="montserrat-bold text-white">protejas tu masa muscular</strong>
                 y crees un
                 <strong class="montserrat-bold text-white">estilo de vida sostenible, funcional</strong>
                 y
-                <strong class="montserrat-bold text-white">sin rebote</strong>
-                .
+                <strong class="montserrat-bold text-white">sin rebote</strong>.
               </p>
             </div>
           </div>
